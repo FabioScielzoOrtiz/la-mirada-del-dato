@@ -2,7 +2,7 @@
 title: "Sobre el blog"
 ---
 
-**La Mirada del Dato** es un blog personal de **Fabio Scielzo Ortiz**, científico de datos, doctorando en Estadística y docente e investigador en el Departamento de Estadística de la Universidad Carlos III de Madrid.
+**La Mirada del Dato** es un blog personal de **Fabio Scielzo Ortiz**, científico de datos en [IBiDat](https://ibidat.es/)  y doctorando en Statistics for Data Science en la [Universidad Carlos III de Madrid](https://www.uc3m.es/Home).
 
 La idea es sencilla: tomar afirmaciones que se repiten en el debate público y contrastarlas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista.
 

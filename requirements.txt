@@ -1,0 +1,30 @@
+# Python >= 3.11. Quarto (https://quarto.org) is installed separately, not with pip.
+#   python -m venv .venv
+#   .venv\Scripts\activate            (Windows)   |   source .venv/bin/activate   (macOS/Linux)
+#   pip install -r requirements.txt
+
+# --- Data handling
+numpy>=1.26
+pandas>=2.2
+polars>=1.0
+pyarrow>=15.0          # Parquet
+
+# --- Reading source files
+requests>=2.31         # downloads (INE API, CSVs)
+openpyxl>=3.1          # .xlsx
+fastexcel>=0.11        # fast .xlsx reader used by polars.read_excel
+
+# --- Statistics
+scipy>=1.12
+statsmodels>=0.14
+
+# --- Charts
+plotly>=5.20           # interactive charts in posts
+matplotlib>=3.8        # static charts / quick exploration
+
+# --- Notebooks and Quarto's Jupyter engine
+jupyterlab>=4.0
+ipykernel>=6.29
+nbformat>=5.9
+nbclient>=0.10
+pyyaml>=6.0

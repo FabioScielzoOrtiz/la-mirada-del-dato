@@ -1,0 +1,23 @@
+---
+title: "La Mirada del Dato"
+pagetitle: "La Mirada del Dato · Afirmaciones del debate público, contrastadas con datos"
+toc: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  fields: [date, title, respuesta, confianza]
+  field-display-names:
+    date: "Fecha"
+    title: "Pregunta"
+    respuesta: "Hacia dónde apunta la evidencia"
+    confianza: "Confianza"
+  date-format: "D MMM YYYY"
+  sort-ui: false
+  filter-ui: true
+  feed: true
+---
+
+::: {.subtitulo-portada}
+Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística. Cada entrada es una pregunta: qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia. [Cómo trabajamos →](method.qmd)
+:::

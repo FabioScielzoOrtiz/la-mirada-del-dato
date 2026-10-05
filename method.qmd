@@ -1,0 +1,34 @@
+---
+title: "Método"
+---
+
+Cada entrada parte de una afirmación que circula en el debate público, venga de donde venga, y la convierte en una pregunta que se pueda contrastar con datos.
+
+1. **Una pregunta concreta.** No «¿hay demasiada inmigración?», sino «¿cuánto ha crecido la población nacida en el extranjero desde 2002?».
+2. **Datos públicos y citados.** Fuente oficial, fecha de descarga y enlace. Los datos y el código están en el [repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato).
+3. **El análisis más simple que responda bien.** Primero se describen los datos. Solo se usan modelos cuando hacen falta.
+4. **Limitaciones explícitas.** Qué no pueden decir estos datos y qué podría cambiar la conclusión.
+5. **Una respuesta corta**, aunque sea provisional.
+
+## Escala de la respuesta
+
+| Respuesta | Significado |
+|:--|:--|
+| **Apunta a sí** / **Apunta a no** | Los datos favorecen claramente una de las dos respuestas. |
+| **Mixta** | Hay evidencia en ambas direcciones, o la respuesta depende del grupo, el lugar o el periodo. |
+| **Insuficiente** | Los datos disponibles no permiten responder con un mínimo de solidez. |
+
+| Confianza | Significado |
+|:--|:--|
+| **Alta** | Varias fuentes coinciden y el resultado no depende de decisiones discutibles del análisis. |
+| **Media** | El resultado es consistente, pero depende de supuestos que no se pueden comprobar del todo. |
+| **Baja** | Indicio descriptivo, sensible a decisiones del análisis o con datos de calidad limitada. |
+
+## Lo que no hacemos
+
+- Elegir las afirmaciones por su color político. Se contrastan las de todos.
+- Partir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.
+- Esconder los datos que no encajan.
+- Confundir correlación con efecto.
+
+Si encuentras un error, abre un *issue* en el repositorio. Las correcciones se indican al final de cada entrada.

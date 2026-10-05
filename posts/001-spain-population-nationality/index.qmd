@@ -1,0 +1,105 @@
+---
+title: "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?"
+description: "Población residente en España por nacionalidad y país de nacimiento, desde 2002."
+date: 2026-10-05
+categories: [Población, Inmigración]
+draft: true
+claim: "España solo crece gracias a la inmigración."
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+jupyter: python3
+---
+
+<!--
+STATUS: skeleton. Notebook: notebooks/001-spain-population-nationality.ipynb
+Data:    src/download/ine_population.py -> src/processing/population.py -> data/processed/population_*.parquet
+
+TODO
+[ ] Choose INE tables (ECP + Cifras de Población) and download them
+[ ] Process to data/processed/population_nationality.parquet and population_birth_country.parquet
+[ ] Explore in the notebook: totals, Spanish vs foreign, born in Spain vs abroad, groups of countries
+[ ] Decide the period (2002– ? ; check the break between Cifras de Población and ECP in 2021)
+[ ] Write the final figures here, set eval: true, fill respuesta / confianza / resumen, remove draft
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+```{python}
+#| label: setup
+import sys
+from pathlib import Path
+ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / "_quarto.yml").exists())
+sys.path.insert(0, str(ROOT))
+
+import polars as pl
+from src.utils.files import read_processed
+from src.utils.plotting import ACCENT, GREY, PALETTE, init_plotly, new_figure, add_source
+init_plotly()
+```
+
+## La afirmación
+
+> {{< meta claim >}}
+
+Se oye en ambos sentidos: como alarma («la población cambia por la inmigración») y como argumento a favor («sin inmigrantes España se despoblaría»). Ambas versiones comparten un hecho que se puede comprobar: **¿cuánto ha crecido la población residente y qué parte de ese crecimiento corresponde a personas de nacionalidad extranjera o nacidas fuera de España?**
+
+## Los datos
+
+<!-- TODO: fuente exacta, tablas, periodo y fecha de descarga -->
+
+Población residente del INE: *Cifras de Población* hasta 2021 y *Estadística Continua de Población* desde entonces.
+
+Una distinción importante: **nacionalidad** y **país de nacimiento** no son lo mismo. Una persona nacida en Ecuador que obtiene la nacionalidad española deja de contar como extranjera, pero sigue siendo nacida en el extranjero. Por eso se muestran las dos.
+
+## Qué dicen los datos
+
+### La población total
+
+```{python}
+#| label: fig-total
+#| fig-cap: "TODO"
+#| eval: false
+# TODO: población total por fecha
+```
+
+### Por nacionalidad y por país de nacimiento
+
+```{python}
+#| label: fig-groups
+#| fig-cap: "TODO"
+#| eval: false
+# TODO: española vs extranjera; nacida en España vs en el extranjero
+```
+
+### ¿De dónde?
+
+```{python}
+#| label: fig-origin
+#| fig-cap: "TODO"
+#| eval: false
+# TODO: población nacida en el extranjero por grandes zonas (UE, resto de Europa, África, América, Asia)
+```
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+<!-- TODO: definiciones (población residente, nacionalidad, país de nacimiento), enlace entre series
+     CP y ECP en 2021, descomposición del crecimiento: Δ total = Δ nacidos en España + Δ nacidos fuera -->
+:::
+
+## Limitaciones
+
+<!-- TODO. Candidates:
+- Nacionalidad ≠ origen: las nacionalizaciones mueven personas de "extranjera" a "española".
+- Cambio de operación estadística en 2021 (CP → ECP).
+- Población residente: no incluye a quienes no están empadronados ni a estancias cortas.
+- Hijos de inmigrantes nacidos en España cuentan como nacidos en España. -->
+
+## Respuesta
+
+<!-- TODO -->

@@ -1,0 +1,10 @@
+# Defaults for every post
+author: "Fabio Scielzo Ortiz"
+title-block-banner: false
+citation: true
+license: "CC BY"
+format:
+  html:
+    code-tools: true
+bibliography: ../../references.bib
+csl: ../../assets/apa.csl

@@ -1,0 +1,45 @@
+---
+title: "¿Cobramos hoy menos que hace quince años, descontando la inflación?"
+description: "Salario medio y mediano en términos reales desde 2008."
+date: 2026-12-31
+categories: [Empleo, Salarios]
+draft: true
+claim: "Los salarios reales llevan quince años estancados."
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (roadmap #10). Notebook: notebooks/006-real-wages.ipynb (not created yet)
+
+Question to verify: how have mean and median gross annual wages evolved since 2008 after deflating by CPI?
+
+Candidate data:
+- Encuesta de Estructura Salarial (INE), annual: mean, median, deciles
+- Mercado de Trabajo y Pensiones en las Fuentes Tributarias (AEAT)
+- IPC (INE)
+
+Pitfalls: mean vs median; composition effects (in 2009–2013 low-paid jobs disappeared, which raises
+the mean); full-time vs part-time; gross vs net.
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La afirmación
+
+> {{< meta claim >}}
+
+## Los datos
+
+## Qué dicen los datos
+
+## Limitaciones
+
+## Respuesta

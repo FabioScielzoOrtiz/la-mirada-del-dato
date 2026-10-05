@@ -1,0 +1,1 @@
+$env:QUARTO_PYTHON = "$PWD\.venv\Scripts\python.exe"

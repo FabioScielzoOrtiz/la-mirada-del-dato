@@ -1,0 +1,20 @@
+# Quarto
+/_site/
+/.quarto/
+**/*.quarto_ipynb
+# _freeze/ IS committed: it stores executed results so GitHub Actions doesn't need the data
+
+# Python
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data: raw and processed files are versioned by default (they are small).
+# If a raw file gets too big (> 50 MB), add it here and document its download in data/README.md
+
+# Local archive of previous versions (not published, not versioned)
+/_archive/

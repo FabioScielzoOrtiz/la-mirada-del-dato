@@ -1,0 +1,45 @@
+---
+title: "¿Pagamos en España más impuestos que en el resto de Europa?"
+description: "Presión fiscal de España frente a la UE, y por qué la cifra depende de cómo se mida."
+date: 2026-12-31
+categories: [Impuestos, Economía]
+draft: true
+claim: "España es un infierno fiscal / En España se pagan pocos impuestos."
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (roadmap #15). Notebook: notebooks/005-tax-burden-eu.ipynb (not created yet)
+
+Question to verify: where does Spain rank in tax revenue (% of GDP) within the EU, and has the gap changed?
+
+Candidate data:
+- Eurostat gov_10a_taxag (tax revenue, % GDP, by type)
+- OECD Revenue Statistics (comparison beyond the EU)
+
+Pitfalls: % of GDP (presión fiscal) vs "esfuerzo fiscal" (adjusted by income per capita, contested measure);
+total revenue vs tax rates; social contributions included or not.
+Both sides use this claim: good example of the same data supporting opposite headlines.
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La afirmación
+
+> {{< meta claim >}}
+
+## Los datos
+
+## Qué dicen los datos
+
+## Limitaciones
+
+## Respuesta

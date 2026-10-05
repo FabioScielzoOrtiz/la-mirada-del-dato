@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: _site
+  render:                       # only blog pages (never notebooks/, src/ or data/)
+    - index.qmd
+    - method.qmd
+    - about.qmd
+    - posts/*/index.qmd
+
+lang: es
+
+execute:
+  freeze: auto      # each post's code runs once; results are cached in _freeze/ (commit it)
+  echo: false
+  warning: false
+
+website:
+  title: "La Mirada del Dato"
+  description: "Afirmaciones del debate público, contrastadas con datos."
+  site-url: https://fabioscielzoortiz.github.io/la-mirada-del-dato
+  repo-url: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
+  favicon: images/logo.png
+  open-graph: true
+  search: true
+  navbar:
+    title: "La Mirada del Dato"
+    logo: images/logo.png
+    left:
+      - href: index.qmd
+        text: Preguntas
+      - href: method.qmd
+        text: Método
+      - href: about.qmd
+        text: Sobre el blog
+    right:
+      - icon: github
+        href: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
+      - icon: rss
+        href: index.xml
+  page-footer:
+    left: "© 2026 Fabio Scielzo Ortiz"
+    right: "Contenido CC BY 4.0 · Código MIT · Hecho con [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/base.scss, assets/light.scss]
+      dark: [darkly, assets/base.scss, assets/dark.scss]
+    respect-user-color-scheme: true   # starts with the OS theme; the navbar toggle switches it
+    toc: true
+    toc-title: "En esta pregunta"
+    code-fold: true
+    code-summary: "Ver código"
+    fig-align: center
+    link-external-newwindow: true

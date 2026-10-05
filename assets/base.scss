@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-weight: 700;
+$font-size-root: 17px;
+
+/*-- scss:rules --*/
+// Caja «Respuesta corta» al principio de cada pregunta
+.respuesta {
+  border-left: 4px solid var(--bs-primary);
+  padding: .9rem 1.2rem;
+  margin: 1rem 0 1.8rem;
+  p { margin: .25rem 0; }
+  .etiqueta { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--bs-primary); }
+}
+.subtitulo-portada { font-size: 1.1rem; max-width: 46rem; opacity: .8; }

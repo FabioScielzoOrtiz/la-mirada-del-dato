@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística.">
 
 <title>La Mirada del Dato · Afirmaciones del debate público, contrastadas con datos – La Mirada del Dato</title>
 <style>
@@ -50,9 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a6a2eecd274b049ed2ae743df8fcd86e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-330820092a653225a500b18861371e6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a6a2eecd274b049ed2ae743df8fcd86e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bae7fe886eab954877ca39b7801bacf4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-67db0d2ed76590e937ee908567007e72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-bae7fe886eab954877ca39b7801bacf4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,20 +84,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-preguntas .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-respuesta','listing-confianza',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-lang','listing-execute','listing-website','listing-format','listing-engines','listing-language','listing-author','listing-title-block-banner','listing-citation','listing-license','listing-bibliography','listing-csl','listing-title','listing-description','listing-date','listing-categories','listing-draft','listing-claim','listing-respuesta','listing-confianza','listing-resumen','listing-jupyter','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-lang","listing-execute","listing-website","listing-format","listing-engines","listing-language","listing-author","listing-title-block-banner","listing-citation","listing-license","listing-bibliography","listing-csl","listing-title","listing-description","listing-date","listing-categories","listing-draft","listing-claim","listing-respuesta","listing-confianza","listing-resumen","listing-jupyter","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-preguntas'] = new List('listing-preguntas', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -141,6 +142,7 @@ window.Quarto = {
 </script>
 
 <link rel="alternate" type="application/rss+xml" title="La Mirada del Dato" href="index.xml" data-external="1"><meta property="og:title" content="La Mirada del Dato · Afirmaciones del debate público, contrastadas con datos">
+<meta property="og:description" content="Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística.">
 <meta property="og:site_name" content="La Mirada del Dato">
 </head>
 
@@ -374,56 +376,68 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">La Mirada del Dato</h1>
+
+
+
+<div class="hero">
+<p><span class="hero-kicker">Verificación con datos abiertos y estadística</span></p>
+<p><span class="hero-title">Afirmaciones del debate público, <strong>contrastadas con datos</strong></span></p>
+<p><span class="hero-lead">Cada entrada parte de una frase que se repite, venga de donde venga, y la convierte en una pregunta medible. Qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia.</span></p>
+<p><a href="./method.html" class="btn btn-primary hero-btn">Cómo trabajamos →</a> <a href="#proximas" class="btn btn-outline-secondary hero-btn">Próximas preguntas</a></p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="subtitulo-portada">
-<p>Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística. Cada entrada es una pregunta: qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia. <a href="./method.html">Cómo trabajamos →</a></p>
+<div class="pasos">
+<div class="paso">
+<p><span class="paso-num">1</span> <strong>La afirmación.</strong> Tal y como circula, de la izquierda, de la derecha o de un colectivo.</p>
 </div>
+<div class="paso">
+<p><span class="paso-num">2</span> <strong>Los datos.</strong> Fuentes oficiales, el análisis más simple que responda bien y sus limitaciones.</p>
+</div>
+<div class="paso">
+<p><span class="paso-num">3</span> <strong>La respuesta.</strong> Hacia dónde apunta la evidencia y con qué confianza.</p>
+</div>
+</div>
+<section id="preguntas" class="level2 seccion-titulo">
+<h2 class="seccion-titulo anchored" data-anchor-id="preguntas">Preguntas</h2>
+<div id="listing-preguntas" class="quarto-listing quarto-listing-container-custom">
 
+<div class="list tarjetas">
 
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filtro">
+  <a class="tarjeta" href="./posts/001-spain-population-nationality/index.html" data-index="0" data-categories="UG9ibGFjaSVDMyVCM24lMkNJbm1pZ3JhY2klQzMlQjNu" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1791217533523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="408">
+    <div class="tarjeta-meta">
+      <span class="veredicto v-pendiente">Pendiente</span>
+      
+      <span class="fecha">5 oct 2026</span>
     </div>
+    <h3 class="tarjeta-titulo anchored">¿Cuánto ha crecido la población de España y quién explica ese crecimiento?</h3>
+    <p class="tarjeta-desc">Población residente en España por nacionalidad y país de nacimiento, desde 2002.</p>
+  </a>
+
 </div>
-<table class="quarto-listing-table table caption-top">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Fecha</th>
-<th data-quarto-table-cell-role="th">Pregunta</th>
-<th data-quarto-table-cell-role="th">Hacia dónde apunta la evidencia</th>
-<th data-quarto-table-cell-role="th">Confianza</th>
-</tr>
-</thead>
-<tbody class="list">
-</tbody>
-</table>
 <div class="listing-no-matching d-none">No hay resultados</div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="proximas" class="level2 seccion-titulo">
+<h2 class="seccion-titulo anchored" data-anchor-id="proximas">Próximas preguntas</h2>
+<div class="proximas">
+<ul>
+<li>¿Cuánto ha crecido la población de España y quién explica ese crecimiento?</li>
+<li>¿Pagan los inmigrantes nuestras pensiones?</li>
+<li>¿Se han disparado las okupaciones?</li>
+<li>¿Es hoy más caro que nunca alquilar en España?</li>
+<li>¿Pagamos más impuestos que el resto de Europa?</li>
+<li>¿Cobramos hoy menos que hace quince años?</li>
+</ul>
+</div>
+<p><a href="https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md" class="enlace-roadmap">Ver la lista completa en el repositorio →</a></p>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

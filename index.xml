@@ -8,8 +8,110 @@
 <title>La Mirada del Dato</title>
 <link>https://lamiradadeldato.com/</link>
 <atom:link href="https://lamiradadeldato.com/index.xml" rel="self" type="application/rss+xml"/>
-<description>Afirmaciones del debate público, contrastadas con datos.</description>
+<description>Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 05 Oct 2026 16:13:51 GMT</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>¿Cuánto ha crecido la población de España y quién explica ese crecimiento?</title>
+  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/posts/001-spain-population-nationality/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!--
+STATUS: skeleton. Notebook: notebooks/001-spain-population-nationality.ipynb
+Data:    src/download/ine_population.py -> src/processing/population.py -> data/processed/population_*.parquet
+
+TODO
+[ ] Choose INE tables (ECP + Cifras de Población) and download them
+[ ] Process to data/processed/population_nationality.parquet and population_birth_country.parquet
+[ ] Explore in the notebook: totals, Spanish vs foreign, born in Spain vs abroad, groups of countries
+[ ] Decide the period (2002– ? ; check the break between Cifras de Población and ECP in 2021)
+[ ] Write the final figures here, set eval: true, fill respuesta / confianza / resumen, remove draft
+-->
+<div class="respuesta">
+<p><span class="etiqueta">Respuesta corta</span></p>
+<p><strong>Pendiente</strong> · confianza —</p>
+<p>TODO</p>
+</div>
+<section id="la-afirmación" class="level2">
+<h2 class="anchored" data-anchor-id="la-afirmación">La afirmación</h2>
+<blockquote class="blockquote">
+<p>España solo crece gracias a la inmigración.</p>
+</blockquote>
+<p>Se oye en ambos sentidos: como alarma («la población cambia por la inmigración») y como argumento a favor («sin inmigrantes España se despoblaría»). Ambas versiones comparten un hecho que se puede comprobar: <strong>¿cuánto ha crecido la población residente y qué parte de ese crecimiento corresponde a personas de nacionalidad extranjera o nacidas fuera de España?</strong></p>
+</section>
+<section id="los-datos" class="level2">
+<h2 class="anchored" data-anchor-id="los-datos">Los datos</h2>
+<!-- TODO: fuente exacta, tablas, periodo y fecha de descarga -->
+<p>Población residente del INE: <em>Cifras de Población</em> hasta 2021 y <em>Estadística Continua de Población</em> desde entonces.</p>
+<p>Una distinción importante: <strong>nacionalidad</strong> y <strong>país de nacimiento</strong> no son lo mismo. Una persona nacida en Ecuador que obtiene la nacionalidad española deja de contar como extranjera, pero sigue siendo nacida en el extranjero. Por eso se muestran las dos.</p>
+</section>
+<section id="qué-dicen-los-datos" class="level2">
+<h2 class="anchored" data-anchor-id="qué-dicen-los-datos">Qué dicen los datos</h2>
+<section id="la-población-total" class="level3">
+<h3 class="anchored" data-anchor-id="la-población-total">La población total</h3>
+</section>
+<section id="por-nacionalidad-y-por-país-de-nacimiento" class="level3">
+<h3 class="anchored" data-anchor-id="por-nacionalidad-y-por-país-de-nacimiento">Por nacionalidad y por país de nacimiento</h3>
+</section>
+<section id="de-dónde" class="level3">
+<h3 class="anchored" data-anchor-id="de-dónde">¿De dónde?</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Detalle técnico">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Detalle técnico
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<!-- TODO: definiciones (población residente, nacionalidad, país de nacimiento), enlace entre series
+     CP y ECP en 2021, descomposición del crecimiento: Δ total = Δ nacidos en España + Δ nacidos fuera -->
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="limitaciones" class="level2">
+<h2 class="anchored" data-anchor-id="limitaciones">Limitaciones</h2>
+<!-- TODO. Candidates:
+- Nacionalidad ≠ origen: las nacionalizaciones mueven personas de "extranjera" a "española".
+- Cambio de operación estadística en 2021 (CP → ECP).
+- Población residente: no incluye a quienes no están empadronados ni a estancias cortas.
+- Hijos de inmigrantes nacidos en España cuentan como nacidos en España. -->
+</section>
+<section id="respuesta" class="level2">
+<h2 class="anchored" data-anchor-id="respuesta">Respuesta</h2>
+<!-- TODO -->
+
+
+<!-- -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
+  author = {Scielzo Ortiz, Fabio},
+  title = {¿Cuánto ha crecido la población de España y quién explica ese
+    crecimiento?},
+  date = {2026-10-05},
+  url = {https://lamiradadeldato.com/posts/001-spain-population-nationality/},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo Ortiz, F. (2026, October 5). <em>¿Cuánto ha crecido la población
+de España y quién explica ese crecimiento?</em> <a href="https://lamiradadeldato.com/posts/001-spain-population-nationality/">https://lamiradadeldato.com/posts/001-spain-population-nationality/</a>
+</div></div></section></div> ]]></description>
+  <category>Población</category>
+  <category>Inmigración</category>
+  <guid>https://lamiradadeldato.com/posts/001-spain-population-nationality/</guid>
+  <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

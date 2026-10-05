@@ -11,7 +11,21 @@
     "href": "index.html",
     "title": "La Mirada del Dato",
     "section": "",
-    "text": "Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística. Cada entrada es una pregunta: qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia. Cómo trabajamos →\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nFecha\nPregunta\nHacia dónde apunta la evidencia\nConfianza\n\n\n\n\n\nNo hay resultados"
+    "text": "Verificación con datos abiertos y estadística\nAfirmaciones del debate público, contrastadas con datos\nCada entrada parte de una frase que se repite, venga de donde venga, y la convierte en una pregunta medible. Qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia.\nCómo trabajamos → Próximas preguntas"
+  },
+  {
+    "objectID": "index.html#preguntas",
+    "href": "index.html#preguntas",
+    "title": "La Mirada del Dato",
+    "section": "Preguntas",
+    "text": "Preguntas\n\n\n\n\n  \n    \n      Pendiente\n      \n      5 oct 2026\n    \n    ¿Cuánto ha crecido la población de España y quién explica ese crecimiento?\n    Población residente en España por nacionalidad y país de nacimiento, desde 2002.\n  \n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "index.html#proximas",
+    "href": "index.html#proximas",
+    "title": "La Mirada del Dato",
+    "section": "Próximas preguntas",
+    "text": "Próximas preguntas\n\n\n¿Cuánto ha crecido la población de España y quién explica ese crecimiento?\n¿Pagan los inmigrantes nuestras pensiones?\n¿Se han disparado las okupaciones?\n¿Es hoy más caro que nunca alquilar en España?\n¿Pagamos más impuestos que el resto de Europa?\n¿Cobramos hoy menos que hace quince años?\n\n\nVer la lista completa en el repositorio →"
   },
   {
     "objectID": "method.html",
@@ -33,5 +47,47 @@
     "title": "Método",
     "section": "Lo que no hacemos",
     "text": "Lo que no hacemos\n\nElegir las afirmaciones por su color político. Se contrastan las de todos.\nPartir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.\nEsconder los datos que no encajan.\nConfundir correlación con efecto.\n\nSi encuentras un error, abre un issue en el repositorio. Las correcciones se indican al final de cada entrada."
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html",
+    "href": "posts/001-spain-population-nationality/index.html",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "",
+    "text": "Respuesta corta\nPendiente · confianza —\nTODO"
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html#la-afirmación",
+    "href": "posts/001-spain-population-nationality/index.html#la-afirmación",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "La afirmación",
+    "text": "La afirmación\n\nEspaña solo crece gracias a la inmigración.\n\nSe oye en ambos sentidos: como alarma («la población cambia por la inmigración») y como argumento a favor («sin inmigrantes España se despoblaría»). Ambas versiones comparten un hecho que se puede comprobar: ¿cuánto ha crecido la población residente y qué parte de ese crecimiento corresponde a personas de nacionalidad extranjera o nacidas fuera de España?"
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html#los-datos",
+    "href": "posts/001-spain-population-nationality/index.html#los-datos",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "Los datos",
+    "text": "Los datos\n\nPoblación residente del INE: Cifras de Población hasta 2021 y Estadística Continua de Población desde entonces.\nUna distinción importante: nacionalidad y país de nacimiento no son lo mismo. Una persona nacida en Ecuador que obtiene la nacionalidad española deja de contar como extranjera, pero sigue siendo nacida en el extranjero. Por eso se muestran las dos."
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html#qué-dicen-los-datos",
+    "href": "posts/001-spain-population-nationality/index.html#qué-dicen-los-datos",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "Qué dicen los datos",
+    "text": "Qué dicen los datos\n\nLa población total\n\n\nPor nacionalidad y por país de nacimiento\n\n\n¿De dónde?\n\n\n\n\n\n\nNotaDetalle técnico"
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html#limitaciones",
+    "href": "posts/001-spain-population-nationality/index.html#limitaciones",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "Limitaciones",
+    "text": "Limitaciones"
+  },
+  {
+    "objectID": "posts/001-spain-population-nationality/index.html#respuesta",
+    "href": "posts/001-spain-population-nationality/index.html#respuesta",
+    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
+    "section": "Respuesta",
+    "text": "Respuesta"
   }
 ]

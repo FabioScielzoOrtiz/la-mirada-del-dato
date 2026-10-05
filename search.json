@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre el blog",
+    "section": "",
+    "text": "La Mirada del Dato es un blog personal de Fabio Scielzo Ortiz, científico de datos en IBiDat y doctorando en Statistics for Data Science en la Universidad Carlos III de Madrid.\nLa idea es sencilla: tomar afirmaciones que se repiten en el debate público y contrastarlas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista.\nLas opiniones expresadas son personales y no representan a ninguna institución.\nGitHub · Madrid"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "La Mirada del Dato",
+    "section": "",
+    "text": "Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística. Cada entrada es una pregunta: qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia. Cómo trabajamos →\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nFecha\nPregunta\nHacia dónde apunta la evidencia\nConfianza\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "method.html",
+    "href": "method.html",
+    "title": "Método",
+    "section": "",
+    "text": "Cada entrada parte de una afirmación que circula en el debate público, venga de donde venga, y la convierte en una pregunta que se pueda contrastar con datos."
+  },
+  {
+    "objectID": "method.html#escala-de-la-respuesta",
+    "href": "method.html#escala-de-la-respuesta",
+    "title": "Método",
+    "section": "Escala de la respuesta",
+    "text": "Escala de la respuesta\n\n\n\n\n\n\n\nRespuesta\nSignificado\n\n\n\n\nApunta a sí / Apunta a no\nLos datos favorecen claramente una de las dos respuestas.\n\n\nMixta\nHay evidencia en ambas direcciones, o la respuesta depende del grupo, el lugar o el periodo.\n\n\nInsuficiente\nLos datos disponibles no permiten responder con un mínimo de solidez.\n\n\n\n\n\n\n\n\n\n\nConfianza\nSignificado\n\n\n\n\nAlta\nVarias fuentes coinciden y el resultado no depende de decisiones discutibles del análisis.\n\n\nMedia\nEl resultado es consistente, pero depende de supuestos que no se pueden comprobar del todo.\n\n\nBaja\nIndicio descriptivo, sensible a decisiones del análisis o con datos de calidad limitada."
+  },
+  {
+    "objectID": "method.html#lo-que-no-hacemos",
+    "href": "method.html#lo-que-no-hacemos",
+    "title": "Método",
+    "section": "Lo que no hacemos",
+    "text": "Lo que no hacemos\n\nElegir las afirmaciones por su color político. Se contrastan las de todos.\nPartir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.\nEsconder los datos que no encajan.\nConfundir correlación con efecto.\n\nSi encuentras un error, abre un issue en el repositorio. Las correcciones se indican al final de cada entrada."
+  }
+]

@@ -12,4 +12,72 @@ $font-size-root: 17px;
   p { margin: .25rem 0; }
   .etiqueta { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--bs-primary); }
 }
-.subtitulo-portada { font-size: 1.1rem; max-width: 46rem; opacity: .8; }
+
+// ---------- Portada ----------
+.hero {
+  padding: 2.2rem 0 1.6rem;
+  max-width: 44rem;
+  .hero-kicker {
+    display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--bs-primary); margin-bottom: .6rem;
+  }
+  .hero-title {
+    display: block; font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 800;
+    line-height: 1.12; letter-spacing: -.02em; margin-bottom: 1rem;
+    strong { color: var(--bs-primary); font-weight: 800; }
+  }
+  .hero-lead { display: block; font-size: 1.12rem; line-height: 1.6; opacity: .82; margin-bottom: 1.4rem; }
+  p { margin-bottom: 0; }
+  .hero-btn { margin: 0 .4rem .4rem 0; padding: .5rem 1.1rem; font-weight: 600; border-radius: .5rem; }
+}
+
+.pasos {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem;
+  margin: 1rem 0 2.6rem;
+  .paso {
+    border: 1px solid rgba(127,127,127,.25); border-radius: .75rem; padding: 1rem 1.1rem;
+    font-size: .95rem; line-height: 1.5;
+    p { margin: 0; }
+  }
+  .paso-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.7rem; height: 1.7rem; border-radius: 50%; margin-bottom: .5rem;
+    background: var(--bs-primary); color: #fff; font-weight: 700; font-size: .85rem;
+  }
+}
+
+.seccion-titulo {
+  font-size: .8rem !important; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  opacity: .65; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .5rem; margin-top: 2rem;
+}
+
+// Tarjetas del listado
+.tarjetas { display: grid; gap: .9rem; margin: 1rem 0 1.5rem; }
+.tarjeta {
+  display: block; text-decoration: none !important; color: inherit !important;
+  border: 1px solid rgba(127,127,127,.25); border-radius: .75rem; padding: 1.1rem 1.25rem;
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+  &:hover { border-color: var(--bs-primary); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  .tarjeta-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; font-size: .82rem; margin-bottom: .45rem; }
+  .fecha, .confianza { opacity: .65; }
+  .fecha { margin-left: auto; }
+  .tarjeta-titulo { font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin: 0 0 .3rem; }
+  .tarjeta-desc { margin: 0; opacity: .78; font-size: .95rem; }
+}
+.veredicto {
+  display: inline-flex; align-items: center; gap: .4rem; font-weight: 600;
+  padding: .12rem .6rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.35);
+  &::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: #8a96a3; }
+  &.v-apunta-a-si::before { background: #16a34a; }
+  &.v-apunta-a-no::before { background: #dc2626; }
+  &.v-mixta::before       { background: #d97706; }
+  &.v-insuficiente::before{ background: #8a96a3; }
+}
+.listing-vacio { opacity: .7; font-style: italic; margin: 1rem 0; }
+
+// Próximas preguntas
+.proximas ul { list-style: none; padding: 0; margin: 1rem 0 .8rem; display: grid; gap: .5rem; }
+.proximas li {
+  padding: .55rem .9rem; border-left: 3px solid rgba(127,127,127,.35); opacity: .85;
+}
+.enlace-roadmap { font-size: .92rem; font-weight: 600; }

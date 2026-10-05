@@ -1,23 +1,55 @@
 ---
-title: "La Mirada del Dato"
 pagetitle: "La Mirada del Dato · Afirmaciones del debate público, contrastadas con datos"
+description: "Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística."
 toc: false
 listing:
+  id: preguntas
   contents: posts
   sort: "date desc"
-  type: table
-  fields: [date, title, respuesta, confianza]
-  field-display-names:
-    date: "Fecha"
-    title: "Pregunta"
-    respuesta: "Hacia dónde apunta la evidencia"
-    confianza: "Confianza"
+  template: assets/listing.ejs
   date-format: "D MMM YYYY"
-  sort-ui: false
-  filter-ui: true
   feed: true
 ---
 
-::: {.subtitulo-portada}
-Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística. Cada entrada es una pregunta: qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia. [Cómo trabajamos →](method.qmd)
+::: {.hero}
+[Verificación con datos abiertos y estadística]{.hero-kicker}
+
+[Afirmaciones del debate público, **contrastadas con datos**]{.hero-title}
+
+[Cada entrada parte de una frase que se repite, venga de donde venga, y la convierte en una pregunta medible. Qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia.]{.hero-lead}
+
+[Cómo trabajamos →](method.qmd){.btn .btn-primary .hero-btn} [Próximas preguntas](#proximas){.btn .btn-outline-secondary .hero-btn}
 :::
+
+::: {.pasos}
+::: {.paso}
+[1]{.paso-num}
+**La afirmación.** Tal y como circula, de la izquierda, de la derecha o de un colectivo.
+:::
+::: {.paso}
+[2]{.paso-num}
+**Los datos.** Fuentes oficiales, el análisis más simple que responda bien y sus limitaciones.
+:::
+::: {.paso}
+[3]{.paso-num}
+**La respuesta.** Hacia dónde apunta la evidencia y con qué confianza.
+:::
+:::
+
+## Preguntas {.seccion-titulo}
+
+::: {#preguntas}
+:::
+
+## Próximas preguntas {#proximas .seccion-titulo}
+
+::: {.proximas}
+- ¿Cuánto ha crecido la población de España y quién explica ese crecimiento?
+- ¿Pagan los inmigrantes nuestras pensiones?
+- ¿Se han disparado las okupaciones?
+- ¿Es hoy más caro que nunca alquilar en España?
+- ¿Pagamos más impuestos que el resto de Europa?
+- ¿Cobramos hoy menos que hace quince años?
+:::
+
+[Ver la lista completa en el repositorio →](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md){.enlace-roadmap}

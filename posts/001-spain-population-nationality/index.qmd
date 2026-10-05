@@ -3,7 +3,7 @@ title: "¿Cuánto ha crecido la población de España y quién explica ese creci
 description: "Población residente en España por nacionalidad y país de nacimiento, desde 2002."
 date: 2026-10-05
 categories: [Población, Inmigración]
-draft: true
+draft: False
 claim: "España solo crece gracias a la inmigración."
 respuesta: "Pendiente"
 confianza: "—"

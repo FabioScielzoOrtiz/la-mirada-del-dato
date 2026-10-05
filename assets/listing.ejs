@@ -1,0 +1,22 @@
+```{=html}
+<%
+const slug = (s) => String(s || "pendiente").toLowerCase()
+  .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-");
+%>
+<% if (items.length === 0) { %>
+<p class="listing-vacio">Las primeras preguntas están en preparación.</p>
+<% } %>
+<div class="list tarjetas">
+<% for (const item of items) { %>
+  <a class="tarjeta" href="<%- item.path %>" <%= metadataAttrs(item) %>>
+    <div class="tarjeta-meta">
+      <span class="veredicto v-<%= slug(item.respuesta) %>"><%= item.respuesta || "Pendiente" %></span>
+      <% if (item.confianza && item.confianza !== "—") { %><span class="confianza">confianza <%= item.confianza %></span><% } %>
+      <span class="fecha"><%= item.date %></span>
+    </div>
+    <h3 class="tarjeta-titulo"><%= item.title %></h3>
+    <% if (item.description) { %><p class="tarjeta-desc"><%= item.description %></p><% } %>
+  </a>
+<% } %>
+</div>
+```

@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - CNAME
   output-dir: _site
   render:                       # only blog pages (never notebooks/, src/ or data/)
     - index.qmd
@@ -17,7 +19,7 @@ execute:
 website:
   title: "La Mirada del Dato"
   description: "Afirmaciones del debate público, contrastadas con datos."
-  site-url: https://fabioscielzoortiz.github.io/la-mirada-del-dato
+  site-url: https://lamiradadeldato.com
   repo-url: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
   favicon: images/logo.png
   open-graph: true

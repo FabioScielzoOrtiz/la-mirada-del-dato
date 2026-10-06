@@ -4,90 +4,62 @@
     "href": "about.html",
     "title": "Sobre el blog",
     "section": "",
-    "text": "La Mirada del Dato es un blog personal de Fabio Scielzo Ortiz, Científico de Datos en IBiDat y doctorando en Statistics for Data Science en la Universidad Carlos III de Madrid.\nLa idea es sencilla: tomar afirmaciones que se repiten en el debate público y contrastarlas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista.\nLas opiniones expresadas son personales y no representan a ninguna institución.\nGitHub · Madrid, Spain"
+    "text": "La Mirada del Dato es un blog personal de Fabio Scielzo Ortiz, científico de datos, doctorando en Estadística y docente e investigador en el Departamento de Estadística de la Universidad Carlos III de Madrid.\nReúne investigaciones breves sobre cuestiones sociales con gran debate público, empezando por la vivienda. La idea es sencilla: tomar las tesis que se enfrentan en el debate y contrastarlas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista. Hasta las elecciones generales del 29 de noviembre de 2026, el foco está en las cuestiones centrales de la campaña.\nLas opiniones expresadas son personales y no representan a ninguna institución.\nGitHub · Madrid, España"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "La Mirada del Dato",
     "section": "",
-    "text": "Verificación con datos abiertos y estadística\nAfirmaciones del debate público, contrastadas con datos\nCada entrada parte de una frase que se repite, venga de donde venga, y la convierte en una pregunta medible. Qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia.\nCómo trabajamos → Próximas preguntas"
+    "text": "Investigaciones breves con datos abiertos · Especial elecciones 29-N\nLos grandes debates, contrastados con datos\nVivienda, inmigración, empleo, impuestos. Cada entrada toma una pregunta con debate público, pone frente a frente las tesis enfrentadas y mira qué dicen los datos oficiales: hacia dónde apunta la evidencia, dónde y con qué incertidumbre. Sin decirte a quién votar.\nCómo trabajamos → Próximas preguntas"
   },
   {
     "objectID": "index.html#preguntas",
     "href": "index.html#preguntas",
     "title": "La Mirada del Dato",
     "section": "Preguntas",
-    "text": "Preguntas\n\n\n\n\n  \n    \n      Pendiente\n      \n      5 oct 2026\n    \n    ¿Cuánto ha crecido la población de España y quién explica ese crecimiento?\n    Población residente en España por nacionalidad y país de nacimiento, desde 2002.\n  \n\n\nNo hay resultados"
+    "text": "Preguntas\n\n\nLas primeras preguntas están en preparación.\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "index.html#proximas",
     "href": "index.html#proximas",
     "title": "La Mirada del Dato",
     "section": "Próximas preguntas",
-    "text": "Próximas preguntas\n\n\n¿Cuánto ha crecido la población de España y quién explica ese crecimiento?\n¿Pagan los inmigrantes nuestras pensiones?\n¿Se han disparado las okupaciones?\n¿Es hoy más caro que nunca alquilar en España?\n¿Pagamos más impuestos que el resto de Europa?\n¿Cobramos hoy menos que hace quince años?\n\n\nVer la lista completa en el repositorio →"
+    "text": "Próximas preguntas\n\n\nVivienda · ¿Son los pisos turísticos marginales o están concentrados?\nInmigración · ¿Cuánto ha crecido la población y qué parte se debe a la inmigración?\nVivienda · ¿Es hoy más difícil pagar el alquiler?\nVivienda · ¿Falta vivienda o sobra vivienda vacía?\nInmigración · ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social?\nInmigración · ¿Qué parte de las ayudas reciben los extranjeros?\nEconomía · ¿Llega el crecimiento económico a los hogares?\nInmigración · ¿Delinquen más los extranjeros, a igual edad y sexo?\n\n\nVer la lista completa en el repositorio →"
   },
   {
     "objectID": "method.html",
     "href": "method.html",
     "title": "Método",
     "section": "",
-    "text": "Cada entrada parte de una afirmación que circula en el debate público, venga de donde venga, y la convierte en una pregunta que se pueda contrastar con datos."
+    "text": "La Mirada del Dato publica investigaciones breves sobre cuestiones sociales con gran debate público: vivienda, inmigración, empleo, impuestos, servicios públicos. No son artículos académicos, pero siguen sus reglas: datos oficiales, método explícito, código abierto y limitaciones a la vista."
+  },
+  {
+    "objectID": "method.html#cómo-es-cada-entrada",
+    "href": "method.html#cómo-es-cada-entrada",
+    "title": "Método",
+    "section": "Cómo es cada entrada",
+    "text": "Cómo es cada entrada\n\nUna pregunta concreta. No «¿hay un problema de vivienda?», sino «¿qué peso tienen los pisos turísticos sobre el total de viviendas, y dónde?».\nLas tesis en disputa. Casi todo debate enfrenta afirmaciones sobre el mundo que se pueden comprobar («los pisos turísticos son marginales» frente a «expulsan a los vecinos»). Se escriben en una frase neutra y se contrastan todas con la misma vara.\nQué dicen y qué hacen los partidos, cuando la cuestión está en el debate electoral: PP, PSOE, Vox y Sumar, siempre los mismos y en el mismo orden. Programa, votaciones en el Congreso, acción de gobierno y declaraciones de sus portavoces, con fuentes primarias, fechadas y enlazadas.\nQué dicen los datos. Fuentes oficiales, fecha de descarga y enlace. El análisis más simple que responda bien. Los datos y el código están en el repositorio.\nQué dice la literatura, cuando existe, indicando la calidad de la evidencia.\nLimitaciones y una respuesta corta sobre cada tesis."
+  },
+  {
+    "objectID": "method.html#principios",
+    "href": "method.html#principios",
+    "title": "Método",
+    "section": "Principios",
+    "text": "Principios\n\nSimetría. Cada tesis se mide con la misma calidad de datos. Si una no tiene datos comparables, se dice como limitación en vez de darla por refutada.\nAsociación no es causa. Con datos agregados se miden magnitudes y asociaciones. Solo se habla de efectos cuando el diseño lo permite, y entonces se explica.\nLa respuesta puede depender del lugar. Una tesis puede ser cierta en la costa turística y falsa en una ciudad mediana. Cuando importa, se muestra."
   },
   {
     "objectID": "method.html#escala-de-la-respuesta",
     "href": "method.html#escala-de-la-respuesta",
     "title": "Método",
     "section": "Escala de la respuesta",
-    "text": "Escala de la respuesta\n\n\n\n\n\n\n\nRespuesta\nSignificado\n\n\n\n\nApunta a sí / Apunta a no\nLos datos favorecen claramente una de las dos respuestas.\n\n\nMixta\nHay evidencia en ambas direcciones, o la respuesta depende del grupo, el lugar o el periodo.\n\n\nInsuficiente\nLos datos disponibles no permiten responder con un mínimo de solidez.\n\n\n\n\n\n\n\n\n\n\nConfianza\nSignificado\n\n\n\n\nAlta\nVarias fuentes coinciden y el resultado no depende de decisiones discutibles del análisis.\n\n\nMedia\nEl resultado es consistente, pero depende de supuestos que no se pueden comprobar del todo.\n\n\nBaja\nIndicio descriptivo, sensible a decisiones del análisis o con datos de calidad limitada."
+    "text": "Escala de la respuesta\n\n\n\n\n\n\n\nRespuesta\nSignificado\n\n\n\n\nApunta a A / Apunta a B\nLos datos favorecen claramente una de las tesis.\n\n\nMixta\nCada tesis acierta en una parte, o la respuesta depende del grupo, el lugar o el periodo.\n\n\nInsuficiente\nLos datos disponibles no permiten responder con un mínimo de solidez.\n\n\n\n\n\n\n\n\n\n\nConfianza\nSignificado\n\n\n\n\nAlta\nVarias fuentes coinciden y el resultado no depende de decisiones discutibles del análisis.\n\n\nMedia\nEl resultado es consistente, pero depende de supuestos que no se pueden comprobar del todo.\n\n\nBaja\nIndicio descriptivo, sensible a decisiones del análisis o con datos de calidad limitada."
   },
   {
     "objectID": "method.html#lo-que-no-hacemos",
     "href": "method.html#lo-que-no-hacemos",
     "title": "Método",
     "section": "Lo que no hacemos",
-    "text": "Lo que no hacemos\n\nElegir las afirmaciones por su color político. Se contrastan las de todos.\nPartir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.\nEsconder los datos que no encajan.\nConfundir correlación con efecto.\n\nSi encuentras un error, abre un issue en el repositorio. Las correcciones se indican al final de cada entrada."
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html",
-    "href": "posts/001-spain-population-nationality/index.html",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "",
-    "text": "Respuesta corta\nPendiente · confianza —\nTODO"
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html#la-afirmación",
-    "href": "posts/001-spain-population-nationality/index.html#la-afirmación",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "La afirmación",
-    "text": "La afirmación\n\nEspaña solo crece gracias a la inmigración.\n\nSe oye en ambos sentidos: como alarma («la población cambia por la inmigración») y como argumento a favor («sin inmigrantes España se despoblaría»). Ambas versiones comparten un hecho que se puede comprobar: ¿cuánto ha crecido la población residente y qué parte de ese crecimiento corresponde a personas de nacionalidad extranjera o nacidas fuera de España?"
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html#los-datos",
-    "href": "posts/001-spain-population-nationality/index.html#los-datos",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "Los datos",
-    "text": "Los datos\n\nPoblación residente del INE: Cifras de Población hasta 2021 y Estadística Continua de Población desde entonces.\nUna distinción importante: nacionalidad y país de nacimiento no son lo mismo. Una persona nacida en Ecuador que obtiene la nacionalidad española deja de contar como extranjera, pero sigue siendo nacida en el extranjero. Por eso se muestran las dos."
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html#qué-dicen-los-datos",
-    "href": "posts/001-spain-population-nationality/index.html#qué-dicen-los-datos",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "Qué dicen los datos",
-    "text": "Qué dicen los datos\n\nLa población total\n\n\nPor nacionalidad y por país de nacimiento\n\n\n¿De dónde?\n\n\n\n\n\n\nNotaDetalle técnico"
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html#limitaciones",
-    "href": "posts/001-spain-population-nationality/index.html#limitaciones",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "Limitaciones",
-    "text": "Limitaciones"
-  },
-  {
-    "objectID": "posts/001-spain-population-nationality/index.html#respuesta",
-    "href": "posts/001-spain-population-nationality/index.html#respuesta",
-    "title": "¿Cuánto ha crecido la población de España y quién explica ese crecimiento?",
-    "section": "Respuesta",
-    "text": "Respuesta"
+    "text": "Lo que no hacemos\n\nDecir a quién votar ni valorar a los partidos. Que una tesis se sostenga o no es un hecho; qué hacer con ello depende de las prioridades de cada uno.\nElegir los temas por lo fácil que sea dejar mal a alguien. Los temas se eligen por su peso en el debate (lista completa).\nPartir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.\nEsconder los datos que no encajan.\n\nSi encuentras un error, o la posición de un partido está mal recogida, abre un issue en el repositorio. Las correcciones se indican al final de cada entrada."
   }
 ]

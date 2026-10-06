@@ -91,9 +91,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-lang','listing-execute','listing-website','listing-format','listing-engines','listing-language','listing-author','listing-title-block-banner','listing-citation','listing-license','listing-bibliography','listing-csl','listing-title','listing-description','listing-date','listing-categories','listing-draft','listing-respuesta','listing-confianza','listing-resumen','listing-jupyter','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-lang","listing-execute","listing-website","listing-format","listing-engines","listing-language","listing-author","listing-title-block-banner","listing-citation","listing-license","listing-bibliography","listing-csl","listing-title","listing-description","listing-date","listing-categories","listing-draft","listing-respuesta","listing-confianza","listing-resumen","listing-jupyter","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -383,7 +383,7 @@ window.Quarto = {
 
 
 <div class="hero">
-<p><span class="hero-kicker">Investigaciones breves con datos abiertos · Especial elecciones 29-N</span></p>
+<p><span class="hero-kicker">Investigaciones breves con datos abiertos</span></p>
 <p><span class="hero-title">Los grandes debates, <strong>contrastados con datos</strong></span></p>
 <p><span class="hero-lead">Vivienda, inmigración, empleo, impuestos. Cada entrada toma una pregunta con debate público, pone frente a frente las tesis enfrentadas y mira qué dicen los datos oficiales: hacia dónde apunta la evidencia, dónde y con qué incertidumbre. Sin decirte a quién votar.</span></p>
 <p><a href="./method.html" class="btn btn-primary hero-btn">Cómo trabajamos →</a> <a href="#proximas" class="btn btn-outline-secondary hero-btn">Próximas preguntas</a></p>
@@ -403,9 +403,17 @@ window.Quarto = {
 <h2 class="seccion-titulo anchored" data-anchor-id="preguntas">Preguntas</h2>
 <div id="listing-preguntas" class="quarto-listing quarto-listing-container-custom">
 
-<p class="listing-vacio">Las primeras preguntas están en preparación.</p>
-
 <div class="list tarjetas">
+
+  <a class="tarjeta" href="./posts/i01-population-nationality/index.html" data-index="0" data-categories="SW5taWdyYWNpJUMzJUIzbiUyQ0VsZWNjaW9uZXMlMjAyOS1O" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1791282368446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="463">
+    <div class="tarjeta-meta">
+      <span class="veredicto v-pendiente">Pendiente</span>
+      
+      <span class="fecha">5 oct 2026</span>
+    </div>
+    <h3 class="tarjeta-titulo anchored">¿Cuánto ha crecido la población de España y quién explica ese crecimiento?</h3>
+    <p class="tarjeta-desc">Población residente en España por nacionalidad y país de nacimiento, desde 2002.</p>
+  </a>
 
 </div>
 <div class="listing-no-matching d-none">No hay resultados</div>

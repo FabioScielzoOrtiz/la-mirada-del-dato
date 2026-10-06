@@ -23,7 +23,7 @@
 
 <!--
 STATUS: skeleton. Notebook: notebooks/i01-population-nationality.ipynb
-Data:    src/download/download_ine_poblacion.py -> src/process/05_poblacion_nacionalidad.py -> data/processed/poblacion_*.parquet
+Data:    src/download/download_ine_poblacion.py -> src/process/01_poblacion_nacionalidad.py -> data/processed/poblacion_*.parquet
 
 TODO
 [ ] Choose INE tables (ECP + Cifras de Población) and download them

@@ -12,7 +12,7 @@ listing:
 ---
 
 ::: {.hero}
-[Investigaciones breves con datos abiertos · Especial elecciones 29-N]{.hero-kicker}
+[Investigaciones breves con datos abiertos]{.hero-kicker}
 
 [Los grandes debates, **contrastados con datos**]{.hero-title}
 

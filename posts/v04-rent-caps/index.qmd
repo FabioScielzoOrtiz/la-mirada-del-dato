@@ -1,0 +1,54 @@
+---
+title: "¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta?"
+description: "TODO"
+date: 2026-12-31
+categories: [Vivienda, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP v04 · dificultad ★★★)
+Notebook: notebooks/v04-rent-caps.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta?
+Datos: ✔ zonas tensionadas (BOE); ✔ SERPAVI; análisis previo de Cataluña en `_archive/`
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «Los topes contienen los precios»
+2. **Tesis B:** «Los topes reducen la oferta y desplazan el mercado»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

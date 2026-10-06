@@ -1,66 +1,101 @@
-# Roadmap: afirmaciones a contrastar
+# Roadmap
 
-Afirmaciones que se repiten en el debate público, desde la izquierda, la derecha o colectivos concretos. El trabajo no es darles o quitarles la razón, sino convertirlas en una pregunta medible y ver hacia dónde apunta la evidencia disponible.
+*Última actualización: 6 de octubre de 2026*
 
-**Criterios para que una afirmación entre en el blog**
+**La Mirada del Dato** reúne investigaciones breves sobre cuestiones sociales con gran debate público. No son artículos académicos: cada entrada contrasta con datos abiertos y evidencia las tesis enfrentadas sobre una pregunta concreta, dice hacia dónde apunta la evidencia y con qué incertidumbre, y se publica en pocas semanas. Si una serie da para más, puede acabar en un artículo académico, pero eso no es el objetivo.
 
-- Se puede convertir en una pregunta con una cifra como respuesta.
-- Hay datos públicos y oficiales para responderla.
-- Se puede hacer con análisis descriptivo (evolución, proporciones, comparaciones, tasas) en una entrada corta. Si exige un diseño causal complejo, se reformula o se deja para más adelante.
-- Equilibrio: el conjunto de entradas debe incluir afirmaciones de todo el espectro.
+## Principios
 
-**Leyenda.** *Quién la dice*: I = izquierda, D = derecha, A = ambos lados (con conclusiones opuestas), C = colectivo concreto. *Dificultad*: ★ datos directos y descriptivo simple · ★★ hay que cruzar fuentes o cuidar definiciones · ★★★ problemas de medición serios o tentación causal.
+1. **Tesis enfrentadas.** Cada pregunta se formula como un contraste entre tesis rivales (habitualmente, las de distintos partidos o colectivos), escritas en una frase neutra. El objetivo no es tomar partido, sino arbitrar: qué tesis encaja mejor con los datos, dónde y con qué incertidumbre.
+2. **Simetría.** Cada tesis se mide con la misma calidad de datos. Si una carece de datos comparables, se dice como limitación en vez de darla por refutada.
+3. **Sin inferencia causal salvo que el diseño lo permita.** Con datos agregados se miden asociaciones, magnitudes y su heterogeneidad. Lenguaje preciso («asociado a», «compatible con»), con especial cuidado en inmigración, donde una correlación ecológica puede malinterpretarse en cualquier dirección.
+4. **La respuesta puede depender del territorio.** Cuando aplica, se muestra la heterogeneidad (por tamaño de municipio, comunidad o tipo de mercado de vivienda): una tesis puede ser cierta en la costa turística y falsa en una ciudad mediana.
+5. **Posición de los partidos, cuando procede.** En las cuestiones de debate electoral, la entrada recoge qué proponen y qué han hecho PP, PSOE, Vox y Sumar/Frente Amplio, con fuentes primarias (programa, votaciones, acción de gobierno, declaraciones).
+6. **De menos a más.** Primero lo descriptivo y con los datos ya disponibles; los análisis complejos, cuando la base de datos esté madura.
 
-## Población e inmigración
+## Series y entradas
 
-| # | Afirmación | Quién | Pregunta contrastable | Datos candidatos | Dif. | Post |
-|:-:|:--|:-:|:--|:--|:-:|:-:|
-| 1 | «España solo crece gracias a la inmigración» | A | ¿Qué parte del crecimiento de la población desde 2002 corresponde a nacidos en el extranjero? | INE: Cifras de Población, ECP | ★ | 001 |
-| 2 | «Los inmigrantes pagan nuestras pensiones» | I | ¿Qué peso tienen los extranjeros en la afiliación y cómo ha evolucionado frente al número de pensiones? | Seguridad Social: afiliados por nacionalidad, pensiones | ★★ | 002 |
-| 3 | «Los inmigrantes viven de las ayudas» | D | ¿Qué proporción de perceptores de IMV y prestaciones por desempleo son extranjeros, frente a su peso en la población? | Seguridad Social (IMV), SEPE | ★★ | — |
-| 4 | «Los extranjeros cometen más delitos» | D | ¿Cuál es la tasa de condenados por nacionalidad, y cuánto cambia al ajustar por edad y sexo? | INE: Estadística de Condenados; ECP | ★★★ | — |
-| 5 | «La natalidad está en mínimos históricos» | A | ¿Cómo ha evolucionado la fecundidad, y qué parte de los nacimientos son de madre extranjera? | INE: Movimiento Natural de Población | ★ | — |
+**Identificadores:** `<serie><nn>-<slug>`, el mismo en `posts/` y en `notebooks/` (por ejemplo, `posts/v01-tourist-housing/` y `notebooks/v01-tourist-housing.ipynb`).
+**Datos:** ✔ ya en `data/raw/` · ⬇ falta descargar.
+**Dificultad:** ★ descriptivo con datos directos · ★★ cruzar fuentes o cuidar definiciones · ★★★ problemas de medición serios, muchas fuentes o tentación causal.
+**29-N:** cuestión central de la campaña de las generales del 29 de noviembre de 2026 (categoría «Elecciones 29-N» y sección de partidos).
 
-## Vivienda
+### v · Vivienda
 
-| # | Afirmación | Quién | Pregunta contrastable | Datos candidatos | Dif. | Post |
-|:-:|:--|:-:|:--|:--|:-:|:-:|
-| 6 | «La okupación se ha disparado» | D | ¿Cómo han evolucionado los delitos de usurpación y allanamiento conocidos, y cuánto suponen sobre el parque de viviendas? | Interior: Balance de Criminalidad; INE: Censo 2021 | ★★ | 003 |
-| 7 | «El alquiler está más caro que nunca» | I / C (inquilinos) | ¿Está el alquiler medio por encima de su máximo histórico, en euros corrientes y en términos reales? | SERPAVI; INE: IPVA, IPC | ★★ | 004 |
-| 8 | «Los pisos turísticos expulsan a los vecinos» | I / C (vecinos) | ¿Qué peso tienen las viviendas turísticas sobre el total, y dónde se concentran? | INE: viviendas turísticas (experimental) | ★★ | — |
-| 9 | «Los jóvenes no pueden emanciparse» | A | ¿A qué edad se emancipan los jóvenes en España y cómo ha cambiado frente a la UE? | Eurostat: edad de emancipación; EPA | ★ | — |
+Serie principal. Recoge las preguntas del proyecto de investigación sobre vivienda (RQ0–RQ5) y la base de datos municipal construida para él.
 
-## Empleo, salarios y pensiones
+| ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
+|:--|:--|:--|:--|:--|:-:|:-:|
+| v01 | ¿Qué peso tienen los pisos turísticos: son marginales o están concentrados? | Son marginales (en torno al 1–1,5 % del parque) y no explican el problema | Concentrados en ciertas zonas, allí sí pesan y presionan | ✔ INE viviendas turísticas (municipio, sección, 2020–2026); ✔ Censo 2021 | ★ | ✓ |
+| v02 | ¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares | El problema es de precios desbocados | El problema es sobre todo de rentas que no siguen el ritmo | ✔ SERPAVI (2011–2024); ✔ ADRH (renta, 2015–2023); ✔ AEAT | ★★ | ✓ |
+| v03 | ¿Falta vivienda o sobra vivienda vacía? | El problema es de oferta: hay que construir más | Hay vivienda de sobra, vacía o infrautilizada: el problema es de uso y distribución | ✔ Censo 2021 (vacías por consumo eléctrico); ✔ Censo 2011; ✔ AEAT (viviendas a disposición); ✔ iniciadas y terminadas; ✔ Padrón | ★★ | ✓ |
+| v04 | ¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta? | Los topes contienen los precios | Los topes reducen la oferta y desplazan el mercado | ✔ zonas tensionadas (BOE); ✔ SERPAVI; análisis previo de Cataluña en `_archive/` | ★★★ | ✓ |
+| v05 | ¿Se declaran las zonas tensionadas donde hay tensión? | La ley se aplica con criterio político e intervencionista | Algunas CCAA bloquean su aplicación por motivos políticos aunque tengan municipios tensionados | ✔ BOE (2024 T1 – 2026 T2); ✔ SERPAVI; ✔ ADRH (criterio de esfuerzo > 30 %) | ★★★ | ✓ |
+| v06 | ¿Qué relación hay entre inmigración y presión sobre la vivienda? | La inmigración aumenta la demanda y encarece la vivienda | Los precios responden sobre todo a turismo, inversión y oferta; los inmigrantes soportan más el problema que lo causan | ✔ Padrón; ✔ Censo Anual (nacionalidad, año de llegada); ✔ ADRH; ✔ SERPAVI; ✔ compradores extranjeros (provincia) | ★★★ | ✓ |
+| v07 | ¿Pequeños propietarios o grandes tenedores? | El alquiler está en manos de particulares; los fondos son marginales | Rentistas con varias viviendas, grandes tenedores y fondos concentran el mercado | ✔ AEAT (por ubicación del declarante); ✔ Censo 2021 (tenencia). Sin datos abiertos de personas jurídicas: el residuo es una cota, no una medida | ★★★ | ✓ |
+| v08 | ¿Cuánto ha crecido la okupación y qué peso tiene sobre el parque? | Es un problema extendido | Es marginal y se magnifica | ⬇ Interior: Balance de Criminalidad; ✔ Censo 2021 | ★★ | ✓ |
+| v09 | ¿Qué tipos de mercado de vivienda hay en España y dónde? | — (entrada metodológica: base para mostrar la heterogeneidad en las demás) | — | Tabla municipal analítica; clustering robusto de datos mixtos (G-Gower + k-medoides, `db-robust-clust`) | ★★★ | |
 
-| # | Afirmación | Quién | Pregunta contrastable | Datos candidatos | Dif. | Post |
-|:-:|:--|:-:|:--|:--|:-:|:-:|
-| 10 | «Los salarios reales llevan quince años estancados» | I | ¿Cómo ha evolucionado el salario medio y mediano descontando la inflación desde 2008? | INE: Encuesta de Estructura Salarial, IPC | ★★ | 006 |
-| 11 | «La subida del SMI destruye empleo» | D | ¿Cómo evolucionó el empleo en los sectores y colectivos más expuestos al SMI tras las subidas de 2019 y siguientes? (descriptivo, sin pretensión causal) | EPA; afiliación por sector | ★★★ | — |
-| 12 | «Los pensionistas viven mejor que los jóvenes» | C (jóvenes) / D | ¿Cómo han evolucionado la pensión media y el salario de los jóvenes en términos reales? ¿Y el riesgo de pobreza por edad? | Seguridad Social; INE: ECV, EES | ★★ | — |
-| 13 | «El paro juvenil español es el peor de Europa» | A | ¿Dónde está España en paro juvenil en la UE, y cómo cambia con la ratio de paro (sobre población) en vez de la tasa? | Eurostat: une_rt_a, une_ratio | ★ | — |
-| 14 | «La brecha salarial de género es del X %» | I / C (feminismo) | ¿Cuánto es la brecha bruta y cuánto se reduce comparando por jornada, ocupación y sector? | INE: EES | ★★ | — |
+### i · Inmigración
 
-## Sector público e impuestos
+| ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
+|:--|:--|:--|:--|:--|:-:|:-:|
+| i01 | ¿Cuánto ha crecido la población y qué parte se debe a la inmigración? | — (base factual común del debate) | — | ⬇ INE: Cifras de Población, ECP; ✔ Padrón municipal (solo total) | ★ | ✓ |
+| i02 | ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social? | Sostienen el empleo y las pensiones | Su aportación es menor de lo que se dice (empleos de bajo salario, cotizaciones bajas) | ⬇ afiliación por nacionalidad; EPA; EES | ★★ | ✓ |
+| i03 | ¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza? | Acaparan las ayudas; hay que priorizar a los nacionales | Reciben en proporción a su situación de necesidad | ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ✔ ADRH (población bajo umbrales de renta por nacionalidad) | ★★ | ✓ |
+| i04 | ¿Delinquen más los extranjeros? ¿Cuánto cambia al comparar por edad, sexo y tipo de delito? | La inmigración aumenta la delincuencia | La sobrerrepresentación se explica sobre todo por la composición demográfica y socioeconómica | ⬇ INE: Estadística de Condenados; Interior; ECP | ★★★ | ✓ |
 
-| # | Afirmación | Quién | Pregunta contrastable | Datos candidatos | Dif. | Post |
-|:-:|:--|:-:|:--|:--|:-:|:-:|
-| 15 | «España es un infierno fiscal» / «En España se pagan pocos impuestos» | A | ¿Dónde está España en recaudación sobre el PIB dentro de la UE y cómo ha cambiado? | Eurostat: gov_10a_taxag; OCDE | ★ | 005 |
-| 16 | «Los ricos pagan menos que la clase media» | I | ¿Cuál es el tipo efectivo del IRPF por tramo de renta? | AEAT: estadística de declarantes del IRPF | ★★ | — |
-| 17 | «Sobran funcionarios» | D | ¿Cuántos empleados públicos hay por habitante y qué peso tienen en el empleo, frente a la UE? | EPA; Boletín Estadístico del Personal de las AAPP; OCDE | ★★ | — |
-| 18 | «La deuda pública está disparada» | D | ¿Cómo ha evolucionado la deuda sobre el PIB y su coste en intereses? | Banco de España; Eurostat | ★ | — |
-| 19 | «La sanidad pública se está desmoronando» | I | ¿Cómo han evolucionado las listas de espera quirúrgicas y el gasto sanitario público por habitante? | Ministerio de Sanidad: SISLE; Estadística de Gasto Sanitario Público | ★★ | — |
+Cuidados específicos en i03 e i04: comparar con el denominador correcto (población que cumple requisitos o en riesgo de pobreza; población de la misma edad y sexo); condenados ≠ detenidos ≠ delitos; extranjeros no residentes en el numerador pero no en el denominador; nacionalidad ≠ origen; dar las cifras completas y hablar de tasas, no de casos.
 
-## Seguridad y sociedad
+### e · Economía, empleo y salarios
 
-| # | Afirmación | Quién | Pregunta contrastable | Datos candidatos | Dif. | Post |
-|:-:|:--|:-:|:--|:--|:-:|:-:|
-| 20 | «España es cada vez más insegura» | D | ¿Cómo ha evolucionado la tasa de criminalidad convencional por 1.000 habitantes, y qué tipos de delito crecen? | Interior: Balance de Criminalidad | ★★ | — |
-| 21 | «La violencia machista no para de aumentar» | I / C (feminismo) | ¿Cómo han evolucionado los feminicidios en pareja y las denuncias? ¿Qué parte del aumento de denuncias puede deberse a más denuncia y no a más violencia? | Ministerio de Igualdad; CGPJ | ★★★ | — |
-| 22 | «Hay muchas denuncias falsas por violencia de género» | D / C (asociaciones de padres) | ¿Qué proporción de denuncias acaba en condena por denuncia falsa, y qué limitaciones tiene ese dato? | Fiscalía General del Estado: Memoria anual | ★★★ | — |
-| 23 | «La España vaciada se sigue vaciando» | C (territorio) | ¿Cuántos municipios han perdido población desde 2000, y está cambiando la tendencia? | INE: Padrón municipal | ★ | — |
+| ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
+|:--|:--|:--|:--|:--|:-:|:-:|
+| e01 | ¿Llega el crecimiento económico a los hogares? | España es la economía que más crece de Europa | El crecimiento se debe a la población y no llega al bolsillo | ⬇ INE: Contabilidad Nacional; Eurostat | ★★ | ✓ |
+| e02 | ¿Han subido los salarios reales? ¿Qué ha pasado con el empleo tras las subidas del SMI? | El SMI mejora los salarios bajos sin destruir empleo | Frena el empleo de los menos cualificados | ⬇ INE: EES, IPC; EPA | ★★★ | ✓ |
+| e03 | ¿Ha reducido la reforma laboral la temporalidad o ha cambiado la forma de medir el paro? | Ha creado empleo estable | Los fijos discontinuos maquillan el paro | ⬇ EPA; afiliación por contrato; SEPE | ★★ | ✓ |
 
-## Cómo pasar una fila del roadmap a post
+### s · Estado del bienestar y cuentas públicas
 
-1. Elegir número libre `NNN` y un *slug* corto en inglés → `NNN-short-slug`.
-2. Copiar `posts/_template/` → `posts/NNN-short-slug/` y `notebooks/_template.ipynb` → `notebooks/NNN-short-slug.ipynb`.
-3. Rellenar la columna **Post** de esta tabla.
+| ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
+|:--|:--|:--|:--|:--|:-:|:-:|
+| s01 | ¿Pagamos más impuestos que en Europa? ¿Ha subido la recaudación por no deflactar el IRPF? | Hay margen para subir impuestos | La recaudación récord es una subida encubierta por la inflación | ⬇ Eurostat; AEAT | ★★ | ✓ |
+| s02 | ¿Son sostenibles las pensiones? | Las pensiones están garantizadas | El sistema traslada el coste a los jóvenes | ⬇ Seguridad Social; AIReF; Eurostat | ★★ | ✓ |
+| s03 | ¿Han empeorado las listas de espera sanitarias? | Deterioro por falta de financiación | Deterioro por gestión autonómica | ⬇ Ministerio de Sanidad: SISLE | ★★ | |
+| s04 | ¿Cómo han evolucionado la deuda y el déficit? | Las cuentas se han saneado | La deuda sigue en máximos | ⬇ Banco de España; IGAE; Eurostat | ★ | |
+
+## Calendario hasta el 29-N
+
+De menos a más dificultad, empezando por los datos que ya están descargados. Lo que no llegue antes del 29-N se publica después: el blog no termina con las elecciones.
+
+| Semana | Fechas | Entradas |
+|:-:|:--|:--|
+| 1 | 6–12 oct | Reorganización del blog. **v01** (pisos turísticos) |
+| 2 | 13–19 oct | **i01** (población e inmigración) |
+| 3 | 20–26 oct | **v02** (alquiler frente a renta) |
+| 4 | 27 oct–2 nov | **v03** (vacías o escasez), i02 |
+| 5 | 3–9 nov | i03, e01 |
+| 6 | 10–16 nov | i04, s01 · empieza la campaña (13 nov) |
+| 7 | 17–23 nov | s02 y una entrada resumen con todas las respuestas |
+| — | 29 nov | Elecciones |
+| después | | v04–v07 y v09 (★★★), e02, e03, s03, s04, v08 |
+
+## Base de datos de vivienda
+
+Detalle de fuentes en `data/raw/README.md` y de tablas procesadas en `data/processed/README.md`. El procesado es genérico, fuente a fuente, a una clave territorial común (código INE de municipio de 5 dígitos; sección censal cuando aplique), conservando las medidas de precisión de cada fuente y el motivo de cada dato faltante.
+
+| Paso | Script | Estado |
+|:--|:--|:--|
+| Municipios y Padrón | `src/process/01_municipios_poblacion.py` | ✔ |
+| AEAT, alquiler declarado | `src/process/02_aeat_alquiler_municipios.py` | ✔ |
+| SERPAVI | `src/process/03_serpavi.py` | script listo, ejecutar |
+| Viviendas turísticas (v01) | `src/process/04_viviendas_turisticas.py` | por escribir (esqueleto) |
+| Población por nacionalidad (i01) | `src/process/05_poblacion_nacionalidad.py` | por escribir (esqueleto) |
+| Censo 2021 y 2011, ADRH, Censo Anual, valor tasado, transacciones, construcción, zonas tensionadas | — | pendiente, según lo pida cada entrada |
+
+Decisiones pendientes para los análisis municipales (v02 en adelante): universo de más de 20.000 frente a 25.000 habitantes, inclusión de País Vasco y Navarra (sin AEAT) y año de referencia (2023 frente a 2024). Se decidirán con un informe de cobertura cuando hagan falta, no antes.
+
+## Líneas futuras
+
+- Si la serie de vivienda madura, el material puede dar para un artículo académico (tipología de mercados, RQ0–RQ5) y para el artículo metodológico sobre G-Gower y k-medoides con faltantes estructurados.
+- Otros usos de la base municipal: segregación residencial, despoblación, asentamiento de la inmigración.

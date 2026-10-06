@@ -1,39 +1,51 @@
 # La Mirada del Dato
 
-Blog de verificación de datos: afirmaciones del debate público, contrastadas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista.
+Investigaciones breves sobre cuestiones sociales con gran debate público (vivienda, inmigración, empleo, servicios públicos), contrastadas con datos abiertos y estadística. Cada entrada pone frente a frente las tesis enfrentadas y dice hacia dónde apunta la evidencia. Hasta el 29-N, especial elecciones generales.
 
-Web: <https://fabioscielzoortiz.github.io/la-mirada-del-dato> · Afirmaciones pendientes: [ROADMAP.md](ROADMAP.md)
+Web: <https://lamiradadeldato.com> · Preguntas, series y calendario: [ROADMAP.md](ROADMAP.md)
 
 ## Estructura
 
 ```
 la-mirada-del-dato/
-├── _quarto.yml            configuración del sitio
-├── index.qmd              portada (tabla de preguntas)
-├── method.qmd             método y escala de respuestas
-├── about.qmd              sobre el blog
-├── references.bib         bibliografía común
-├── requirements.txt       dependencias de Python
-├── ROADMAP.md             afirmaciones a contrastar
+├── _quarto.yml              configuración del sitio
+├── index.qmd · method.qmd · about.qmd
+├── ROADMAP.md               series, preguntas, tesis, datos y calendario
+├── requirements.txt         dependencias de Python
+├── CNAME                    dominio propio (GitHub Pages)
+├── .github/workflows/       publicación automática
 │
-├── posts/                 una carpeta por entrada: NNN-short-slug/index.qmd
-│   ├── _metadata.yml      valores comunes (autor, licencia, bibliografía)
-│   └── _template/         plantilla (no se publica)
-├── notebooks/             trabajo exploratorio: NNN-short-slug.ipynb ↔ posts/NNN-short-slug/
+├── posts/                   una carpeta por entrada: <id>-<slug>/index.qmd
+│   ├── _metadata.yml        valores comunes (autor, licencia, bibliografía)
+│   └── _template/           plantilla (no se publica)
+├── notebooks/               trabajo exploratorio: <id>-<slug>.ipynb  ↔  posts/<id>-<slug>/
 │
-├── src/                   código reutilizable, se ejecuta como scripts (no es un paquete instalable)
-│   ├── download/          descarga datos → data/raw/
-│   ├── processing/        data/raw/ → data/processed/
-│   ├── analysis/          indicadores usados en varias entradas
-│   └── utils/             rutas, lectura/escritura, estilo de gráficos
-├── data/
-│   ├── raw/               descargas originales, nunca se editan (fecha en el nombre)
-│   └── processed/         tablas limpias en Parquet
+├── src/                     scripts ejecutables (no es un paquete instalable)
+│   ├── download/            descarga en bruto → data/raw/            (download_<fuente>.py)
+│   ├── process/             data/raw/ → data/processed/, numerados   (NN_<tabla>.py)
+│   ├── analysis/            indicadores reutilizados en varias entradas
+│   └── utils/               rutas y estilo de gráficos (para notebooks y posts)
+├── data/                    NO se versiona (ver .gitignore)
+│   ├── raw/                 descargas originales, nunca se editan · catálogo en data/raw/README.md
+│   └── processed/           tablas limpias en Parquet · diccionario en data/processed/README.md
 │
-├── assets/                estilos (base, light, dark) y CSL de citas
-├── images/                logo
-└── _freeze/               resultados ejecutados de cada post (lo genera Quarto; se sube al repo)
+├── assets/                  estilos (base, light, dark), plantilla de la portada, CSL
+├── images/                  logo
+└── _freeze/                 resultados ejecutados de cada post (Quarto; sí se versiona)
 ```
+
+### Identificadores de las entradas
+
+`<serie><nn>-<slug-en-inglés>`, igual en `posts/` y `notebooks/`:
+
+| Serie | Prefijo | Ejemplo |
+|:--|:-:|:--|
+| Vivienda | `v` | `v01-tourist-housing` |
+| Inmigración | `i` | `i01-population-nationality` |
+| Economía, empleo y salarios | `e` | `e01-growth-households` |
+| Estado del bienestar y cuentas públicas | `s` | `s01-tax-burden` |
+
+El número identifica la pregunta, no el orden de publicación (eso lo da la fecha).
 
 ## Puesta en marcha
 
@@ -41,45 +53,47 @@ Requisitos: Python ≥ 3.11 y [Quarto](https://quarto.org/docs/get-started/).
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate               # Windows   (macOS/Linux: source .venv/bin/activate)
+.venv\Scripts\activate                      # Windows   (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
-python -m ipykernel install --user --name la-mirada-del-dato   # opcional: kernel con nombre para Jupyter/VS Code
-
-quarto preview                       # con el venv activado, para que Quarto use su Python
+$env:QUARTO_PYTHON = "$PWD\.venv\Scripts\python.exe"   # Windows PowerShell: que Quarto use el Python del venv
+quarto preview
 ```
 
-Todos los comandos se lanzan **desde la raíz del proyecto**.
+Todos los scripts se lanzan **desde la raíz del proyecto**:
+
+```bash
+python src/download/download_viviendas_turisticas.py
+python src/process/04_viviendas_turisticas.py
+```
 
 ## Flujo de una entrada
 
-Cada entrada tiene un identificador `NNN-short-slug` que se repite en el notebook y en la carpeta del post.
-
 | Paso | Dónde | Qué |
 |:--|:--|:--|
-| 1. Pregunta | `ROADMAP.md` | Elegir la afirmación y escribir la pregunta contrastable. |
-| 2. Descarga | `src/download/<fuente>_<tema>.py` | `python -m src.download.<módulo>` → `data/raw/<fuente>/<nombre>_<fecha>.<ext>`. O descarga manual con el mismo nombre. |
-| 3. Exploración | `notebooks/NNN-short-slug.ipynb` | Mirar los datos crudos, probar, ensuciar. |
-| 4. Procesado | `src/processing/<tema>.py` | Pasar aquí los pasos de limpieza ya decididos. `python -m src.processing.<módulo>` → `data/processed/<nombre>.parquet`. |
-| 5. Análisis | `notebooks/NNN-short-slug.ipynb` | Cifras y gráficos finales sobre `data/processed/`. |
-| 6. Publicación | `posts/NNN-short-slug/index.qmd` | Copiar solo el código final. Rellenar `respuesta`, `confianza`, `resumen`. Quitar `draft: true`. |
+| 1. Pregunta y tesis | `ROADMAP.md` → `posts/<id>/index.qmd` | Pregunta concreta y tesis enfrentadas en una frase neutra. |
+| 2. Partidos (si es tema electoral) | `posts/<id>/index.qmd` | Programa, votaciones, acción de gobierno y declaraciones, con fuentes primarias. |
+| 3. Descarga | `src/download/download_<fuente>.py` | → `data/raw/<fuente>/`. Documentar en `data/raw/README.md`. |
+| 4. Exploración | `notebooks/<id>.ipynb` | Mirar los datos crudos, probar, decidir. |
+| 5. Procesado | `src/process/NN_<tabla>.py` | Pasar aquí la limpieza ya decidida, con comprobaciones. → `data/processed/`. Documentar en `data/processed/README.md`. |
+| 6. Análisis | `notebooks/<id>.ipynb` | Cifras y gráficos finales sobre `data/processed/`. |
+| 7. Publicación | `posts/<id>/index.qmd` | Solo el código final. Rellenar `respuesta`, `confianza`, `resumen`. Quitar `draft: true`. `quarto render` y *push*. |
 
 Reglas:
 
-- `data/raw/` no se toca a mano: si hay una versión nueva, se descarga con otra fecha.
-- Los posts solo leen `data/processed/`. Nada de limpieza dentro del `.qmd`.
-- Los scripts de `src/` son independientes y se pueden volver a lanzar en cualquier momento.
-- `src/analysis/` solo recoge lo que ya se ha usado en más de una entrada.
-- Los posts con `draft: true` se ven en `quarto preview`, pero no se publican ni salen en la portada.
+- `data/raw/` no se toca a mano. Los posts solo leen `data/processed/`: nada de limpieza dentro del `.qmd`.
+- Los scripts de procesado son genéricos (por fuente, no por entrada) y reutilizables: clave territorial común `cod_mun` (código INE de 5 dígitos, texto), medidas de precisión conservadas y motivo de cada dato faltante.
+- Los posts con `draft: true` se ven en `quarto preview`, pero no se publican.
 
 ### Importar `src` desde notebooks y posts
 
-`src` no se instala. La primera celda de cada notebook y post añade la raíz del proyecto al `sys.path`:
+La primera celda de cada notebook y post añade la raíz del proyecto al `sys.path`:
 
 ```python
 import sys
 from pathlib import Path
 ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / "_quarto.yml").exists())
 sys.path.insert(0, str(ROOT))
+from src.utils.paths import RAW, PROCESSED
 ```
 
 ## Publicación
@@ -89,14 +103,15 @@ quarto render          # ejecuta los posts nuevos o modificados y actualiza _fre
 git add . && git commit -m "..." && git push
 ```
 
-GitHub Actions (`.github/workflows/publish.yml`) renderiza el sitio usando `_freeze/` (no necesita volver a ejecutar el código ni los datos) y lo publica en la rama `gh-pages`.
+GitHub Actions renderiza el sitio a partir de `_freeze/` (no necesita los datos, que no se suben) y lo publica en la rama `gh-pages`.
 
 ## Estado
 
-| Post | Estado |
+| Entrada | Estado |
 |:--|:--|
-| 001 · Población por nacionalidad y país de nacimiento | Esqueleto: falta descarga, procesado y análisis |
-| 002–006 | Placeholders (ver ROADMAP) |
+| v01 · Pisos turísticos | **En curso.** Datos descargados; falta procesado (`04_viviendas_turisticas.py`), análisis y tabla de partidos |
+| i01 · Población e inmigración | Esqueleto: falta descarga (ECP), procesado y análisis |
+| Resto | Placeholders con pregunta, tesis y datos candidatos (ver ROADMAP) |
 
 ## Licencia
 

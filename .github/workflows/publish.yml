@@ -1,7 +1,3 @@
-# Put this file in .github/workflows/publish.yml
-# Renders the site from _freeze/ (no Python execution needed for frozen posts) and publishes to gh-pages.
-# One-time setup: run `quarto publish gh-pages` locally once, and in GitHub → Settings → Actions → General
-# set "Workflow permissions" to "Read and write".
 name: Publish
 
 on:

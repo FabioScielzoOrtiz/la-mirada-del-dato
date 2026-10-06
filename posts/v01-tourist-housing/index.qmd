@@ -1,0 +1,113 @@
+---
+title: "¿Son los pisos turísticos un problema marginal o están concentrados?"
+description: "Peso de las viviendas turísticas sobre el total de viviendas, en España, por municipio y por barrio, 2020–2026."
+date: 2026-10-12
+categories: [Vivienda, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+jupyter: python3
+---
+
+<!--
+STATUS: esqueleto. Primera entrada del blog (ROADMAP v01, dificultad ★).
+Notebook: notebooks/v01-tourist-housing.ipynb
+Datos:    data/raw/viviendas_turisticas/ -> src/process/04_viviendas_turisticas.py
+          -> data/processed/viviendas_turisticas_municipios.parquet
+
+TODO
+[ ] Escribir y ejecutar src/process/04_viviendas_turisticas.py (explorar antes en el notebook)
+[ ] Peso agregado: % nacional y su evolución por oleada
+[ ] Concentración: ¿qué parte de las viviendas turísticas está en el 1 %, 5 %, 10 % de municipios? (curva de concentración)
+[ ] ¿Cuántos municipios superan el 2 %, 5 %, 10 %? ¿Cuánta población vive en ellos? (poblacion.parquet)
+[ ] Opcional: barrios (tabla 5, secciones censales) de las grandes ciudades
+[ ] Tabla de partidos (programas 2023, Ley de Vivienda, normativa autonómica de VUT)
+[ ] Rellenar respuesta, confianza y resumen; quitar draft
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+```{python}
+#| label: setup
+import sys
+from pathlib import Path
+ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / "_quarto.yml").exists())
+sys.path.insert(0, str(ROOT))
+
+import polars as pl
+from src.utils.paths import PROCESSED
+from src.utils.plotting import ACCENT, GREY, PALETTE, init_plotly, new_figure, add_source
+init_plotly()
+```
+
+## La pregunta
+
+Las viviendas turísticas están en el centro del debate sobre la vivienda. La discusión suele quedarse en dos cifras que no se contradicen, porque miden cosas distintas: el peso sobre el total de viviendas del país y el peso en los barrios donde se concentran. **¿Qué peso tienen las viviendas turísticas sobre el parque de viviendas, y cómo de concentradas están?**
+
+## Las tesis en disputa
+
+1. **Tesis A:** «Las viviendas turísticas son marginales: en torno al 1 % del parque, no pueden explicar el problema de la vivienda».
+2. **Tesis B:** «Se concentran en ciertos municipios y barrios, y allí sí tienen un peso importante sobre la vivienda disponible».
+
+## Qué dicen y qué hacen los partidos
+
+<!-- TODO: programas 2023, votación de la Ley 12/2023 y de la regulación de VUT, normativa en las CCAA donde gobiernan. -->
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+Estadística experimental de viviendas turísticas del INE: número de viviendas turísticas, plazas y porcentaje sobre las viviendas censadas, por municipio y sección censal, en 13 oleadas desde agosto de 2020. <!-- TODO: fecha de descarga, cómo identifica el INE una vivienda turística -->
+
+### El peso en el conjunto de España
+
+```{python}
+#| label: fig-national
+#| fig-cap: "TODO"
+#| eval: false
+# TODO: % nacional por oleada
+```
+
+### Dónde se concentran
+
+```{python}
+#| label: fig-concentration
+#| fig-cap: "TODO"
+#| eval: false
+# TODO: curva de concentración (% acumulado de viviendas turísticas frente a % acumulado de municipios)
+```
+
+```{python}
+#| label: tbl-top
+#| tbl-cap: "TODO"
+#| eval: false
+# TODO: municipios con mayor % de viviendas turísticas (por tramo de tamaño)
+```
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+<!-- TODO: definición de vivienda turística y del denominador (viviendas censadas); tratamiento de ".."; salto de serie de 2024 (Andalucía); medida de concentración utilizada. -->
+:::
+
+## Limitaciones
+
+<!-- TODO. Candidatas:
+- Estadística experimental: metodología aún en desarrollo.
+- Peso sobre el parque total ≠ peso sobre el alquiler disponible (lo relevante para el precio).
+- Mide stock de viviendas anunciadas, no si se han retirado del alquiler residencial (no dice nada del efecto sobre los precios).
+- Salto de serie en 2024 por la revisión de Andalucía. -->
+
+## Respuesta
+
+<!-- TODO -->

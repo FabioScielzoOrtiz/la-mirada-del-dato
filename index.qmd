@@ -1,6 +1,6 @@
 ---
-pagetitle: "La Mirada del Dato · Afirmaciones del debate público, contrastadas con datos"
-description: "Afirmaciones que se repiten en el debate público, contrastadas con datos abiertos y estadística."
+pagetitle: "La Mirada del Dato · Los grandes debates, contrastados con datos"
+description: "Investigaciones breves sobre vivienda, inmigración, empleo y servicios públicos: qué tesis se enfrentan y hacia dónde apunta la evidencia."
 toc: false
 listing:
   id: preguntas
@@ -12,11 +12,11 @@ listing:
 ---
 
 ::: {.hero}
-[Verificación con datos abiertos y estadística]{.hero-kicker}
+[Investigaciones breves con datos abiertos · Especial elecciones 29-N]{.hero-kicker}
 
-[Afirmaciones del debate público, **contrastadas con datos**]{.hero-title}
+[Los grandes debates, **contrastados con datos**]{.hero-title}
 
-[Cada entrada parte de una frase que se repite, venga de donde venga, y la convierte en una pregunta medible. Qué dicen los datos, qué no pueden decir y hacia dónde apunta la evidencia.]{.hero-lead}
+[Vivienda, inmigración, empleo, impuestos. Cada entrada toma una pregunta con debate público, pone frente a frente las tesis enfrentadas y mira qué dicen los datos oficiales: hacia dónde apunta la evidencia, dónde y con qué incertidumbre. Sin decirte a quién votar.]{.hero-lead}
 
 [Cómo trabajamos →](method.qmd){.btn .btn-primary .hero-btn} [Próximas preguntas](#proximas){.btn .btn-outline-secondary .hero-btn}
 :::
@@ -24,15 +24,15 @@ listing:
 ::: {.pasos}
 ::: {.paso}
 [1]{.paso-num}
-**La afirmación.** Tal y como circula, de la izquierda, de la derecha o de un colectivo.
+**Las tesis.** Lo que se afirma en el debate, en una frase neutra, y quién lo sostiene.
 :::
 ::: {.paso}
 [2]{.paso-num}
-**Los datos.** Fuentes oficiales, el análisis más simple que responda bien y sus limitaciones.
+**Los datos.** Fuentes oficiales, el análisis más simple que responda bien y sus límites.
 :::
 ::: {.paso}
 [3]{.paso-num}
-**La respuesta.** Hacia dónde apunta la evidencia y con qué confianza.
+**La respuesta.** Qué tesis encaja mejor con la evidencia, dónde y con qué confianza.
 :::
 :::
 
@@ -44,12 +44,14 @@ listing:
 ## Próximas preguntas {#proximas .seccion-titulo}
 
 ::: {.proximas}
-- ¿Cuánto ha crecido la población de España y quién explica ese crecimiento?
-- ¿Pagan los inmigrantes nuestras pensiones?
-- ¿Se han disparado las okupaciones?
-- ¿Es hoy más caro que nunca alquilar en España?
-- ¿Pagamos más impuestos que el resto de Europa?
-- ¿Cobramos hoy menos que hace quince años?
+- **Vivienda ·** ¿Son los pisos turísticos marginales o están concentrados?
+- **Inmigración ·** ¿Cuánto ha crecido la población y qué parte se debe a la inmigración?
+- **Vivienda ·** ¿Es hoy más difícil pagar el alquiler?
+- **Vivienda ·** ¿Falta vivienda o sobra vivienda vacía?
+- **Inmigración ·** ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social?
+- **Inmigración ·** ¿Qué parte de las ayudas reciben los extranjeros?
+- **Economía ·** ¿Llega el crecimiento económico a los hogares?
+- **Inmigración ·** ¿Delinquen más los extranjeros, a igual edad y sexo?
 :::
 
 [Ver la lista completa en el repositorio →](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md){.enlace-roadmap}

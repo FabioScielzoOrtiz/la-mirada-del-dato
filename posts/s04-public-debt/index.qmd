@@ -1,0 +1,45 @@
+---
+title: "¿Cómo han evolucionado la deuda y el déficit?"
+description: "TODO"
+date: 2026-12-31
+categories: [Estado del bienestar]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP s04 · dificultad ★)
+Notebook: notebooks/s04-public-debt.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Cómo han evolucionado la deuda y el déficit?
+Datos: ⬇ Banco de España; IGAE; Eurostat
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «Las cuentas se han saneado»
+2. **Tesis B:** «La deuda sigue en máximos»
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

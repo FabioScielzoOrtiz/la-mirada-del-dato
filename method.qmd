@@ -2,20 +2,29 @@
 title: "Método"
 ---
 
-Cada entrada parte de una afirmación que circula en el debate público, venga de donde venga, y la convierte en una pregunta que se pueda contrastar con datos.
+**La Mirada del Dato** publica investigaciones breves sobre cuestiones sociales con gran debate público: vivienda, inmigración, empleo, impuestos, servicios públicos. No son artículos académicos, pero siguen sus reglas: datos oficiales, método explícito, código abierto y limitaciones a la vista.
 
-1. **Una pregunta concreta.** No «¿hay demasiada inmigración?», sino «¿cuánto ha crecido la población nacida en el extranjero desde 2002?».
-2. **Datos públicos y citados.** Fuente oficial, fecha de descarga y enlace. Los datos y el código están en el [repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato).
-3. **El análisis más simple que responda bien.** Primero se describen los datos. Solo se usan modelos cuando hacen falta.
-4. **Limitaciones explícitas.** Qué no pueden decir estos datos y qué podría cambiar la conclusión.
-5. **Una respuesta corta**, aunque sea provisional.
+## Cómo es cada entrada
+
+1. **Una pregunta concreta.** No «¿hay un problema de vivienda?», sino «¿qué peso tienen los pisos turísticos sobre el total de viviendas, y dónde?».
+2. **Las tesis en disputa.** Casi todo debate enfrenta afirmaciones sobre el mundo que se pueden comprobar («los pisos turísticos son marginales» frente a «expulsan a los vecinos»). Se escriben en una frase neutra y se contrastan todas con la misma vara.
+3. **Qué dicen y qué hacen los partidos**, cuando la cuestión está en el debate electoral: PP, PSOE, Vox y Sumar, siempre los mismos y en el mismo orden. Programa, votaciones en el Congreso, acción de gobierno y declaraciones de sus portavoces, con fuentes primarias, fechadas y enlazadas.
+4. **Qué dicen los datos.** Fuentes oficiales, fecha de descarga y enlace. El análisis más simple que responda bien. Los datos y el código están en el [repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato).
+5. **Qué dice la literatura**, cuando existe, indicando la calidad de la evidencia.
+6. **Limitaciones** y **una respuesta corta** sobre cada tesis.
+
+## Principios
+
+- **Simetría.** Cada tesis se mide con la misma calidad de datos. Si una no tiene datos comparables, se dice como limitación en vez de darla por refutada.
+- **Asociación no es causa.** Con datos agregados se miden magnitudes y asociaciones. Solo se habla de efectos cuando el diseño lo permite, y entonces se explica.
+- **La respuesta puede depender del lugar.** Una tesis puede ser cierta en la costa turística y falsa en una ciudad mediana. Cuando importa, se muestra.
 
 ## Escala de la respuesta
 
 | Respuesta | Significado |
 |:--|:--|
-| **Apunta a sí** / **Apunta a no** | Los datos favorecen claramente una de las dos respuestas. |
-| **Mixta** | Hay evidencia en ambas direcciones, o la respuesta depende del grupo, el lugar o el periodo. |
+| **Apunta a A** / **Apunta a B** | Los datos favorecen claramente una de las tesis. |
+| **Mixta** | Cada tesis acierta en una parte, o la respuesta depende del grupo, el lugar o el periodo. |
 | **Insuficiente** | Los datos disponibles no permiten responder con un mínimo de solidez. |
 
 | Confianza | Significado |
@@ -26,9 +35,9 @@ Cada entrada parte de una afirmación que circula en el debate público, venga d
 
 ## Lo que no hacemos
 
-- Elegir las afirmaciones por su color político. Se contrastan las de todos.
+- Decir a quién votar ni valorar a los partidos. Que una tesis se sostenga o no es un hecho; qué hacer con ello depende de las prioridades de cada uno.
+- Elegir los temas por lo fácil que sea dejar mal a alguien. Los temas se eligen por su peso en el debate ([lista completa](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md)).
 - Partir de la conclusión. Antes de analizar, nos preguntamos qué resultado nos haría cambiar de opinión.
 - Esconder los datos que no encajan.
-- Confundir correlación con efecto.
 
-Si encuentras un error, abre un *issue* en el repositorio. Las correcciones se indican al final de cada entrada.
+Si encuentras un error, o la posición de un partido está mal recogida, abre un *issue* en el repositorio. Las correcciones se indican al final de cada entrada.

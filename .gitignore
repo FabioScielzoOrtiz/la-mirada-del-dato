@@ -13,8 +13,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data: raw and processed files are versioned by default (they are small).
-# If a raw file gets too big (> 50 MB), add it here and document its download in data/README.md
+# Data: not versioned (tens of GB). Reproducible with src/download + src/process;
+# catalogues in data/raw/README.md and data/processed/README.md. The site builds from _freeze/.
+data/
 
 # Local archive of previous versions (not published, not versioned)
 /_archive/

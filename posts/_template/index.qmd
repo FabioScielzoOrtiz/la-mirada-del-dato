@@ -1,16 +1,15 @@
 ---
 # TEMPLATE (folders starting with "_" are not published).
-# 1. Copy this folder as posts/NNN-short-slug/ and the notebook as notebooks/NNN-short-slug.ipynb
+# 1. Copy this folder as posts/<id>-<slug>/ (e.g. v01-tourist-housing) and the notebook as notebooks/<id>-<slug>.ipynb
 # 2. Explore in the notebook; paste here only the final code.
 # 3. Remove `draft: true` when it is ready to publish.
 title: "¿Pregunta concreta y contrastable?"
-description: "Una frase: qué afirmación se contrasta y con qué datos."
+description: "Una frase: qué se contrasta y con qué datos."
 date: 2026-01-01
-categories: [Tema]
+categories: [Vivienda]           # series: Vivienda | Inmigración | Economía | Estado del bienestar. Add "Elecciones 29-N" if relevant
 draft: true
-claim: "La afirmación tal y como circula en el debate."
-respuesta: "Pendiente"     # Apunta a sí | Apunta a no | Mixta | Insuficiente
-confianza: "—"             # Alta | Media | Baja
+respuesta: "Pendiente"           # Apunta a A | Apunta a B | Mixta | Insuficiente  (or Apunta a sí / no)
+confianza: "—"                   # Alta | Media | Baja
 resumen: "Una o dos frases con la cifra clave y su incertidumbre."
 jupyter: python3
 ---
@@ -31,33 +30,51 @@ ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / "_quarto.yml").
 sys.path.insert(0, str(ROOT))
 
 import polars as pl
-from src.utils.files import read_processed
+from src.utils.paths import PROCESSED
 from src.utils.plotting import ACCENT, GREY, PALETTE, init_plotly, new_figure, add_source
 init_plotly()
 ```
 
-## La afirmación
+## La pregunta
 
-> {{< meta claim >}}
+Por qué está en el debate y qué se puede contrastar exactamente.
 
-Quién la hace, en qué contexto, y la pregunta concreta que se puede contrastar.
+## Las tesis en disputa
 
-## Los datos
+1. **Tesis A:** «...» (quién la sostiene)
+2. **Tesis B:** «...»
 
-Fuente, qué mide, cobertura y fecha de descarga, en lenguaje llano.
+## Qué dicen y qué hacen los partidos
+
+<!-- Only for questions in the electoral debate (category "Elecciones 29-N"); delete otherwise.
+     Same four parties, same order. Primary sources only, with date and link.
+     "Sin posición pública identificada" is a valid entry. Max 2–3 facts per party. -->
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
 
 ## Qué dicen los datos
+
+Fuente, qué mide, cobertura y fecha de descarga, en lenguaje llano.
 
 ```{python}
 #| label: fig-main
 #| fig-cap: "Qué muestra el gráfico."
 #| eval: false
-df = read_processed("table_name")
+df = pl.read_parquet(PROCESSED / "table_name.parquet")
 fig = new_figure(y_title="Unidades")
 fig.add_scatter(x=df["date"], y=df["value"], name="...", mode="lines")
 add_source(fig, "Fuente: ... Elaboración propia.")
 fig.show()
 ```
+
+## Qué dice la literatura
+
+Los mejores estudios disponibles y su calidad. Si no hay, se dice. (Opcional en entradas puramente descriptivas.)
 
 ::: {.callout-note collapse="true" title="Detalle técnico"}
 Definición exacta de las variables, fórmulas, decisiones del análisis y comprobaciones de robustez.
@@ -67,6 +84,6 @@ Definición exacta de las variables, fórmulas, decisiones del análisis y compr
 
 ## Respuesta
 
-Hacia dónde apunta la evidencia y con qué confianza.
+Hacia dónde apunta la evidencia **sobre cada tesis**, dónde y con qué confianza. Sin valorar a los partidos.
 
 <!-- Correcciones: AAAA-MM-DD · qué se corrigió -->

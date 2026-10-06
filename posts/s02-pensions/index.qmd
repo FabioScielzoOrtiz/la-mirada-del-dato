@@ -1,0 +1,54 @@
+---
+title: "¿Son sostenibles las pensiones?"
+description: "TODO"
+date: 2026-12-31
+categories: [Estado del bienestar, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP s02 · dificultad ★★)
+Notebook: notebooks/s02-pensions.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Son sostenibles las pensiones?
+Datos: ⬇ Seguridad Social; AIReF; Eurostat
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «Las pensiones están garantizadas»
+2. **Tesis B:** «El sistema traslada el coste a los jóvenes»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

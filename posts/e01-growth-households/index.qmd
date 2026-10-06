@@ -1,0 +1,54 @@
+---
+title: "¿Llega el crecimiento económico a los hogares?"
+description: "TODO"
+date: 2026-12-31
+categories: [Economía, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP e01 · dificultad ★★)
+Notebook: notebooks/e01-growth-households.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Llega el crecimiento económico a los hogares?
+Datos: ⬇ INE: Contabilidad Nacional; Eurostat
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «España es la economía que más crece de Europa»
+2. **Tesis B:** «El crecimiento se debe a la población y no llega al bolsillo»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

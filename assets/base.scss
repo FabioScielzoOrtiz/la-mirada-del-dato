@@ -81,3 +81,6 @@ $font-size-root: 17px;
   padding: .55rem .9rem; border-left: 3px solid rgba(127,127,127,.35); opacity: .85;
 }
 .enlace-roadmap { font-size: .92rem; font-weight: 600; }
+
+// Tabla de posiciones de los partidos
+.table th:first-child, .table td:first-child { white-space: nowrap; }

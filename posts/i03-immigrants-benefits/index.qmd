@@ -1,0 +1,54 @@
+---
+title: "¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza?"
+description: "TODO"
+date: 2026-12-31
+categories: [Inmigración, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP i03 · dificultad ★★)
+Notebook: notebooks/i03-immigrants-benefits.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza?
+Datos: ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ✔ ADRH (población bajo umbrales de renta por nacionalidad)
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «Acaparan las ayudas; hay que priorizar a los nacionales»
+2. **Tesis B:** «Reciben en proporción a su situación de necesidad»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

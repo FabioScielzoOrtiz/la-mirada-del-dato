@@ -1,0 +1,54 @@
+---
+title: "¿Se declaran las zonas tensionadas donde hay tensión?"
+description: "TODO"
+date: 2026-12-31
+categories: [Vivienda, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP v05 · dificultad ★★★)
+Notebook: notebooks/v05-stressed-areas.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Se declaran las zonas tensionadas donde hay tensión?
+Datos: ✔ BOE (2024 T1 – 2026 T2); ✔ SERPAVI; ✔ ADRH (criterio de esfuerzo > 30 %)
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «La ley se aplica con criterio político e intervencionista»
+2. **Tesis B:** «Algunas CCAA bloquean su aplicación por motivos políticos aunque tengan municipios tensionados»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

@@ -1,8 +1,8 @@
 project:
   type: website
-  resources:
-    - CNAME
   output-dir: _site
+  resources:
+    - CNAME                     # custom domain for GitHub Pages
   render:                       # only blog pages (never notebooks/, src/ or data/)
     - index.qmd
     - method.qmd
@@ -18,7 +18,7 @@ execute:
 
 website:
   title: "La Mirada del Dato"
-  description: "Afirmaciones del debate público, contrastadas con datos."
+  description: "Las cuestiones del 29-N: qué dicen los partidos y qué dicen los datos."
   site-url: https://lamiradadeldato.com
   repo-url: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
   favicon: images/logo.png

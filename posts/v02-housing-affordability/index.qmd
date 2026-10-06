@@ -1,0 +1,54 @@
+---
+title: "¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares"
+description: "TODO"
+date: 2026-12-31
+categories: [Vivienda, Elecciones 29-N]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP v02 · dificultad ★★)
+Notebook: notebooks/v02-housing-affordability.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares
+Datos: ✔ SERPAVI (2011–2024); ✔ ADRH (renta, 2015–2023); ✔ AEAT
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Las tesis en disputa
+
+1. **Tesis A:** «El problema es de precios desbocados»
+2. **Tesis B:** «El problema es sobre todo de rentas que no siguen el ritmo»
+
+## Qué dicen y qué hacen los partidos
+
+| | Programa | Votaciones | Acción de gobierno | Declaraciones |
+|:--|:--|:--|:--|:--|
+| **PP** | | | | |
+| **PSOE** | | | | |
+| **Vox** | | | | |
+| **Sumar / Frente Amplio** | | | | |
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

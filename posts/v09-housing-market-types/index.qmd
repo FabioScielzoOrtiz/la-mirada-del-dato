@@ -1,0 +1,40 @@
+---
+title: "¿Qué tipos de mercado de vivienda hay en España y dónde?"
+description: "TODO"
+date: 2026-12-31
+categories: [Vivienda]
+draft: true
+respuesta: "Pendiente"
+confianza: "—"
+resumen: "TODO"
+---
+
+<!--
+STATUS: placeholder (ROADMAP v09 · dificultad ★★★)
+Notebook: notebooks/v09-housing-market-types.ipynb (copiar notebooks/_template.ipynb)
+Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
+
+Pregunta: ¿Qué tipos de mercado de vivienda hay en España y dónde?
+Datos: Tabla municipal analítica; clustering robusto de datos mixtos (G-Gower + k-medoides, `db-robust-clust`)
+-->
+
+::: {.respuesta}
+[Respuesta corta]{.etiqueta}
+
+**{{< meta respuesta >}}** · confianza {{< meta confianza >}}
+
+{{< meta resumen >}}
+:::
+
+## La pregunta
+
+## Qué dicen los datos
+
+## Qué dice la literatura
+
+::: {.callout-note collapse="true" title="Detalle técnico"}
+:::
+
+## Limitaciones
+
+## Respuesta

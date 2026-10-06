@@ -15,7 +15,7 @@ Notebook: notebooks/v04-rent-caps.ipynb (copiar notebooks/_template.ipynb)
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta?
-Datos: ✔ zonas tensionadas (BOE); ✔ SERPAVI; análisis previo de Cataluña en `_archive/`
+Datos: ⬇ zonas tensionadas (BOE); ⬇ SERPAVI; análisis previo de Cataluña en `_archive/`
 -->
 
 ::: {.respuesta}

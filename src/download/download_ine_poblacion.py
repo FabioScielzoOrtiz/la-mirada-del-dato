@@ -22,7 +22,7 @@ Notas:
   - 60129/60130 solo cuentan la población en viviendas familiares (sin establecimientos
     colectivos), así que no suman exactamente la población residente total.
 
-Formato de URL igual que en download_adrh.py (CSV con separador ';').
+Formato de URL de las tablas JAXI-T3 del INE (CSV con separador ';').
 Guarda los ficheros tal cual en data/raw/ine_poblacion/<id>.csv. Reanudable: salta
 los ficheros ya descargados.
 
@@ -36,7 +36,7 @@ from pathlib import Path
 import requests
 
 OUT = Path("data/raw/ine_poblacion")
-URL = "https://www.ine.es/jaxiT3/files/t/csv_bdsc/{id}.csv"   # mismo formato que download_adrh.py
+URL = "https://www.ine.es/jaxiT3/files/t/csv_bdsc/{id}.csv"
 
 TABLAS: dict[str, str] = {
     "56938": "ECP, nacional: fecha, sexo, edad, nacionalidad y lugar de nacimiento (grupos de países), 2002-2025",

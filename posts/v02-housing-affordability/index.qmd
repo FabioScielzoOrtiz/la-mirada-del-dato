@@ -15,7 +15,7 @@ Notebook: notebooks/v02-housing-affordability.ipynb (copiar notebooks/_template.
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares
-Datos: ✔ SERPAVI (2011–2024); ✔ ADRH (renta, 2015–2023); ✔ AEAT
+Datos: ⬇ SERPAVI (2011–2024); ⬇ ADRH (renta, 2015–2023); ⬇ AEAT
 -->
 
 ::: {.respuesta}

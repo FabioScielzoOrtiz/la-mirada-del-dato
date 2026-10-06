@@ -15,7 +15,7 @@ Notebook: notebooks/i03-immigrants-benefits.ipynb (copiar notebooks/_template.ip
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza?
-Datos: ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ✔ ADRH (población bajo umbrales de renta por nacionalidad)
+Datos: ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ⬇ ADRH (población bajo umbrales de renta por nacionalidad)
 -->
 
 ::: {.respuesta}

@@ -13,11 +13,13 @@ jupyter: python3
 <!--
 STATUS: esqueleto. Primera entrada del blog (ROADMAP v01, dificultad ★).
 Notebook: notebooks/v01-tourist-housing.ipynb
-Datos:    data/raw/viviendas_turisticas/ -> src/process/04_viviendas_turisticas.py
+Datos:    INE, estadística experimental de viviendas turísticas (por descargar)
+          -> data/raw/viviendas_turisticas/ -> src/process/NN_viviendas_turisticas.py
           -> data/processed/viviendas_turisticas_municipios.parquet
 
 TODO
-[ ] Escribir y ejecutar src/process/04_viviendas_turisticas.py (explorar antes en el notebook)
+[ ] Localizar en el INE las tablas por municipio (viviendas, plazas, % sobre viviendas censadas) y por sección censal; escribir src/download/download_viviendas_turisticas.py
+[ ] Escribir y ejecutar src/process/NN_viviendas_turisticas.py (explorar antes en el notebook)
 [ ] Peso agregado: % nacional y su evolución por oleada
 [ ] Concentración: ¿qué parte de las viviendas turísticas está en el 1 %, 5 %, 10 % de municipios? (curva de concentración)
 [ ] ¿Cuántos municipios superan el 2 %, 5 %, 10 %? ¿Cuánta población vive en ellos? (poblacion.parquet)

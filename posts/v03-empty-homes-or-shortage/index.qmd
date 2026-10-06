@@ -15,7 +15,7 @@ Notebook: notebooks/v03-empty-homes-or-shortage.ipynb (copiar notebooks/_templat
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Falta vivienda o sobra vivienda vacía?
-Datos: ✔ Censo 2021 (vacías por consumo eléctrico); ✔ Censo 2011; ✔ AEAT (viviendas a disposición); ✔ iniciadas y terminadas; ✔ Padrón
+Datos: ⬇ Censo 2021 (vacías por consumo eléctrico); ⬇ Censo 2011; ⬇ AEAT (viviendas a disposición); ⬇ iniciadas y terminadas; ⬇ Padrón
 -->
 
 ::: {.respuesta}

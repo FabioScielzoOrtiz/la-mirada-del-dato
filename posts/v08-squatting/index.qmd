@@ -15,7 +15,7 @@ Notebook: notebooks/v08-squatting.ipynb (copiar notebooks/_template.ipynb)
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Cuánto ha crecido la okupación y qué peso tiene sobre el parque?
-Datos: ⬇ Interior: Balance de Criminalidad; ✔ Censo 2021
+Datos: ⬇ Interior: Balance de Criminalidad; ⬇ Censo 2021
 -->
 
 ::: {.respuesta}

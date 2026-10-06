@@ -15,7 +15,7 @@ Notebook: notebooks/v05-stressed-areas.ipynb (copiar notebooks/_template.ipynb)
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Se declaran las zonas tensionadas donde hay tensión?
-Datos: ✔ BOE (2024 T1 – 2026 T2); ✔ SERPAVI; ✔ ADRH (criterio de esfuerzo > 30 %)
+Datos: ⬇ BOE (2024 T1 – 2026 T2); ⬇ SERPAVI; ⬇ ADRH (criterio de esfuerzo > 30 %)
 -->
 
 ::: {.respuesta}

@@ -22,27 +22,27 @@
 
 ### v · Vivienda
 
-Serie principal. Recoge las preguntas del proyecto de investigación sobre vivienda (RQ0–RQ5) y la base de datos municipal construida para él.
+Serie principal. Recoge las preguntas del proyecto de investigación sobre vivienda (RQ0–RQ5). Los datos se descargan y procesan pregunta a pregunta.
 
 | ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
 |:--|:--|:--|:--|:--|:-:|:-:|
-| v01 | ¿Qué peso tienen los pisos turísticos: son marginales o están concentrados? | Son marginales (en torno al 1–1,5 % del parque) y no explican el problema | Concentrados en ciertas zonas, allí sí pesan y presionan | ✔ INE viviendas turísticas (municipio, sección, 2020–2026); ✔ Censo 2021 | ★ | ✓ |
-| v02 | ¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares | El problema es de precios desbocados | El problema es sobre todo de rentas que no siguen el ritmo | ✔ SERPAVI (2011–2024); ✔ ADRH (renta, 2015–2023); ✔ AEAT | ★★ | ✓ |
-| v03 | ¿Falta vivienda o sobra vivienda vacía? | El problema es de oferta: hay que construir más | Hay vivienda de sobra, vacía o infrautilizada: el problema es de uso y distribución | ✔ Censo 2021 (vacías por consumo eléctrico); ✔ Censo 2011; ✔ AEAT (viviendas a disposición); ✔ iniciadas y terminadas; ✔ Padrón | ★★ | ✓ |
-| v04 | ¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta? | Los topes contienen los precios | Los topes reducen la oferta y desplazan el mercado | ✔ zonas tensionadas (BOE); ✔ SERPAVI; análisis previo de Cataluña en `_archive/` | ★★★ | ✓ |
-| v05 | ¿Se declaran las zonas tensionadas donde hay tensión? | La ley se aplica con criterio político e intervencionista | Algunas CCAA bloquean su aplicación por motivos políticos aunque tengan municipios tensionados | ✔ BOE (2024 T1 – 2026 T2); ✔ SERPAVI; ✔ ADRH (criterio de esfuerzo > 30 %) | ★★★ | ✓ |
-| v06 | ¿Qué relación hay entre inmigración y presión sobre la vivienda? | La inmigración aumenta la demanda y encarece la vivienda | Los precios responden sobre todo a turismo, inversión y oferta; los inmigrantes soportan más el problema que lo causan | ✔ Padrón; ✔ Censo Anual (nacionalidad, año de llegada); ✔ ADRH; ✔ SERPAVI; ✔ compradores extranjeros (provincia) | ★★★ | ✓ |
-| v07 | ¿Pequeños propietarios o grandes tenedores? | El alquiler está en manos de particulares; los fondos son marginales | Rentistas con varias viviendas, grandes tenedores y fondos concentran el mercado | ✔ AEAT (por ubicación del declarante); ✔ Censo 2021 (tenencia). Sin datos abiertos de personas jurídicas: el residuo es una cota, no una medida | ★★★ | ✓ |
-| v08 | ¿Cuánto ha crecido la okupación y qué peso tiene sobre el parque? | Es un problema extendido | Es marginal y se magnifica | ⬇ Interior: Balance de Criminalidad; ✔ Censo 2021 | ★★ | ✓ |
+| v01 | ¿Qué peso tienen los pisos turísticos: son marginales o están concentrados? | Son marginales (en torno al 1–1,5 % del parque) y no explican el problema | Concentrados en ciertas zonas, allí sí pesan y presionan | ⬇ INE viviendas turísticas (municipio, sección, 2020–2026); ⬇ Censo 2021 | ★ | ✓ |
+| v02 | ¿Es hoy más difícil pagar el alquiler? Alquiler frente a renta de los hogares | El problema es de precios desbocados | El problema es sobre todo de rentas que no siguen el ritmo | ⬇ SERPAVI (2011–2024); ⬇ ADRH (renta, 2015–2023); ⬇ AEAT | ★★ | ✓ |
+| v03 | ¿Falta vivienda o sobra vivienda vacía? | El problema es de oferta: hay que construir más | Hay vivienda de sobra, vacía o infrautilizada: el problema es de uso y distribución | ⬇ Censo 2021 (vacías por consumo eléctrico); ⬇ Censo 2011; ⬇ AEAT (viviendas a disposición); ⬇ iniciadas y terminadas; ⬇ Padrón | ★★ | ✓ |
+| v04 | ¿Han bajado los alquileres donde se han aplicado topes? ¿Y la oferta? | Los topes contienen los precios | Los topes reducen la oferta y desplazan el mercado | ⬇ zonas tensionadas (BOE); ⬇ SERPAVI; análisis previo de Cataluña en `_archive/` | ★★★ | ✓ |
+| v05 | ¿Se declaran las zonas tensionadas donde hay tensión? | La ley se aplica con criterio político e intervencionista | Algunas CCAA bloquean su aplicación por motivos políticos aunque tengan municipios tensionados | ⬇ BOE (2024 T1 – 2026 T2); ⬇ SERPAVI; ⬇ ADRH (criterio de esfuerzo > 30 %) | ★★★ | ✓ |
+| v06 | ¿Qué relación hay entre inmigración y presión sobre la vivienda? | La inmigración aumenta la demanda y encarece la vivienda | Los precios responden sobre todo a turismo, inversión y oferta; los inmigrantes soportan más el problema que lo causan | ⬇ Padrón; ⬇ Censo Anual (nacionalidad, año de llegada); ⬇ ADRH; ⬇ SERPAVI; ⬇ compradores extranjeros (provincia) | ★★★ | ✓ |
+| v07 | ¿Pequeños propietarios o grandes tenedores? | El alquiler está en manos de particulares; los fondos son marginales | Rentistas con varias viviendas, grandes tenedores y fondos concentran el mercado | ⬇ AEAT (por ubicación del declarante); ⬇ Censo 2021 (tenencia). Sin datos abiertos de personas jurídicas: el residuo es una cota, no una medida | ★★★ | ✓ |
+| v08 | ¿Cuánto ha crecido la okupación y qué peso tiene sobre el parque? | Es un problema extendido | Es marginal y se magnifica | ⬇ Interior: Balance de Criminalidad; ⬇ Censo 2021 | ★★ | ✓ |
 | v09 | ¿Qué tipos de mercado de vivienda hay en España y dónde? | — (entrada metodológica: base para mostrar la heterogeneidad en las demás) | — | Tabla municipal analítica; clustering robusto de datos mixtos (G-Gower + k-medoides, `db-robust-clust`) | ★★★ | |
 
 ### i · Inmigración
 
 | ID | Pregunta | Tesis A | Tesis B | Datos | Dif. | 29-N |
 |:--|:--|:--|:--|:--|:-:|:-:|
-| i01 | ¿Cuánto ha crecido la población y qué parte se debe a la inmigración? | — (base factual común del debate) | — | ⬇ INE: Cifras de Población, ECP; ✔ Padrón municipal (solo total) | ★ | ✓ |
+| i01 | ¿Cuánto ha crecido la población y qué parte se debe a la inmigración? | — (base factual común del debate) | — | ✔ INE: ECP 56938 (nacional, 2002–2025), 60129 y 60130 (provincial, 2021–); CP 9691 (provincial, 2002–2022) | ★ | ✓ |
 | i02 | ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social? | Sostienen el empleo y las pensiones | Su aportación es menor de lo que se dice (empleos de bajo salario, cotizaciones bajas) | ⬇ afiliación por nacionalidad; EPA; EES | ★★ | ✓ |
-| i03 | ¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza? | Acaparan las ayudas; hay que priorizar a los nacionales | Reciben en proporción a su situación de necesidad | ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ✔ ADRH (población bajo umbrales de renta por nacionalidad) | ★★ | ✓ |
+| i03 | ¿Qué parte de las ayudas reciben los extranjeros, comparada con su peso en la población y en la población en riesgo de pobreza? | Acaparan las ayudas; hay que priorizar a los nacionales | Reciben en proporción a su situación de necesidad | ⬇ IMV y prestaciones por nacionalidad; INE: ECV; ⬇ ADRH (población bajo umbrales de renta por nacionalidad) | ★★ | ✓ |
 | i04 | ¿Delinquen más los extranjeros? ¿Cuánto cambia al comparar por edad, sexo y tipo de delito? | La inmigración aumenta la delincuencia | La sobrerrepresentación se explica sobre todo por la composición demográfica y socioeconómica | ⬇ INE: Estadística de Condenados; Interior; ECP | ★★★ | ✓ |
 
 Cuidados específicos en i03 e i04: comparar con el denominador correcto (población que cumple requisitos o en riesgo de pobreza; población de la misma edad y sexo); condenados ≠ detenidos ≠ delitos; extranjeros no residentes en el numerador pero no en el denominador; nacionalidad ≠ origen; dar las cifras completas y hablar de tasas, no de casos.
@@ -66,12 +66,12 @@ Cuidados específicos en i03 e i04: comparar con el denominador correcto (poblac
 
 ## Calendario hasta el 29-N
 
-De menos a más dificultad, empezando por los datos que ya están descargados. Lo que no llegue antes del 29-N se publica después: el blog no termina con las elecciones.
+De menos a más dificultad. Lo que no llegue antes del 29-N se publica después: el blog no termina con las elecciones.
 
 | Semana | Fechas | Entradas |
 |:-:|:--|:--|
-| 1 | 6–12 oct | Reorganización del blog. **v01** (pisos turísticos) |
-| 2 | 13–19 oct | **i01** (población e inmigración) |
+| 1 | 6–12 oct | Reorganización del blog. **i01** (población e inmigración) |
+| 2 | 13–19 oct | **v01** (pisos turísticos) |
 | 3 | 20–26 oct | **v02** (alquiler frente a renta) |
 | 4 | 27 oct–2 nov | **v03** (vacías o escasez), i02 |
 | 5 | 3–9 nov | i03, e01 |
@@ -80,20 +80,13 @@ De menos a más dificultad, empezando por los datos que ya están descargados. L
 | — | 29 nov | Elecciones |
 | después | | v04–v07 y v09 (★★★), e02, e03, s03, s04, v08 |
 
-## Base de datos de vivienda
+## Datos
 
-Detalle de fuentes en `data/raw/README.md` y de tablas procesadas en `data/processed/README.md`. El procesado es genérico, fuente a fuente, a una clave territorial común (código INE de municipio de 5 dígitos; sección censal cuando aplique), conservando las medidas de precisión de cada fuente y el motivo de cada dato faltante.
+Cada entrada descarga y procesa solo lo que necesita, con scripts genéricos por fuente (`src/download/`, `src/process/`) documentados en `data/raw/README.md` y `data/processed/README.md`. Clave territorial común cuando aplique: código INE (provincia de 2 dígitos, municipio de 5), como texto.
 
 | Paso | Script | Estado |
 |:--|:--|:--|
-| Municipios y Padrón | `src/process/01_municipios_poblacion.py` | ✔ |
-| AEAT, alquiler declarado | `src/process/02_aeat_alquiler_municipios.py` | ✔ |
-| SERPAVI | `src/process/03_serpavi.py` | script listo, ejecutar |
-| Viviendas turísticas (v01) | `src/process/04_viviendas_turisticas.py` | por escribir (esqueleto) |
-| Población por nacionalidad (i01) | `src/process/05_poblacion_nacionalidad.py` | por escribir (esqueleto) |
-| Censo 2021 y 2011, ADRH, Censo Anual, valor tasado, transacciones, construcción, zonas tensionadas | — | pendiente, según lo pida cada entrada |
-
-Decisiones pendientes para los análisis municipales (v02 en adelante): universo de más de 20.000 frente a 25.000 habitantes, inclusión de País Vasco y Navarra (sin AEAT) y año de referencia (2023 frente a 2024). Se decidirán con un informe de cobertura cuando hagan falta, no antes.
+| Población por nacionalidad y lugar de nacimiento (i01) | `src/download/download_ine_poblacion.py` → `src/process/01_poblacion_nacionalidad.py` | descargado; procesado por escribir |
 
 ## Líneas futuras
 

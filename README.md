@@ -62,8 +62,8 @@ quarto preview
 Todos los scripts se lanzan **desde la raíz del proyecto**:
 
 ```bash
-python src/download/download_viviendas_turisticas.py
-python src/process/04_viviendas_turisticas.py
+python src/download/download_ine_poblacion.py
+python src/process/01_poblacion_nacionalidad.py
 ```
 
 ## Flujo de una entrada
@@ -109,8 +109,8 @@ GitHub Actions renderiza el sitio a partir de `_freeze/` (no necesita los datos,
 
 | Entrada | Estado |
 |:--|:--|
-| v01 · Pisos turísticos | **En curso.** Datos descargados; falta procesado (`04_viviendas_turisticas.py`), análisis y tabla de partidos |
-| i01 · Población e inmigración | Esqueleto: falta descarga (ECP), procesado y análisis |
+| i01 · Población e inmigración | **En curso.** Datos descargados (`data/raw/ine_poblacion/`); falta procesado, análisis y tabla de partidos |
+| v01 · Pisos turísticos | Esqueleto: falta descarga, procesado y análisis |
 | Resto | Placeholders con pregunta, tesis y datos candidatos (ver ROADMAP) |
 
 ## Licencia

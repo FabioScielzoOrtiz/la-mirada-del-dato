@@ -15,7 +15,7 @@ Notebook: notebooks/v06-immigration-housing.ipynb (copiar notebooks/_template.ip
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Qué relación hay entre inmigración y presión sobre la vivienda?
-Datos: ✔ Padrón; ✔ Censo Anual (nacionalidad, año de llegada); ✔ ADRH; ✔ SERPAVI; ✔ compradores extranjeros (provincia)
+Datos: ⬇ Padrón; ⬇ Censo Anual (nacionalidad, año de llegada); ⬇ ADRH; ⬇ SERPAVI; ⬇ compradores extranjeros (provincia)
 -->
 
 ::: {.respuesta}

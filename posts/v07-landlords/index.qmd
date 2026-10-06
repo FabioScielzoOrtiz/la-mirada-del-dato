@@ -15,7 +15,7 @@ Notebook: notebooks/v07-landlords.ipynb (copiar notebooks/_template.ipynb)
 Al empezar: copiar las celdas de código de posts/_template/index.qmd y añadir `jupyter: python3`.
 
 Pregunta: ¿Pequeños propietarios o grandes tenedores?
-Datos: ✔ AEAT (por ubicación del declarante); ✔ Censo 2021 (tenencia). Sin datos abiertos de personas jurídicas: el residuo es una cota, no una medida
+Datos: ⬇ AEAT (por ubicación del declarante); ⬇ Censo 2021 (tenencia). Sin datos abiertos de personas jurídicas: el residuo es una cota, no una medida
 -->
 
 ::: {.respuesta}

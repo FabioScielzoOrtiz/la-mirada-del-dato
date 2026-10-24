@@ -2,24 +2,43 @@
   {
     "listing": "/vivienda/index.html",
     "items": [
-      "/vivienda/notebooks/v01-rent-affordability.html",
-      "/vivienda/notebooks/v02-empty-homes-or-shortage.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/poblacion/notebooks/i01-population-nationality.html",
-      "/poblacion/notebooks/i02-immigrants-employment-social-security.html",
-      "/vivienda/notebooks/v01-rent-affordability.html",
-      "/vivienda/notebooks/v02-empty-homes-or-shortage.html"
+      "/vivienda/notebooks/v01-housing-public-private.html",
+      "/vivienda/notebooks/v02-housing-owners.html"
     ]
   },
   {
     "listing": "/poblacion/index.html",
     "items": [
-      "/poblacion/notebooks/i01-population-nationality.html",
-      "/poblacion/notebooks/i02-immigrants-employment-social-security.html"
+      "/poblacion/notebooks/p01-population-nationality-origin.html"
+    ]
+  },
+  {
+    "listing": "/gasto-publico/index.html",
+    "items": [
+      "/gasto-publico/notebooks/g01-public-spending.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/poblacion/notebooks/p01-population-nationality-origin.html",
+      "/gasto-publico/notebooks/g01-public-spending.html",
+      "/vivienda/notebooks/v01-housing-public-private.html",
+      "/vivienda/notebooks/v02-housing-owners.html",
+      "/seguridad/notebooks/seg01-gender-violence.html",
+      "/historia/notebooks/h01-francoism-deaths.html"
+    ]
+  },
+  {
+    "listing": "/historia/index.html",
+    "items": [
+      "/historia/notebooks/h01-francoism-deaths.html"
+    ]
+  },
+  {
+    "listing": "/seguridad/index.html",
+    "items": [
+      "/seguridad/notebooks/seg01-gender-violence.html"
     ]
   }
 ]

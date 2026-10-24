@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lamiradadeldato.com/vivienda/notebooks/v02-empty-homes-or-shortage.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
+    <loc>https://lamiradadeldato.com/vivienda/notebooks/v02-housing-owners.html</loc>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
   </url>
   <url>
-    <loc>https://lamiradadeldato.com/poblacion/notebooks/i02-immigrants-employment-social-security.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
+    <loc>https://lamiradadeldato.com/seguridad/notebooks/seg01-gender-violence.html</loc>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/historia/notebooks/h01-francoism-deaths.html</loc>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
   </url>
   <url>
     <loc>https://lamiradadeldato.com/vivienda/index.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamiradadeldato.com/about.html</loc>
-    <lastmod>2026-10-24T21:42:08.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamiradadeldato.com/temas.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamiradadeldato.com/index.html</loc>
-    <lastmod>2026-10-24T21:42:08.567Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamiradadeldato.com/method.html</loc>
-    <lastmod>2026-10-24T21:42:08.567Z</lastmod>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
   </url>
   <url>
     <loc>https://lamiradadeldato.com/poblacion/index.html</loc>
-    <lastmod>2026-10-24T21:42:08.567Z</lastmod>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
   </url>
   <url>
-    <loc>https://lamiradadeldato.com/poblacion/notebooks/i01-population-nationality.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
+    <loc>https://lamiradadeldato.com/gasto-publico/index.html</loc>
+    <lastmod>2026-10-24T23:15:05.022Z</lastmod>
   </url>
   <url>
-    <loc>https://lamiradadeldato.com/vivienda/notebooks/v01-rent-affordability.html</loc>
-    <lastmod>2026-10-24T21:42:08.568Z</lastmod>
+    <loc>https://lamiradadeldato.com/method.html</loc>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/index.html</loc>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/temas.html</loc>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/about.html</loc>
+    <lastmod>2026-10-24T23:15:05.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/historia/index.html</loc>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/seguridad/index.html</loc>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/gasto-publico/notebooks/g01-public-spending.html</loc>
+    <lastmod>2026-10-24T23:15:05.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html</loc>
+    <lastmod>2026-10-24T23:15:05.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamiradadeldato.com/vivienda/notebooks/v01-housing-public-private.html</loc>
+    <lastmod>2026-10-24T23:15:05.029Z</lastmod>
   </url>
 </urlset>

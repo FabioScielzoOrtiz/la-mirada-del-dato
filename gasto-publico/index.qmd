@@ -1,0 +1,14 @@
+---
+title: "Gasto público"
+description: "A dónde van los impuestos y cómo evoluciona el gasto."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)

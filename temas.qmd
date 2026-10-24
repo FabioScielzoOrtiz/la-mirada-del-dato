@@ -11,8 +11,23 @@ toc: false
 Cuánto crece España, de dónde y por qué.
 :::
 ::: {.tema}
+[Gasto público →](gasto-publico/index.qmd)
+
+A dónde van los impuestos y cómo evoluciona el gasto.
+:::
+::: {.tema}
 [Vivienda →](vivienda/index.qmd)
 
-Precios, alquiler, oferta y acceso.
+Quién posee la vivienda, qué parque hay y cómo se distribuye.
+:::
+::: {.tema}
+[Seguridad →](seguridad/index.qmd)
+
+Violencia, delincuencia y homicidios: evolución y comparativas.
+:::
+::: {.tema}
+[Historia →](historia/index.qmd)
+
+Memoria histórica y datos del pasado reciente.
 :::
 :::

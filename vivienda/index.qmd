@@ -1,6 +1,6 @@
 ---
 title: "Vivienda"
-description: "Precios, alquiler, oferta y acceso."
+description: "Quién posee la vivienda, qué parque hay y cómo se distribuye."
 toc: false
 listing:
   contents: "notebooks/*.ipynb"

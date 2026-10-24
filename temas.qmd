@@ -1,0 +1,18 @@
+---
+title: "Temas"
+description: "Cada tema reúne los análisis sobre una cuestión de debate público."
+toc: false
+---
+
+::: {.temas}
+::: {.tema}
+[Población →](poblacion/index.qmd)
+
+Cuánto crece España, de dónde y por qué.
+:::
+::: {.tema}
+[Vivienda →](vivienda/index.qmd)
+
+Precios, alquiler, oferta y acceso.
+:::
+:::

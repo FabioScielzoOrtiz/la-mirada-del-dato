@@ -3,22 +3,23 @@ project:
   output-dir: _site
   resources:
     - CNAME                     # custom domain for GitHub Pages
-  render:                       # only blog pages (never notebooks/, src/ or data/)
+  render:                       # only site pages; each article is a notebook inside <topic>/notebooks/
     - index.qmd
+    - temas.qmd
     - method.qmd
     - about.qmd
-    - posts/*/index.qmd
+    - "*/index.qmd"             # topic pages (poblacion/, vivienda/…)
+    - "*/notebooks/*.ipynb"     # the articles
 
 lang: es
 
 execute:
-  freeze: auto      # each post's code runs once; results are cached in _freeze/ (commit it)
-  echo: false
+  freeze: auto
   warning: false
 
 website:
   title: "La Mirada del Dato"
-  description: "Las cuestiones del 29-N: qué dicen los partidos y qué dicen los datos."
+  description: "Análisis breves con datos públicos sobre los grandes debates de España."
   site-url: https://lamiradadeldato.com
   repo-url: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
   favicon: images/logo.png
@@ -29,7 +30,9 @@ website:
     logo: images/logo.png
     left:
       - href: index.qmd
-        text: Preguntas
+        text: Inicio
+      - href: temas.qmd
+        text: Temas
       - href: method.qmd
         text: Método
       - href: about.qmd
@@ -46,11 +49,11 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, assets/base.scss, assets/light.scss]
-      dark: [darkly, assets/base.scss, assets/dark.scss]
-    respect-user-color-scheme: true   # starts with the OS theme; the navbar toggle switches it
+      light: [cosmo, assets/styles.scss, assets/light.scss]
+      dark: [darkly, assets/styles.scss, assets/dark.scss]
+    respect-user-color-scheme: true
     toc: true
-    toc-title: "En esta pregunta"
+    toc-title: "En este análisis"
     code-fold: true
     code-summary: "Ver código"
     fig-align: center

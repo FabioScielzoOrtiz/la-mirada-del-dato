@@ -1,0 +1,14 @@
+---
+title: "Nombre del tema"
+description: "Una frase sobre el tema."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)

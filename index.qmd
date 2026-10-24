@@ -1,57 +1,29 @@
 ---
-pagetitle: "La Mirada del Dato · Los grandes debates, contrastados con datos"
-description: "Investigaciones breves sobre vivienda, inmigración, empleo y servicios públicos: qué tesis se enfrentan y hacia dónde apunta la evidencia."
+pagetitle: "La Mirada del Dato · Preguntas concretas, respondidas con datos"
+description: "Análisis breves con datos públicos: preguntas concretas sobre los grandes debates, respondidas con estadística."
 toc: false
 listing:
-  id: preguntas
-  contents: posts
+  id: ultimo
+  contents: "*/notebooks/*.ipynb"
+  type: grid
   sort: "date desc"
-  template: assets/listing.ejs
+  max-items: 6
+  fields: [date, title, description, categories]
   date-format: "D MMM YYYY"
   feed: true
 ---
 
 ::: {.hero}
-[Investigaciones breves con datos abiertos]{.hero-kicker}
+[Análisis con datos públicos]{.kicker}
 
-[Los grandes debates, **contrastados con datos**]{.hero-title}
+[Preguntas concretas, **respondidas con datos**]{.titulo}
 
-[Vivienda, inmigración, empleo, impuestos. Cada entrada toma una pregunta con debate público, pone frente a frente las tesis enfrentadas y mira qué dicen los datos oficiales: hacia dónde apunta la evidencia, dónde y con qué incertidumbre. Sin decirte a quién votar.]{.hero-lead}
-
-[Cómo trabajamos →](method.qmd){.btn .btn-primary .hero-btn} [Próximas preguntas](#proximas){.btn .btn-outline-secondary .hero-btn}
+[Cada análisis plantea una o varias preguntas concretas sobre una cuestión de debate público, las responde con datos oficiales y estadística, y explica los resultados con la teoría pertinente y sus límites.]{.lead}
 :::
 
-::: {.pasos}
-::: {.paso}
-[1]{.paso-num}
-**Las tesis.** Lo que se afirma en el debate, en una frase neutra, y quién lo sostiene.
-:::
-::: {.paso}
-[2]{.paso-num}
-**Los datos.** Fuentes oficiales, el análisis más simple que responda bien y sus límites.
-:::
-::: {.paso}
-[3]{.paso-num}
-**La respuesta.** Qué tesis encaja mejor con la evidencia, dónde y con qué confianza.
-:::
+## Lo último {.seccion-titulo}
+
+::: {#ultimo}
 :::
 
-## Preguntas {.seccion-titulo}
-
-::: {#preguntas}
-:::
-
-## Próximas preguntas {#proximas .seccion-titulo}
-
-::: {.proximas}
-- **Vivienda ·** ¿Son los pisos turísticos marginales o están concentrados?
-- **Inmigración ·** ¿Cuánto ha crecido la población y qué parte se debe a la inmigración?
-- **Vivienda ·** ¿Es hoy más difícil pagar el alquiler?
-- **Vivienda ·** ¿Falta vivienda o sobra vivienda vacía?
-- **Inmigración ·** ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social?
-- **Inmigración ·** ¿Qué parte de las ayudas reciben los extranjeros?
-- **Economía ·** ¿Llega el crecimiento económico a los hogares?
-- **Inmigración ·** ¿Delinquen más los extranjeros, a igual edad y sexo?
-:::
-
-[Ver la lista completa en el repositorio →](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md){.enlace-roadmap}
+[Ver todos los temas →](temas.qmd)

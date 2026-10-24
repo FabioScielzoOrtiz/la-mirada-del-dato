@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-weight: 700;
+$font-size-root: 17px;
+
+/*-- scss:rules --*/
+// Caja «En breve» al inicio de cada análisis
+.claves {
+  border-left: 4px solid var(--bs-primary);
+  padding: .9rem 1.2rem;
+  margin: 1rem 0 1.8rem;
+  p { margin: .25rem 0; }
+  .etiqueta { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--bs-primary); }
+}
+
+// Portada
+.hero {
+  padding: 2rem 0 1.4rem;
+  max-width: 46rem;
+  .kicker { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--bs-primary); margin-bottom: .6rem; }
+  .titulo { display: block; font-size: clamp(1.9rem, 4.5vw, 2.7rem); font-weight: 800; line-height: 1.12; letter-spacing: -.02em; margin-bottom: .9rem; }
+  .lead { display: block; font-size: 1.1rem; line-height: 1.6; opacity: .82; }
+  p { margin-bottom: 0; }
+}
+
+// «Temas clave»
+.temas {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1rem 0 2.4rem;
+  .tema {
+    border: 1px solid rgba(127,127,127,.28); border-radius: .75rem; padding: 1rem 1.2rem; line-height: 1.45;
+    p { margin: .2rem 0; }
+    a { font-weight: 700; text-decoration: none; }
+    &:hover { border-color: var(--bs-primary); }
+  }
+}
+
+.seccion-titulo { font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; border-bottom: 1px solid rgba(127,127,127,.3); padding-bottom: .4rem; margin-top: 2rem; }

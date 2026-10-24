@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Investigaciones breves sobre vivienda, inmigración, empleo y servicios públicos: qué tesis se enfrentan y hacia dónde apunta la evidencia.">
+<meta name="description" content="Análisis breves con datos públicos: preguntas concretas sobre los grandes debates, respondidas con estadística.">
 
-<title>La Mirada del Dato · Los grandes debates, contrastados con datos – La Mirada del Dato</title>
+<title>La Mirada del Dato · Preguntas concretas, respondidas con datos – La Mirada del Dato</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -51,9 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f04b7c9750f27dd22a0f5c6e3366768d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-a77eafb336ebd67a77e34bc87b4e6936.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f04b7c9750f27dd22a0f5c6e3366768d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a91c15ec176b3790e23b6e870a3e7925.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-36c3794c4e1d9ef35df83802c3c9ad9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a91c15ec176b3790e23b6e870a3e7925.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,20 +84,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-preguntas .list');
+    const listingTargetEl = window.document.querySelector('#listing-ultimo .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-lang','listing-execute','listing-website','listing-format','listing-engines','listing-language','listing-author','listing-title-block-banner','listing-citation','listing-license','listing-bibliography','listing-csl','listing-title','listing-description','listing-date','listing-categories','listing-draft','listing-respuesta','listing-confianza','listing-resumen','listing-jupyter','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-project","listing-lang","listing-execute","listing-website","listing-format","listing-engines","listing-language","listing-author","listing-title-block-banner","listing-citation","listing-license","listing-bibliography","listing-csl","listing-title","listing-description","listing-date","listing-categories","listing-draft","listing-respuesta","listing-confianza","listing-resumen","listing-jupyter","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-preguntas'] = new List('listing-preguntas', options);
+    window['quarto-listings']['listing-ultimo'] = new List('listing-ultimo', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -141,8 +141,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="La Mirada del Dato" href="index.xml" data-external="1"><meta property="og:title" content="La Mirada del Dato · Los grandes debates, contrastados con datos">
-<meta property="og:description" content="Investigaciones breves sobre vivienda, inmigración, empleo y servicios públicos: qué tesis se enfrentan y hacia dónde apunta la evidencia.">
+<link rel="alternate" type="application/rss+xml" title="La Mirada del Dato" href="index.xml" data-external="1"><meta property="og:title" content="La Mirada del Dato · Preguntas concretas, respondidas con datos">
+<meta property="og:description" content="Análisis breves con datos públicos: preguntas concretas sobre los grandes debates, respondidas con estadística.">
 <meta property="og:site_name" content="La Mirada del Dato">
 </head>
 
@@ -340,7 +340,11 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Preguntas</span></a>
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./temas.html"> 
+<span class="menu-text">Temas</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./method.html"> 
@@ -383,57 +387,110 @@ window.Quarto = {
 
 
 <div class="hero">
-<p><span class="hero-kicker">Investigaciones breves con datos abiertos</span></p>
-<p><span class="hero-title">Los grandes debates, <strong>contrastados con datos</strong></span></p>
-<p><span class="hero-lead">Vivienda, inmigración, empleo, impuestos. Cada entrada toma una pregunta con debate público, pone frente a frente las tesis enfrentadas y mira qué dicen los datos oficiales: hacia dónde apunta la evidencia, dónde y con qué incertidumbre. Sin decirte a quién votar.</span></p>
-<p><a href="./method.html" class="btn btn-primary hero-btn">Cómo trabajamos →</a> <a href="#proximas" class="btn btn-outline-secondary hero-btn">Próximas preguntas</a></p>
+<p><span class="kicker">Análisis con datos públicos</span></p>
+<p><span class="titulo">Preguntas concretas, <strong>respondidas con datos</strong></span></p>
+<p><span class="lead">Cada análisis plantea una o varias preguntas concretas sobre una cuestión de debate público, las responde con datos oficiales y estadística, y explica los resultados con la teoría pertinente y sus límites.</span></p>
 </div>
-<div class="pasos">
-<div class="paso">
-<p><span class="paso-num">1</span> <strong>Las tesis.</strong> Lo que se afirma en el debate, en una frase neutra, y quién lo sostiene.</p>
-</div>
-<div class="paso">
-<p><span class="paso-num">2</span> <strong>Los datos.</strong> Fuentes oficiales, el análisis más simple que responda bien y sus límites.</p>
-</div>
-<div class="paso">
-<p><span class="paso-num">3</span> <strong>La respuesta.</strong> Qué tesis encaja mejor con la evidencia, dónde y con qué confianza.</p>
-</div>
-</div>
-<section id="preguntas" class="level2 seccion-titulo">
-<h2 class="seccion-titulo anchored" data-anchor-id="preguntas">Preguntas</h2>
-<div id="listing-preguntas" class="quarto-listing quarto-listing-container-custom">
+<section id="lo-último" class="level2 seccion-titulo">
+<h2 class="seccion-titulo anchored" data-anchor-id="lo-último">Lo último</h2>
+<div id="listing-ultimo" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UHIlQzMlQjN4aW1hbWVudGU=" data-listing-date-sort="1792800000000" data-listing-file-modified-sort="1792878128568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<a href="./poblacion/notebooks/i01-population-nationality.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¿Cuánto ha crecido la población de España y quién explica ese crecimiento?
+</h5>
+<div class="listing-categories">
 
-<div class="list tarjetas">
+<div class="listing-category" onclick="window.quartoListingCategory('UHIlQzMlQjN4aW1hbWVudGU='); return false;">Próximamente</div>
 
-  <a class="tarjeta" href="./posts/i01-population-nationality/index.html" data-index="0" data-categories="SW5taWdyYWNpJUMzJUIzbiUyQ0VsZWNjaW9uZXMlMjAyOS1O" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1791367633081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="463">
-    <div class="tarjeta-meta">
-      <span class="veredicto v-pendiente">Pendiente</span>
-      
-      <span class="fecha">5 oct 2026</span>
-    </div>
-    <h3 class="tarjeta-titulo anchored">¿Cuánto ha crecido la población de España y quién explica ese crecimiento?</h3>
-    <p class="tarjeta-desc">Población residente en España por nacionalidad y país de nacimiento, desde 2002.</p>
-  </a>
+</div>
+<div class="card-text listing-description delink">
+<p>Población residente por nacionalidad y país de nacimiento, 2002–2025.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+24 oct 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHIlQzMlQjN4aW1hbWVudGU=" data-listing-date-sort="1792713600000" data-listing-file-modified-sort="1792878128568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
+<a href="./poblacion/notebooks/i02-immigrants-employment-social-security.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¿Qué aportan los inmigrantes al empleo y a la Seguridad Social?
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('UHIlQzMlQjN4aW1hbWVudGU='); return false;">Próximamente</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Empleo y cotizaciones de la población extranjera.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+23 oct 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHIlQzMlQjN4aW1hbWVudGU=" data-listing-date-sort="1792627200000" data-listing-file-modified-sort="1792878128568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<a href="./vivienda/notebooks/v01-rent-affordability.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¿Es hoy más difícil pagar el alquiler?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHIlQzMlQjN4aW1hbWVudGU='); return false;">Próximamente</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Esfuerzo de acceso al alquiler respecto a los ingresos.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+22 oct 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UHIlQzMlQjN4aW1hbWVudGU=" data-listing-date-sort="1792540800000" data-listing-file-modified-sort="1792878128568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<a href="./vivienda/notebooks/v02-empty-homes-or-shortage.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¿Falta vivienda o sobra vivienda vacía?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHIlQzMlQjN4aW1hbWVudGU='); return false;">Próximamente</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Hogares nuevos frente a viviendas nuevas, y viviendas vacías.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+21 oct 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">No hay resultados</div>
 </div>
-</section>
-<section id="proximas" class="level2 seccion-titulo">
-<h2 class="seccion-titulo anchored" data-anchor-id="proximas">Próximas preguntas</h2>
-<div class="proximas">
-<ul>
-<li><strong>Vivienda ·</strong> ¿Son los pisos turísticos marginales o están concentrados?</li>
-<li><strong>Inmigración ·</strong> ¿Cuánto ha crecido la población y qué parte se debe a la inmigración?</li>
-<li><strong>Vivienda ·</strong> ¿Es hoy más difícil pagar el alquiler?</li>
-<li><strong>Vivienda ·</strong> ¿Falta vivienda o sobra vivienda vacía?</li>
-<li><strong>Inmigración ·</strong> ¿Qué aportan los inmigrantes al empleo y a la Seguridad Social?</li>
-<li><strong>Inmigración ·</strong> ¿Qué parte de las ayudas reciben los extranjeros?</li>
-<li><strong>Economía ·</strong> ¿Llega el crecimiento económico a los hogares?</li>
-<li><strong>Inmigración ·</strong> ¿Delinquen más los extranjeros, a igual edad y sexo?</li>
-</ul>
-</div>
-<p><a href="https://github.com/FabioScielzoOrtiz/la-mirada-del-dato/blob/main/ROADMAP.md" class="enlace-roadmap">Ver la lista completa en el repositorio →</a></p>
+<p><a href="./temas.html">Ver todos los temas →</a></p>
 
 
 

@@ -1,8 +1,25 @@
 [
   {
+    "listing": "/vivienda/index.html",
+    "items": [
+      "/vivienda/notebooks/v01-rent-affordability.html",
+      "/vivienda/notebooks/v02-empty-homes-or-shortage.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/posts/i01-population-nationality/index.html"
+      "/poblacion/notebooks/i01-population-nationality.html",
+      "/poblacion/notebooks/i02-immigrants-employment-social-security.html",
+      "/vivienda/notebooks/v01-rent-affordability.html",
+      "/vivienda/notebooks/v02-empty-homes-or-shortage.html"
+    ]
+  },
+  {
+    "listing": "/poblacion/index.html",
+    "items": [
+      "/poblacion/notebooks/i01-population-nationality.html",
+      "/poblacion/notebooks/i02-immigrants-employment-social-security.html"
     ]
   }
 ]

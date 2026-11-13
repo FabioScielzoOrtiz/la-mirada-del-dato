@@ -1,0 +1,20 @@
+# Registro de materiales docentes que citan las entradas del blog.
+#
+# En una entrada se cita con:   {{< var materiales.desc-2-3 >}}
+# Mientras un material no esté publicado, el texto lleva «(enlace próximamente)».
+# Al publicarlo, se sustituye su línea por un enlace y TODAS las entradas que lo citan
+# pasan a enlazarlo:
+#   desc-2-3: "[*Estadística descriptiva*, parte 2.3: distribución empírica, centro y posición](https://…)"
+#
+# Regla del blog: solo se usan técnicas que estén en los materiales. Si una entrada necesita
+# una técnica nueva, primero se añade a la asignatura que corresponda (aunque sea como
+# apartado extra o apéndice) y después se registra aquí.
+
+materiales:
+  # Estadística descriptiva
+  desc-1-1: "*Estadística descriptiva*, parte 1.1: estadística, población y muestras (enlace próximamente)"
+  desc-1-2: "*Estadística descriptiva*, parte 1.2: tipos de variables y escalas de medida (enlace próximamente)"
+  desc-2-1: "*Estadística descriptiva*, parte 2.1: tablas de frecuencias y gráficos (enlace próximamente)"
+  desc-2-2: "*Estadística descriptiva*, parte 2.2: datos continuos agrupados e histogramas (enlace próximamente)"
+  desc-2-3: "*Estadística descriptiva*, parte 2.3: distribución empírica, centro y posición (enlace próximamente)"
+  desc-2-4: "*Estadística descriptiva*, parte 2.4: dispersión, forma y atípicos (enlace próximamente)"

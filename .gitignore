@@ -2,7 +2,7 @@
 /_site/
 /.quarto/
 **/*.quarto_ipynb
-# _freeze/ IS committed: it stores executed results so GitHub Actions doesn't need the data
+# Notebooks are not executed when rendering: Quarto publishes the outputs saved in each .ipynb
 
 # Python
 __pycache__/
@@ -13,8 +13,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data: not versioned (tens of GB). Reproducible with src/download + src/process;
-# catalogues in data/raw/README.md and data/processed/README.md. The site builds from _freeze/.
+# Data: not versioned (tens of GB). Reproducible with each topic's src/download + src/process.
+# The site does not need it: it builds from the outputs saved in the notebooks.
 data/
 
 # Local archive of previous versions (not published, not versioned)

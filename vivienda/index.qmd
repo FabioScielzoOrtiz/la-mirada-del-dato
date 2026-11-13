@@ -5,7 +5,7 @@ toc: false
 listing:
   contents: "notebooks/*.ipynb"
   type: default
-  sort: "date desc"
+  sort: "filename"
   fields: [date, title, description, categories]
   date-format: "D MMM YYYY"
   categories: false

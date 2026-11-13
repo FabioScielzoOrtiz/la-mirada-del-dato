@@ -2,35 +2,14 @@
 #   python -m venv .venv
 #   .venv\Scripts\activate            (Windows)   |   source .venv/bin/activate   (macOS/Linux)
 #   pip install -r requirements.txt
+#
+# Only what the code uses today. Add a package when an entry needs it, for example:
+#   openpyxl / xlrd / fastexcel (Excel files), statsmodels / scipy (models and tests),
+#   geopandas (maps).
 
-# --- Data handling
-numpy>=1.26
-pandas>=2.2
 polars>=1.0
 pyarrow>=15.0          # Parquet
-
-# --- Reading source files
-requests>=2.31         # downloads (INE API, BOE, Ministerio de Vivienda, AEAT)
-openpyxl>=3.1          # .xlsx
-xlrd>=2.0              # old .xls (Padrón, Ministerio de Vivienda)
-fastexcel>=0.11        # fast .xlsx reader used by polars.read_excel
-lxml>=5.0              # pandas.read_html (AEAT tables)
-
-# --- Statistics
-scipy>=1.12
-statsmodels>=0.14
-
-# --- Charts
-plotly>=5.20           # interactive charts in posts
-matplotlib>=3.8        # static charts / quick exploration
-
-# --- Notebooks and Quarto's Jupyter engine
-jupyterlab>=4.0
-ipykernel>=6.29
-nbformat>=5.9
-nbclient>=0.10
-pyyaml>=6.0
-
-# --- Later (not needed yet)
-# geopandas / pyogrio     maps from data/raw/serpavi/shapefiles
-# db-robust-clust         v09 (housing market types); requires numpy<=1.26.4 -> use a separate venv if it conflicts
+requests>=2.31         # downloads
+plotly>=5.20           # charts
+ipykernel>=6.29        # run the notebooks (VS Code / Jupyter)
+nbformat>=5.9          # needed by plotly to display figures in notebooks

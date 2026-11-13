@@ -1,4 +1,4 @@
-# p01 · Evolución de la población de España por nacionalidad y país de origen
+# p01–p05 · Evolución de la población de España por nacionalidad y país de origen
 
 **Plan de análisis** · redactado el 2026-10-25, antes de rehacer el análisis en el notebook.
 Este documento no se publica. Si algo cambia durante el análisis, se anota en «Cambios al plan» (final), con fecha y motivo.
@@ -72,3 +72,4 @@ Apartados a desarrollar en la sección «Explicaciones», citando la literatura 
 ## 7. Cambios al plan
 
 <!-- AAAA-MM-DD · qué cambió y por qué -->
+- 2026-11-13 · El plan se reparte en cinco entradas cortas, una por pregunta: p01 (crecimiento por nacionalidad), p02 (ritmo por periodos), p03 (regiones de nacionalidad), p04 (país de nacimiento) y p05 (las dos definiciones de «extranjero»). Las entradas se empiezan de nuevo; los notebooks anteriores quedan solo como referencia.

@@ -2,22 +2,51 @@
 title: "Método"
 ---
 
-**La Mirada del Dato** publica análisis breves sobre cuestiones con gran debate público. No son artículos académicos, pero siguen sus reglas: datos oficiales, método explícito, código abierto y limitaciones a la vista.
+**La Mirada del Dato** aplica la estadística a cuestiones de debate público, con
+el mismo rigor y el mismo tono que un curso universitario: cada concepto se define y cada
+técnica se explica. No son artículos académicos, pero siguen sus reglas: datos oficiales,
+método explícito, código abierto y limitaciones a la vista.
 
-## Cómo es cada análisis
+## Cómo es cada entrada
 
-1. **Preguntas concretas.** No «¿hay un problema de vivienda?», sino una o varias preguntas que se puedan responder con datos, formuladas con precisión.
-2. **Datos y método.** Fuentes oficiales con enlace y fecha de descarga, definiciones explícitas y el análisis estadístico más simple que responda bien. Cuando la pregunta lo permite, se escribe antes de mirar los datos qué se va a medir y cómo.
-3. **Análisis.** Cada pregunta se responde con tablas y gráficos. El código está en el [repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato).
-4. **Conclusiones.** Qué responden los datos a cada pregunta.
-5. **Explicaciones.** Por qué puede ser así, apoyado en la teoría pertinente (económica, social, jurídica…) y en la literatura, siempre citada, separando lo que muestran los datos de lo que es interpretación.
+Las entradas se agrupan por temas, y cada una responde a **una pregunta concreta**, con la
+misma estructura:
+
+1. **En breve.** La respuesta corta, con su cifra principal.
+2. **La pregunta.** Por qué importa y qué se responde exactamente.
+3. **Datos y definiciones.** Fuentes oficiales con enlace y fecha de descarga, y qué mide
+   exactamente cada concepto.
+4. **Análisis.** Cada resultado con su gráfico o tabla y una frase que lo resume.
+5. **Interpretación.** Por qué puede ser así, apoyado en la teoría pertinente y en la
+   literatura, siempre citada, separando lo que muestran los datos de lo que es
+   interpretación.
 6. **Limitaciones.** Qué no permite concluir el análisis.
+7. **Técnicas y materiales.** Qué técnicas estadísticas se usan y dónde se explican en
+   detalle.
+
+## Dos niveles de lectura
+
+El texto principal se entiende sin conocimientos previos de estadística. Los
+**desplegables** guardan la explicación técnica completa (definiciones exactas, fórmulas,
+cómo se calcula cada medida y el código) para quien quiera ir más allá.
+
+## Ligado a la docencia
+
+El blog es una extensión aplicada de mis materiales docentes de estadística. Cada técnica
+que aparece en una entrada está explicada en detalle en esos materiales, y la entrada
+remite a ellos. El blog solo usa técnicas recogidas en los materiales: si una pregunta
+necesita una nueva, primero se incorpora a la asignatura que corresponda.
 
 ## Principios
 
-- **Descripción no es causa.** Con datos agregados se miden magnitudes y asociaciones. Solo se habla de efectos cuando el diseño lo permite, y entonces se explica.
-- **Las definiciones importan.** Cada concepto se define y se indica qué cambia con otras definiciones razonables.
-- **Mostrar la incertidumbre.** Los resultados se acompañan de sus márgenes, sensibilidad y límites; los datos que no encajan no se esconden.
+- **Descripción no es causa.** Con datos agregados se miden magnitudes y asociaciones. Solo
+  se habla de efectos cuando el diseño lo permite, y entonces se explica.
+- **Las definiciones importan.** Cada concepto se define y se indica qué cambia con otras
+  definiciones razonables.
+- **Mostrar la incertidumbre.** Los resultados se acompañan de sus márgenes, sensibilidad y
+  límites; los datos que no encajan no se esconden.
 - **Reproducibilidad.** Los datos de partida y el código se pueden volver a ejecutar.
 
-Si encuentras un error, abre un *issue* en el [repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato). Las correcciones se indican al final de cada análisis.
+Si encuentras un error, abre un *issue* en el
+[repositorio](https://github.com/FabioScielzoOrtiz/la-mirada-del-dato). Las correcciones se
+indican al final de cada entrada.

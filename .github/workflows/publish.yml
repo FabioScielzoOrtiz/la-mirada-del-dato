@@ -8,6 +8,8 @@ on:
 permissions:
   contents: write
 
+# Notebooks are not executed when rendering (Quarto publishes the outputs saved in each
+# .ipynb), so the build needs Quarto but not Python.
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -15,13 +17,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: quarto-dev/quarto-actions/setup@v2
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - run: pip install -r requirements.txt
 
       - uses: quarto-dev/quarto-actions/publish@v2
         with:

@@ -87,7 +87,10 @@ def procesar(df: pl.DataFrame) -> pl.DataFrame:
 
     # Un único group_by para unir las filas de Europa (UE28 / UE27)
     claves = [c for c in df.columns if c != VALOR]
-    return df.group_by(claves).agg(pl.col(VALOR).sum()).sort(claves)
+    # Si todo el grupo es null (combinación sin dato) se conserva null: sum() daría 0
+    return df.group_by(claves).agg(
+        pl.when(pl.col(VALOR).count() > 0).then(pl.col(VALOR).sum()).alias(VALOR)
+    ).sort(claves)
 
 
 def check_suma(d: pl.DataFrame, col: str, partes: list[str], total: str) -> pl.DataFrame:
@@ -98,6 +101,11 @@ def check_suma(d: pl.DataFrame, col: str, partes: list[str], total: str) -> pl.D
 
 
 def validar(df: pl.DataFrame) -> None:
+    # Tras unir Europa (UE28/UE27) no deben quedar nulos
+    n_nulos = df[VALOR].null_count()
+    print(f"Nulos en '{VALOR}' tras unir Europa: {n_nulos}")
+    assert n_nulos == 0, "Quedan combinaciones sin dato tras unir las clasificaciones de Europa"
+
     base = df.filter(pl.col("sexo") == "Total", pl.col("edad") == "Todas las edades")
     base_nac = base.filter(pl.col("pais_nacimiento") == "Total")      # series por nacionalidad
     base_pais = base.filter(pl.col("nacionalidad") == "Total")        # series por país de nacimiento

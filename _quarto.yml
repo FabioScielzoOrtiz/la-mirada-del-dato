@@ -19,7 +19,7 @@ execute:
 
 website:
   title: "La Mirada del Dato"
-  description: "Análisis breves con datos públicos sobre los grandes debates de España."
+  description: "Estadística aplicada a problemas sociales, explicada paso a paso."
   site-url: https://lamiradadeldato.com
   repo-url: https://github.com/FabioScielzoOrtiz/la-mirada-del-dato
   favicon: images/logo.png
@@ -43,7 +43,7 @@ website:
       - icon: rss
         href: index.xml
   page-footer:
-    left: "© 2026 Fabio Scielzo Ortiz"
+    left: "© 2026 Fabio Scielzo-Ortiz"
     right: "Contenido CC BY 4.0 · Código MIT · Hecho con [Quarto](https://quarto.org)"
 
 format:

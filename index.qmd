@@ -1,6 +1,6 @@
 ---
-pagetitle: "La Mirada del Dato · Preguntas concretas, respondidas con datos"
-description: "Análisis breves con datos públicos: preguntas concretas sobre los grandes debates, respondidas con estadística."
+pagetitle: "La Mirada del Dato · Estadística aplicada a problemas sociales"
+description: "Estadística aplicada a problemas sociales: preguntas concretas de debate público, respondidas con datos oficiales y explicadas paso a paso."
 toc: false
 listing:
   id: ultimo
@@ -14,11 +14,11 @@ listing:
 ---
 
 ::: {.hero}
-[Análisis con datos públicos]{.kicker}
+[La Mirada del Dato]{.titulo}
 
-[Preguntas concretas, **respondidas con datos**]{.titulo}
+[Estadística aplicada a problemas sociales]{.subtitulo}
 
-[Cada análisis plantea una o varias preguntas concretas sobre una cuestión de debate público, las responde con datos oficiales y estadística, y explica los resultados con la teoría pertinente y sus límites.]{.lead}
+[Cada entrada plantea una pregunta concreta de debate público y la responde con datos oficiales y estadística, explicando cada técnica que usa con el rigor de un curso universitario. El texto se lee sin conocimientos previos; los desplegables guardan el detalle técnico para quien lo quiera.]{.lead}
 :::
 
 ## Lo último {.seccion-titulo}

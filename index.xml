@@ -8,13 +8,13 @@
 <title>La Mirada del Dato</title>
 <link>https://lamiradadeldato.com/</link>
 <atom:link href="https://lamiradadeldato.com/index.xml" rel="self" type="application/rss+xml"/>
-<description>Análisis breves con datos públicos: preguntas concretas sobre los grandes debates, respondidas con estadística.</description>
-<generator>quarto-1.10.19</generator>
-<lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
+<description>Estadística aplicada a problemas sociales: preguntas concretas de debate público, respondidas con datos oficiales y explicadas paso a paso.</description>
+<generator>quarto-1.11.9</generator>
+<lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>¿Cómo ha evolucionado la población de España según nacionalidad y país de origen?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
-  <link>https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html</link>
+  <title>¿Cuánto ha crecido la población con nacionalidad extranjera?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p01-foreign-population-growth.html</link>
   <description><![CDATA[ 
 
 
@@ -23,158 +23,358 @@
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
-<li><strong>P1.</strong> ¿Cómo ha evolucionado la población residente según su nacionalidad?</li>
-<li><strong>P2.</strong> ¿Cómo ha evolucionado según su país de origen?</li>
+<li><strong>P1.</strong> ¿Cuánto han cambiado la población con nacionalidad española y la extranjera desde 2002?</li>
+<li><strong>P2.</strong> ¿Qué parte del crecimiento de la población corresponde a cada una?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
-<div id="870b8066" class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> os, sys</span>
-<span id="cb1-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pathlib <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> Path</span>
-<span id="cb1-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> polars <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pl</span>
-<span id="cb1-4"></span>
-<span id="cb1-5">ROOT <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">next</span>(p <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> p <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> [Path.cwd(), <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span>Path.cwd().parents] <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> (p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"_quarto.yml"</span>).exists())</span>
-<span id="cb1-6"></span>
-<span id="cb1-7">sys.path.append(ROOT)</span>
-<span id="cb1-8"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> common.files <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> read_processed</span></code></pre></div></div>
-</details>
-</div>
-<div id="66052f7c" class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">processed_data_path <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> os.path.join(ROOT, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'poblacion'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'data'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'processed'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'poblacion_nacionalidad_origen.parquet'</span>)</span>
-<span id="cb2-2">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> pl.read_parquet(processed_data_path)</span></code></pre></div></div>
-</details>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre>  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[34]</span><span class="ansi-green-fg">, line 1</span>
-<span class="ansi-red-fg">    </span><span class="ansi-red-fg">processed_data_path =</span>
-                          ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-</div>
-<div id="1e55ac70" class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">TOPIC <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'poblacion'</span></span>
-<span id="cb3-2">read_processed(TOPIC, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"poblacion_nacionalidad_origen"</span>)</span></code></pre></div></div>
-</details>
-</div>
-<div id="9f4e53e7" class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">df.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">filter</span>(</span>
-<span id="cb4-2">    pl.col(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'sexo'</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Total'</span>,</span>
-<span id="cb4-3">    pl.col(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'edad'</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Todas las edades'</span>,</span>
-<span id="cb4-4">).select(</span>
-<span id="cb4-5">    [<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'periodo'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'nacionalidad'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'pais_nacimiento'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'total'</span>]</span>
-<span id="cb4-6">)</span></code></pre></div></div>
-</details>
-</div>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
-  title = {¿Cómo ha evolucionado la población de España según
-    nacionalidad y país de origen?},
-  date = {2026-10-24},
-  url = {https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Cuánto ha crecido la población con nacionalidad extranjera?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p01-foreign-population-growth.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 24). <em>¿Cómo ha evolucionado la
-población de España según nacionalidad y país de origen?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html">https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html</a>
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Cuánto ha crecido la
+población con nacionalidad extranjera?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p01-foreign-population-growth.html">https://lamiradadeldato.com/poblacion/notebooks/p01-foreign-population-growth.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>
-  <guid>https://lamiradadeldato.com/poblacion/notebooks/p01-population-nationality-origin.html</guid>
-  <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p01-foreign-population-growth.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Ha crecido la población al mismo ritmo desde 2002?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p02-population-growth-phases.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cuánto ha crecido la población cada año, en media, en cada periodo?</li>
+<li><strong>P2.</strong> ¿Qué grupo explica el crecimiento en cada periodo?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Ha crecido la población al mismo ritmo desde 2002?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p02-population-growth-phases.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Ha crecido la población al
+mismo ritmo desde 2002?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p02-population-growth-phases.html">https://lamiradadeldato.com/poblacion/notebooks/p02-population-growth-phases.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p02-population-growth-phases.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿De qué regiones del mundo procede la población extranjera?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p03-foreign-population-origin.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Qué peso tiene cada región sobre la población extranjera?</li>
+<li><strong>P2.</strong> ¿Qué regiones explican su crecimiento?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿De qué regiones del mundo procede la población extranjera?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p03-foreign-population-origin.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿De qué regiones del mundo
+procede la población extranjera?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p03-foreign-population-origin.html">https://lamiradadeldato.com/poblacion/notebooks/p03-foreign-population-origin.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p03-foreign-population-origin.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Cuántos residentes en España han nacido en el extranjero?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p04-born-abroad-population.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cómo han evolucionado la población nacida en el extranjero y su peso sobre el total?</li>
+<li><strong>P2.</strong> ¿De qué regiones procede?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Cuántos residentes en España han nacido en el extranjero?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p04-born-abroad-population.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Cuántos residentes en España
+han nacido en el extranjero?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p04-born-abroad-population.html">https://lamiradadeldato.com/poblacion/notebooks/p04-born-abroad-population.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p04-born-abroad-population.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Quién cuenta como «extranjero»?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p05-defining-foreign-population.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cuánto difiere la población «extranjera» según se defina por nacionalidad o por país de nacimiento?</li>
+<li><strong>P2.</strong> ¿Qué grupos explican esa diferencia?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Quién cuenta como «extranjero»?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p05-defining-foreign-population.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Quién cuenta como
+«extranjero»?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p05-defining-foreign-population.html">https://lamiradadeldato.com/poblacion/notebooks/p05-defining-foreign-population.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p05-defining-foreign-population.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Crece la población por los nacimientos o por la migración?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p06-natural-vs-migratory-growth.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cuánto del cambio anual de la población se debe al saldo natural y cuánto al saldo migratorio?</li>
+<li><strong>P2.</strong> ¿Cómo ha cambiado ese reparto a lo largo del tiempo?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Crece la población por los nacimientos o por la migración?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p06-natural-vs-migratory-growth.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Crece la población por los
+nacimientos o por la migración?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p06-natural-vs-migratory-growth.html">https://lamiradadeldato.com/poblacion/notebooks/p06-natural-vs-migratory-growth.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p06-natural-vs-migratory-growth.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Cuántas personas llegan, cuántas se van y cuántas se quedan?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p07-migration-flows.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cuántas personas entran y salen de España cada año, y cuál es el saldo?</li>
+<li><strong>P2.</strong> ¿Por qué el saldo migratorio y el aumento de la población nacida fuera no coinciden?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Cuántas personas llegan, cuántas se van y cuántas se
+    quedan?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p07-migration-flows.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Cuántas personas llegan,
+cuántas se van y cuántas se quedan?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p07-migration-flows.html">https://lamiradadeldato.com/poblacion/notebooks/p07-migration-flows.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p07-migration-flows.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿Dónde vive la población extranjera?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p08-foreign-population-territory.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cómo se reparte la población extranjera entre comunidades autónomas y provincias?</li>
+<li><strong>P2.</strong> ¿Ha cambiado ese reparto en las últimas dos décadas?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿Dónde vive la población extranjera?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p08-foreign-population-territory.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿Dónde vive la población
+extranjera?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p08-foreign-population-territory.html">https://lamiradadeldato.com/poblacion/notebooks/p08-foreign-population-territory.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p08-foreign-population-territory.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>¿En qué trabajan las personas extranjeras y cuántas cotizan?</title>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
+  <link>https://lamiradadeldato.com/poblacion/notebooks/p09-foreign-workers-social-security.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="claves">
+<p><span class="etiqueta">En breve · Análisis</span></p>
+<p>Entrada en preparación.</p>
+</div>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
+<ol type="1">
+<li><strong>P1.</strong> ¿Cuántas personas extranjeras están afiliadas a la Seguridad Social y qué peso tienen sobre el total?</li>
+<li><strong>P2.</strong> ¿En qué sectores de actividad se concentran?</li>
+</ol>
+<p><em>Esta entrada está en preparación.</em></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
+  title = {¿En qué trabajan las personas extranjeras y cuántas cotizan?},
+  date = {2026-11-13},
+  url = {https://lamiradadeldato.com/poblacion/notebooks/p09-foreign-workers-social-security.html},
+  langid = {es}
+}
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, November 13). <em>¿En qué trabajan las personas
+extranjeras y cuántas cotizan?</em> <a href="https://lamiradadeldato.com/poblacion/notebooks/p09-foreign-workers-social-security.html">https://lamiradadeldato.com/poblacion/notebooks/p09-foreign-workers-social-security.html</a>
+</div></div></section></div> ]]></description>
+  <category>Próximamente</category>
+  <guid>https://lamiradadeldato.com/poblacion/notebooks/p09-foreign-workers-social-security.html</guid>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>¿A dónde van los impuestos?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
   <link>https://lamiradadeldato.com/gasto-publico/notebooks/g01-public-spending.html</link>
   <description><![CDATA[ 
 
@@ -184,28 +384,28 @@ población de España según nacionalidad y país de origen?</em> <a href="https
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
 <li><strong>P1.</strong> ¿Cómo se distribuye el gasto público entre sus partidas?</li>
 <li><strong>P2.</strong> ¿Cómo ha evolucionado a lo largo del tiempo?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
   title = {¿A dónde van los impuestos?},
   date = {2026-10-23},
   url = {https://lamiradadeldato.com/gasto-publico/notebooks/g01-public-spending.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 23). <em>¿A dónde van los
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, October 23). <em>¿A dónde van los
 impuestos?</em> <a href="https://lamiradadeldato.com/gasto-publico/notebooks/g01-public-spending.html">https://lamiradadeldato.com/gasto-publico/notebooks/g01-public-spending.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>
@@ -214,7 +414,7 @@ impuestos?</em> <a href="https://lamiradadeldato.com/gasto-publico/notebooks/g01
 </item>
 <item>
   <title>¿Cuánta vivienda de España es pública y cuánta privada?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
   <link>https://lamiradadeldato.com/vivienda/notebooks/v01-housing-public-private.html</link>
   <description><![CDATA[ 
 
@@ -224,28 +424,28 @@ impuestos?</em> <a href="https://lamiradadeldato.com/gasto-publico/notebooks/g01
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
 <li><strong>P1.</strong> ¿Qué parte del parque de viviendas es de titularidad privada y qué parte pública?</li>
 <li><strong>P2.</strong> ¿Qué peso tiene la vivienda de protección oficial?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
   title = {¿Cuánta vivienda de España es pública y cuánta privada?},
   date = {2026-10-22},
   url = {https://lamiradadeldato.com/vivienda/notebooks/v01-housing-public-private.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 22). <em>¿Cuánta vivienda de España es
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, October 22). <em>¿Cuánta vivienda de España es
 pública y cuánta privada?</em> <a href="https://lamiradadeldato.com/vivienda/notebooks/v01-housing-public-private.html">https://lamiradadeldato.com/vivienda/notebooks/v01-housing-public-private.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>
@@ -254,7 +454,7 @@ pública y cuánta privada?</em> <a href="https://lamiradadeldato.com/vivienda/n
 </item>
 <item>
   <title>¿Quién posee las viviendas: grandes o pequeños tenedores?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
   <link>https://lamiradadeldato.com/vivienda/notebooks/v02-housing-owners.html</link>
   <description><![CDATA[ 
 
@@ -264,27 +464,27 @@ pública y cuánta privada?</em> <a href="https://lamiradadeldato.com/vivienda/n
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
 <li><strong>P1.</strong> ¿Qué parte de las viviendas está en manos de grandes tenedores y cuál en manos de pequeños?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
   title = {¿Quién posee las viviendas: grandes o pequeños tenedores?},
   date = {2026-10-21},
   url = {https://lamiradadeldato.com/vivienda/notebooks/v02-housing-owners.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 21). <em>¿Quién posee las viviendas:
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, October 21). <em>¿Quién posee las viviendas:
 grandes o pequeños tenedores?</em> <a href="https://lamiradadeldato.com/vivienda/notebooks/v02-housing-owners.html">https://lamiradadeldato.com/vivienda/notebooks/v02-housing-owners.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>
@@ -293,7 +493,7 @@ grandes o pequeños tenedores?</em> <a href="https://lamiradadeldato.com/viviend
 </item>
 <item>
   <title>¿Cómo ha evolucionado la violencia de género?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
   <link>https://lamiradadeldato.com/seguridad/notebooks/seg01-gender-violence.html</link>
   <description><![CDATA[ 
 
@@ -303,28 +503,28 @@ grandes o pequeños tenedores?</em> <a href="https://lamiradadeldato.com/viviend
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
 <li><strong>P1.</strong> ¿Cómo ha evolucionado la violencia de género?</li>
 <li><strong>P2.</strong> ¿Cómo se compara con otros tipos de violencia?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
   title = {¿Cómo ha evolucionado la violencia de género?},
   date = {2026-10-19},
   url = {https://lamiradadeldato.com/seguridad/notebooks/seg01-gender-violence.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 19). <em>¿Cómo ha evolucionado la
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, October 19). <em>¿Cómo ha evolucionado la
 violencia de género?</em> <a href="https://lamiradadeldato.com/seguridad/notebooks/seg01-gender-violence.html">https://lamiradadeldato.com/seguridad/notebooks/seg01-gender-violence.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>
@@ -333,7 +533,7 @@ violencia de género?</em> <a href="https://lamiradadeldato.com/seguridad/notebo
 </item>
 <item>
   <title>¿Cómo se distribuyen las muertes del franquismo por tipología?</title>
-  <dc:creator>Fabio Scielzo Ortiz</dc:creator>
+  <dc:creator>Fabio Scielzo-Ortiz</dc:creator>
   <link>https://lamiradadeldato.com/historia/notebooks/h01-francoism-deaths.html</link>
   <description><![CDATA[ 
 
@@ -343,28 +543,28 @@ violencia de género?</em> <a href="https://lamiradadeldato.com/seguridad/notebo
 
 <div class="claves">
 <p><span class="etiqueta">En breve · Análisis</span></p>
-<p>Análisis en preparación.</p>
+<p>Entrada en preparación.</p>
 </div>
-<section id="preguntas" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<section id="la-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="la-pregunta">La pregunta</h2>
 <ol type="1">
 <li><strong>P1.</strong> ¿Cómo han evolucionado las muertes del franquismo según su tipología?</li>
 </ol>
-<p><em>Este análisis está en preparación.</em></p>
+<p><em>Esta entrada está en preparación.</em></p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scielzo_ortiz2026,
-  author = {Scielzo Ortiz, Fabio},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><div class="code-copy-outer-scaffold"><pre class="sourceCode quarto-appendix-bibtex code-with-copy"><code class="sourceCode bibtex">@online{scielzo-ortiz2026,
+  author = {Scielzo-Ortiz, Fabio},
   title = {¿Cómo se distribuyen las muertes del franquismo por
     tipología?},
   date = {2026-10-18},
   url = {https://lamiradadeldato.com/historia/notebooks/h01-francoism-deaths.html},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo_ortiz2026" class="csl-entry quarto-appendix-citeas">
-Scielzo Ortiz, F. (2026, October 18). <em>¿Cómo se distribuyen las
+</code></pre></div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-scielzo-ortiz2026" class="csl-entry quarto-appendix-citeas">
+Scielzo-Ortiz, F. (2026, October 18). <em>¿Cómo se distribuyen las
 muertes del franquismo por tipología?</em> <a href="https://lamiradadeldato.com/historia/notebooks/h01-francoism-deaths.html">https://lamiradadeldato.com/historia/notebooks/h01-francoism-deaths.html</a>
 </div></div></section></div> ]]></description>
   <category>Próximamente</category>

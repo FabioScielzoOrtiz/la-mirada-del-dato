@@ -9,7 +9,15 @@
   {
     "listing": "/poblacion/index.html",
     "items": [
-      "/poblacion/notebooks/p01-population-nationality-origin.html"
+      "/poblacion/notebooks/p01-foreign-population-growth.html",
+      "/poblacion/notebooks/p02-population-growth-phases.html",
+      "/poblacion/notebooks/p03-foreign-population-origin.html",
+      "/poblacion/notebooks/p04-born-abroad-population.html",
+      "/poblacion/notebooks/p05-defining-foreign-population.html",
+      "/poblacion/notebooks/p06-natural-vs-migratory-growth.html",
+      "/poblacion/notebooks/p07-migration-flows.html",
+      "/poblacion/notebooks/p08-foreign-population-territory.html",
+      "/poblacion/notebooks/p09-foreign-workers-social-security.html"
     ]
   },
   {
@@ -21,7 +29,15 @@
   {
     "listing": "/index.html",
     "items": [
-      "/poblacion/notebooks/p01-population-nationality-origin.html",
+      "/poblacion/notebooks/p01-foreign-population-growth.html",
+      "/poblacion/notebooks/p02-population-growth-phases.html",
+      "/poblacion/notebooks/p03-foreign-population-origin.html",
+      "/poblacion/notebooks/p04-born-abroad-population.html",
+      "/poblacion/notebooks/p05-defining-foreign-population.html",
+      "/poblacion/notebooks/p06-natural-vs-migratory-growth.html",
+      "/poblacion/notebooks/p07-migration-flows.html",
+      "/poblacion/notebooks/p08-foreign-population-territory.html",
+      "/poblacion/notebooks/p09-foreign-workers-social-security.html",
       "/gasto-publico/notebooks/g01-public-spending.html",
       "/vivienda/notebooks/v01-housing-public-private.html",
       "/vivienda/notebooks/v02-housing-owners.html",

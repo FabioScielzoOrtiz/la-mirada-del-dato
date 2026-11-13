@@ -4,98 +4,168 @@
     "href": "vivienda/notebooks/v02-housing-owners.html",
     "title": "¿Quién posee las viviendas: grandes o pequeños tenedores?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "vivienda/notebooks/v02-housing-owners.html#preguntas",
-    "href": "vivienda/notebooks/v02-housing-owners.html#preguntas",
+    "objectID": "vivienda/notebooks/v02-housing-owners.html#la-pregunta",
+    "href": "vivienda/notebooks/v02-housing-owners.html#la-pregunta",
     "title": "¿Quién posee las viviendas: grandes o pequeños tenedores?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Qué parte de las viviendas está en manos de grandes tenedores y cuál en manos de pequeños?\n\nEste análisis está en preparación."
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Qué parte de las viviendas está en manos de grandes tenedores y cuál en manos de pequeños?\n\nEsta entrada está en preparación."
   },
   {
     "objectID": "seguridad/notebooks/seg01-gender-violence.html",
     "href": "seguridad/notebooks/seg01-gender-violence.html",
     "title": "¿Cómo ha evolucionado la violencia de género?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "seguridad/notebooks/seg01-gender-violence.html#preguntas",
-    "href": "seguridad/notebooks/seg01-gender-violence.html#preguntas",
+    "objectID": "seguridad/notebooks/seg01-gender-violence.html#la-pregunta",
+    "href": "seguridad/notebooks/seg01-gender-violence.html#la-pregunta",
     "title": "¿Cómo ha evolucionado la violencia de género?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Cómo ha evolucionado la violencia de género?\nP2. ¿Cómo se compara con otros tipos de violencia?\n\nEste análisis está en preparación."
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cómo ha evolucionado la violencia de género?\nP2. ¿Cómo se compara con otros tipos de violencia?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p08-foreign-population-territory.html",
+    "href": "poblacion/notebooks/p08-foreign-population-territory.html",
+    "title": "¿Dónde vive la población extranjera?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p08-foreign-population-territory.html#la-pregunta",
+    "href": "poblacion/notebooks/p08-foreign-population-territory.html#la-pregunta",
+    "title": "¿Dónde vive la población extranjera?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cómo se reparte la población extranjera entre comunidades autónomas y provincias?\nP2. ¿Ha cambiado ese reparto en las últimas dos décadas?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p06-natural-vs-migratory-growth.html",
+    "href": "poblacion/notebooks/p06-natural-vs-migratory-growth.html",
+    "title": "¿Crece la población por los nacimientos o por la migración?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p06-natural-vs-migratory-growth.html#la-pregunta",
+    "href": "poblacion/notebooks/p06-natural-vs-migratory-growth.html#la-pregunta",
+    "title": "¿Crece la población por los nacimientos o por la migración?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuánto del cambio anual de la población se debe al saldo natural y cuánto al saldo migratorio?\nP2. ¿Cómo ha cambiado ese reparto a lo largo del tiempo?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p04-born-abroad-population.html",
+    "href": "poblacion/notebooks/p04-born-abroad-population.html",
+    "title": "¿Cuántos residentes en España han nacido en el extranjero?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p04-born-abroad-population.html#la-pregunta",
+    "href": "poblacion/notebooks/p04-born-abroad-population.html#la-pregunta",
+    "title": "¿Cuántos residentes en España han nacido en el extranjero?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cómo han evolucionado la población nacida en el extranjero y su peso sobre el total?\nP2. ¿De qué regiones procede?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p02-population-growth-phases.html",
+    "href": "poblacion/notebooks/p02-population-growth-phases.html",
+    "title": "¿Ha crecido la población al mismo ritmo desde 2002?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p02-population-growth-phases.html#la-pregunta",
+    "href": "poblacion/notebooks/p02-population-growth-phases.html#la-pregunta",
+    "title": "¿Ha crecido la población al mismo ritmo desde 2002?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuánto ha crecido la población cada año, en media, en cada periodo?\nP2. ¿Qué grupo explica el crecimiento en cada periodo?\n\nEsta entrada está en preparación."
   },
   {
     "objectID": "historia/notebooks/h01-francoism-deaths.html",
     "href": "historia/notebooks/h01-francoism-deaths.html",
     "title": "¿Cómo se distribuyen las muertes del franquismo por tipología?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "historia/notebooks/h01-francoism-deaths.html#preguntas",
-    "href": "historia/notebooks/h01-francoism-deaths.html#preguntas",
+    "objectID": "historia/notebooks/h01-francoism-deaths.html#la-pregunta",
+    "href": "historia/notebooks/h01-francoism-deaths.html#la-pregunta",
     "title": "¿Cómo se distribuyen las muertes del franquismo por tipología?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Cómo han evolucionado las muertes del franquismo según su tipología?\n\nEste análisis está en preparación."
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cómo han evolucionado las muertes del franquismo según su tipología?\n\nEsta entrada está en preparación."
   },
   {
     "objectID": "vivienda/index.html",
     "href": "vivienda/index.html",
     "title": "Vivienda",
     "section": "",
-    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cuánta vivienda de España es pública y cuánta privada?\n\n\n\nPróximamente\n\n\n\nTitularidad del parque de viviendas, incluida la vivienda de protección oficial.\n\n\n\n\n\n22 oct 2026\n\n\n\n\n\n\n\n¿Quién posee las viviendas: grandes o pequeños tenedores?\n\n\n\nPróximamente\n\n\n\nDistribución de la propiedad entre grandes y pequeños tenedores.\n\n\n\n\n\n21 oct 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cuánta vivienda de España es pública y cuánta privada?\n\n\n\nPróximamente\n\n\n\n\nTitularidad del parque de viviendas, incluida la vivienda de protección oficial.\n\n\n\n\n\n\n22 oct 2026\n\n\n\n\n\n\n\n¿Quién posee las viviendas: grandes o pequeños tenedores?\n\n\n\nPróximamente\n\n\n\n\nDistribución de la propiedad entre grandes y pequeños tenedores.\n\n\n\n\n\n\n21 oct 2026\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "poblacion/index.html",
     "href": "poblacion/index.html",
     "title": "Población",
     "section": "",
-    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cómo ha evolucionado la población de España según nacionalidad y país de origen?\n\n\n\nPróximamente\n\n\n\nPoblación residente por nacionalidad y país de nacimiento.\n\n\n\n\n\n24 oct 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cuánto ha crecido la población con nacionalidad extranjera?\n\n\n\nPróximamente\n\n\n\n\nPoblación residente en España con nacionalidad española y extranjera desde 2002, y peso de la extranjera.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Ha crecido la población al mismo ritmo desde 2002?\n\n\n\nPróximamente\n\n\n\n\nRitmo de crecimiento de la población residente por periodos y aportación de cada grupo de nacionalidad.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿De qué regiones del mundo procede la población extranjera?\n\n\n\nPróximamente\n\n\n\n\nComposición de la población con nacionalidad extranjera por región de nacionalidad y su evolución.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Cuántos residentes en España han nacido en el extranjero?\n\n\n\nPróximamente\n\n\n\n\nPoblación residente según país de nacimiento: nacidos en España y en el extranjero, por región de nacimiento.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Quién cuenta como «extranjero»?\n\n\n\nPróximamente\n\n\n\n\nNacionalidad frente a país de nacimiento: dos definiciones de «extranjero» que no dan la misma cifra.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Crece la población por los nacimientos o por la migración?\n\n\n\nPróximamente\n\n\n\n\nDescomposición del cambio de población en saldo natural (nacimientos menos defunciones) y saldo migratorio.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Cuántas personas llegan, cuántas se van y cuántas se quedan?\n\n\n\nPróximamente\n\n\n\n\nEntradas, salidas y saldo migratorio, y su relación con la población residente nacida en el extranjero.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿Dónde vive la población extranjera?\n\n\n\nPróximamente\n\n\n\n\nDistribución territorial de la población extranjera y nacida en el extranjero por comunidades y provincias.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n¿En qué trabajan las personas extranjeras y cuántas cotizan?\n\n\n\nPróximamente\n\n\n\n\nAfiliación a la Seguridad Social de las personas extranjeras por sector de actividad y su evolución.\n\n\n\n\n\n\n13 nov 2026\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "gasto-publico/index.html",
     "href": "gasto-publico/index.html",
     "title": "Gasto público",
     "section": "",
-    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿A dónde van los impuestos?\n\n\n\nPróximamente\n\n\n\nDistribución y evolución del gasto público por funciones.\n\n\n\n\n\n23 oct 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿A dónde van los impuestos?\n\n\n\nPróximamente\n\n\n\n\nDistribución y evolución del gasto público por funciones.\n\n\n\n\n\n\n23 oct 2026\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "method.html",
     "href": "method.html",
     "title": "Método",
     "section": "",
-    "text": "La Mirada del Dato publica análisis breves sobre cuestiones con gran debate público. No son artículos académicos, pero siguen sus reglas: datos oficiales, método explícito, código abierto y limitaciones a la vista."
+    "text": "La Mirada del Dato aplica la estadística a cuestiones de debate público, con el mismo rigor y el mismo tono que un curso universitario: cada concepto se define y cada técnica se explica. No son artículos académicos, pero siguen sus reglas: datos oficiales, método explícito, código abierto y limitaciones a la vista."
   },
   {
-    "objectID": "method.html#cómo-es-cada-análisis",
-    "href": "method.html#cómo-es-cada-análisis",
+    "objectID": "method.html#cómo-es-cada-entrada",
+    "href": "method.html#cómo-es-cada-entrada",
     "title": "Método",
-    "section": "Cómo es cada análisis",
-    "text": "Cómo es cada análisis\n\nPreguntas concretas. No «¿hay un problema de vivienda?», sino una o varias preguntas que se puedan responder con datos, formuladas con precisión.\nDatos y método. Fuentes oficiales con enlace y fecha de descarga, definiciones explícitas y el análisis estadístico más simple que responda bien. Cuando la pregunta lo permite, se escribe antes de mirar los datos qué se va a medir y cómo.\nAnálisis. Cada pregunta se responde con tablas y gráficos. El código está en el repositorio.\nConclusiones. Qué responden los datos a cada pregunta.\nExplicaciones. Por qué puede ser así, apoyado en la teoría pertinente (económica, social, jurídica…) y en la literatura, siempre citada, separando lo que muestran los datos de lo que es interpretación.\nLimitaciones. Qué no permite concluir el análisis."
+    "section": "Cómo es cada entrada",
+    "text": "Cómo es cada entrada\nLas entradas se agrupan por temas, y cada una responde a una pregunta concreta, con la misma estructura:\n\nEn breve. La respuesta corta, con su cifra principal.\nLa pregunta. Por qué importa y qué se responde exactamente.\nDatos y definiciones. Fuentes oficiales con enlace y fecha de descarga, y qué mide exactamente cada concepto.\nAnálisis. Cada resultado con su gráfico o tabla y una frase que lo resume.\nInterpretación. Por qué puede ser así, apoyado en la teoría pertinente y en la literatura, siempre citada, separando lo que muestran los datos de lo que es interpretación.\nLimitaciones. Qué no permite concluir el análisis.\nTécnicas y materiales. Qué técnicas estadísticas se usan y dónde se explican en detalle."
+  },
+  {
+    "objectID": "method.html#dos-niveles-de-lectura",
+    "href": "method.html#dos-niveles-de-lectura",
+    "title": "Método",
+    "section": "Dos niveles de lectura",
+    "text": "Dos niveles de lectura\nEl texto principal se entiende sin conocimientos previos de estadística. Los desplegables guardan la explicación técnica completa (definiciones exactas, fórmulas, cómo se calcula cada medida y el código) para quien quiera ir más allá."
+  },
+  {
+    "objectID": "method.html#ligado-a-la-docencia",
+    "href": "method.html#ligado-a-la-docencia",
+    "title": "Método",
+    "section": "Ligado a la docencia",
+    "text": "Ligado a la docencia\nEl blog es una extensión aplicada de mis materiales docentes de estadística. Cada técnica que aparece en una entrada está explicada en detalle en esos materiales, y la entrada remite a ellos. El blog solo usa técnicas recogidas en los materiales: si una pregunta necesita una nueva, primero se incorpora a la asignatura que corresponda."
   },
   {
     "objectID": "method.html#principios",
     "href": "method.html#principios",
     "title": "Método",
     "section": "Principios",
-    "text": "Principios\n\nDescripción no es causa. Con datos agregados se miden magnitudes y asociaciones. Solo se habla de efectos cuando el diseño lo permite, y entonces se explica.\nLas definiciones importan. Cada concepto se define y se indica qué cambia con otras definiciones razonables.\nMostrar la incertidumbre. Los resultados se acompañan de sus márgenes, sensibilidad y límites; los datos que no encajan no se esconden.\nReproducibilidad. Los datos de partida y el código se pueden volver a ejecutar.\n\nSi encuentras un error, abre un issue en el repositorio. Las correcciones se indican al final de cada análisis."
+    "text": "Principios\n\nDescripción no es causa. Con datos agregados se miden magnitudes y asociaciones. Solo se habla de efectos cuando el diseño lo permite, y entonces se explica.\nLas definiciones importan. Cada concepto se define y se indica qué cambia con otras definiciones razonables.\nMostrar la incertidumbre. Los resultados se acompañan de sus márgenes, sensibilidad y límites; los datos que no encajan no se esconden.\nReproducibilidad. Los datos de partida y el código se pueden volver a ejecutar.\n\nSi encuentras un error, abre un issue en el repositorio. Las correcciones se indican al final de cada entrada."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "La Mirada del Dato",
     "section": "",
-    "text": "Análisis con datos públicos\nPreguntas concretas, respondidas con datos\nCada análisis plantea una o varias preguntas concretas sobre una cuestión de debate público, las responde con datos oficiales y estadística, y explica los resultados con la teoría pertinente y sus límites."
+    "text": "La Mirada del Dato\nEstadística aplicada a problemas sociales\nCada entrada plantea una pregunta concreta de debate público y la responde con datos oficiales y estadística, explicando cada técnica que usa con el rigor de un curso universitario. El texto se lee sin conocimientos previos; los desplegables guardan el detalle técnico para quien lo quiera."
   },
   {
     "objectID": "index.html#lo-último",
     "href": "index.html#lo-último",
     "title": "La Mirada del Dato",
     "section": "Lo último",
-    "text": "Lo último\n\n\n\n\n\n\n\n¿Cómo ha evolucionado la población de España según nacionalidad y país de origen?\n\n\n\nPróximamente\n\n\n\nPoblación residente por nacionalidad y país de nacimiento.\n\n\n\n24 oct 2026\n\n\n\n\n\n\n\n\n\n\n¿A dónde van los impuestos?\n\n\n\nPróximamente\n\n\n\nDistribución y evolución del gasto público por funciones.\n\n\n\n23 oct 2026\n\n\n\n\n\n\n\n\n\n\n¿Cuánta vivienda de España es pública y cuánta privada?\n\n\n\nPróximamente\n\n\n\nTitularidad del parque de viviendas, incluida la vivienda de protección oficial.\n\n\n\n22 oct 2026\n\n\n\n\n\n\n\n\n\n\n¿Quién posee las viviendas: grandes o pequeños tenedores?\n\n\n\nPróximamente\n\n\n\nDistribución de la propiedad entre grandes y pequeños tenedores.\n\n\n\n21 oct 2026\n\n\n\n\n\n\n\n\n\n\n¿Cómo ha evolucionado la violencia de género?\n\n\n\nPróximamente\n\n\n\nEvolución de la violencia de género y comparativa con otras violencias.\n\n\n\n19 oct 2026\n\n\n\n\n\n\n\n\n\n\n¿Cómo se distribuyen las muertes del franquismo por tipología?\n\n\n\nPróximamente\n\n\n\nEvolución y tipología de las muertes atribuidas al franquismo.\n\n\n\n18 oct 2026\n\n\n\n\n\n\nNo hay resultados\n\nVer todos los temas →"
+    "text": "Lo último\n\n\n\n\n\n\n\n¿Cuánto ha crecido la población con nacionalidad extranjera?\n\n\n\nPróximamente\n\n\n\nPoblación residente en España con nacionalidad española y extranjera desde 2002, y peso de la extranjera.\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n\n\n\n¿Ha crecido la población al mismo ritmo desde 2002?\n\n\n\nPróximamente\n\n\n\nRitmo de crecimiento de la población residente por periodos y aportación de cada grupo de nacionalidad.\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n\n\n\n¿De qué regiones del mundo procede la población extranjera?\n\n\n\nPróximamente\n\n\n\nComposición de la población con nacionalidad extranjera por región de nacionalidad y su evolución.\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n\n\n\n¿Cuántos residentes en España han nacido en el extranjero?\n\n\n\nPróximamente\n\n\n\nPoblación residente según país de nacimiento: nacidos en España y en el extranjero, por región de nacimiento.\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n\n\n\n¿Quién cuenta como «extranjero»?\n\n\n\nPróximamente\n\n\n\nNacionalidad frente a país de nacimiento: dos definiciones de «extranjero» que no dan la misma cifra.\n\n\n\n13 nov 2026\n\n\n\n\n\n\n\n\n\n\n¿Crece la población por los nacimientos o por la migración?\n\n\n\nPróximamente\n\n\n\nDescomposición del cambio de población en saldo natural (nacimientos menos defunciones) y saldo migratorio.\n\n\n\n13 nov 2026\n\n\n\n\n\n\nNo hay resultados\n\nVer todos los temas →"
   },
   {
     "objectID": "temas.html",
@@ -109,62 +179,118 @@
     "href": "about.html",
     "title": "Sobre el blog",
     "section": "",
-    "text": "La Mirada del Dato es un blog personal de Fabio Scielzo Ortiz, científico de datos en IBiDat y doctorando en Statistics for Data Science en la Universidad Carlos III de Madrid.\nLa idea es sencilla: plantear preguntas concretas sobre cuestiones de debate público y responderlas con datos abiertos y estadística. Entradas cortas, sin adjetivos, con el código y los datos a la vista.\nLas opiniones expresadas son personales y no representan a ninguna institución.\nGitHub · Madrid, España"
+    "text": "La Mirada del Dato es un blog personal de Fabio Scielzo Ortiz, científico de datos en IBiDat y doctorando en Statistics for Data Science en la Universidad Carlos III de Madrid.\nLa idea es sencilla: plantear preguntas concretas sobre cuestiones de debate público, responderlas con datos abiertos y estadística, y explicar paso a paso cómo se llega a la respuesta. El blog es una extensión aplicada de mi docencia: cada técnica que se usa está explicada en mis materiales de estadística, y cada entrada puede servir de ejemplo de aplicación en clase. Sin adjetivos, con el código y los datos a la vista.\nLas opiniones expresadas son personales y no representan a ninguna institución.\nGitHub · Madrid, España"
   },
   {
     "objectID": "historia/index.html",
     "href": "historia/index.html",
     "title": "Historia",
     "section": "",
-    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cómo se distribuyen las muertes del franquismo por tipología?\n\n\n\nPróximamente\n\n\n\nEvolución y tipología de las muertes atribuidas al franquismo.\n\n\n\n\n\n18 oct 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cómo se distribuyen las muertes del franquismo por tipología?\n\n\n\nPróximamente\n\n\n\n\nEvolución y tipología de las muertes atribuidas al franquismo.\n\n\n\n\n\n\n18 oct 2026\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "seguridad/index.html",
     "href": "seguridad/index.html",
     "title": "Seguridad",
     "section": "",
-    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cómo ha evolucionado la violencia de género?\n\n\n\nPróximamente\n\n\n\nEvolución de la violencia de género y comparativa con otras violencias.\n\n\n\n\n\n19 oct 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "← Todos los temas\n\n\n\n\n\n\n\n\n\n¿Cómo ha evolucionado la violencia de género?\n\n\n\nPróximamente\n\n\n\n\nEvolución de la violencia de género y comparativa con otras violencias.\n\n\n\n\n\n\n19 oct 2026\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "gasto-publico/notebooks/g01-public-spending.html",
     "href": "gasto-publico/notebooks/g01-public-spending.html",
     "title": "¿A dónde van los impuestos?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "gasto-publico/notebooks/g01-public-spending.html#preguntas",
-    "href": "gasto-publico/notebooks/g01-public-spending.html#preguntas",
+    "objectID": "gasto-publico/notebooks/g01-public-spending.html#la-pregunta",
+    "href": "gasto-publico/notebooks/g01-public-spending.html#la-pregunta",
     "title": "¿A dónde van los impuestos?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Cómo se distribuye el gasto público entre sus partidas?\nP2. ¿Cómo ha evolucionado a lo largo del tiempo?\n\nEste análisis está en preparación."
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cómo se distribuye el gasto público entre sus partidas?\nP2. ¿Cómo ha evolucionado a lo largo del tiempo?\n\nEsta entrada está en preparación."
   },
   {
-    "objectID": "poblacion/notebooks/p01-population-nationality-origin.html",
-    "href": "poblacion/notebooks/p01-population-nationality-origin.html",
-    "title": "¿Cómo ha evolucionado la población de España según nacionalidad y país de origen?",
+    "objectID": "poblacion/notebooks/p01-foreign-population-growth.html",
+    "href": "poblacion/notebooks/p01-foreign-population-growth.html",
+    "title": "¿Cuánto ha crecido la población con nacionalidad extranjera?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "poblacion/notebooks/p01-population-nationality-origin.html#preguntas",
-    "href": "poblacion/notebooks/p01-population-nationality-origin.html#preguntas",
-    "title": "¿Cómo ha evolucionado la población de España según nacionalidad y país de origen?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Cómo ha evolucionado la población residente según su nacionalidad?\nP2. ¿Cómo ha evolucionado según su país de origen?\n\nEste análisis está en preparación.\n\n\nVer código\nimport os, sys\nfrom pathlib import Path\nimport polars as pl\n\nROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / \"_quarto.yml\").exists())\n\nsys.path.append(ROOT)\nfrom common.files import read_processed\n\n\n\n\nVer código\nprocessed_data_path = os.path.join(ROOT, 'poblacion', 'data', 'processed', 'poblacion_nacionalidad_origen.parquet')\ndf = pl.read_parquet(processed_data_path)\n\n\n\n  Cell In[34], line 1\n    processed_data_path =\n                          ^\nSyntaxError: invalid syntax\n\n\n\n\n\n\nVer código\nTOPIC = 'poblacion'\nread_processed(TOPIC, \"poblacion_nacionalidad_origen\")\n\n\n\n\nVer código\ndf.filter(\n    pl.col('sexo') == 'Total',\n    pl.col('edad') == 'Todas las edades',\n).select(\n    ['periodo', 'nacionalidad', 'pais_nacimiento', 'total']\n)"
+    "objectID": "poblacion/notebooks/p01-foreign-population-growth.html#la-pregunta",
+    "href": "poblacion/notebooks/p01-foreign-population-growth.html#la-pregunta",
+    "title": "¿Cuánto ha crecido la población con nacionalidad extranjera?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuánto han cambiado la población con nacionalidad española y la extranjera desde 2002?\nP2. ¿Qué parte del crecimiento de la población corresponde a cada una?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p03-foreign-population-origin.html",
+    "href": "poblacion/notebooks/p03-foreign-population-origin.html",
+    "title": "¿De qué regiones del mundo procede la población extranjera?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p03-foreign-population-origin.html#la-pregunta",
+    "href": "poblacion/notebooks/p03-foreign-population-origin.html#la-pregunta",
+    "title": "¿De qué regiones del mundo procede la población extranjera?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Qué peso tiene cada región sobre la población extranjera?\nP2. ¿Qué regiones explican su crecimiento?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p05-defining-foreign-population.html",
+    "href": "poblacion/notebooks/p05-defining-foreign-population.html",
+    "title": "¿Quién cuenta como «extranjero»?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p05-defining-foreign-population.html#la-pregunta",
+    "href": "poblacion/notebooks/p05-defining-foreign-population.html#la-pregunta",
+    "title": "¿Quién cuenta como «extranjero»?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuánto difiere la población «extranjera» según se defina por nacionalidad o por país de nacimiento?\nP2. ¿Qué grupos explican esa diferencia?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p07-migration-flows.html",
+    "href": "poblacion/notebooks/p07-migration-flows.html",
+    "title": "¿Cuántas personas llegan, cuántas se van y cuántas se quedan?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p07-migration-flows.html#la-pregunta",
+    "href": "poblacion/notebooks/p07-migration-flows.html#la-pregunta",
+    "title": "¿Cuántas personas llegan, cuántas se van y cuántas se quedan?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuántas personas entran y salen de España cada año, y cuál es el saldo?\nP2. ¿Por qué el saldo migratorio y el aumento de la población nacida fuera no coinciden?\n\nEsta entrada está en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p09-foreign-workers-social-security.html",
+    "href": "poblacion/notebooks/p09-foreign-workers-social-security.html",
+    "title": "¿En qué trabajan las personas extranjeras y cuántas cotizan?",
+    "section": "",
+    "text": "En breve · Análisis\nEntrada en preparación."
+  },
+  {
+    "objectID": "poblacion/notebooks/p09-foreign-workers-social-security.html#la-pregunta",
+    "href": "poblacion/notebooks/p09-foreign-workers-social-security.html#la-pregunta",
+    "title": "¿En qué trabajan las personas extranjeras y cuántas cotizan?",
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Cuántas personas extranjeras están afiliadas a la Seguridad Social y qué peso tienen sobre el total?\nP2. ¿En qué sectores de actividad se concentran?\n\nEsta entrada está en preparación."
   },
   {
     "objectID": "vivienda/notebooks/v01-housing-public-private.html",
     "href": "vivienda/notebooks/v01-housing-public-private.html",
     "title": "¿Cuánta vivienda de España es pública y cuánta privada?",
     "section": "",
-    "text": "En breve · Análisis\nAnálisis en preparación."
+    "text": "En breve · Análisis\nEntrada en preparación."
   },
   {
-    "objectID": "vivienda/notebooks/v01-housing-public-private.html#preguntas",
-    "href": "vivienda/notebooks/v01-housing-public-private.html#preguntas",
+    "objectID": "vivienda/notebooks/v01-housing-public-private.html#la-pregunta",
+    "href": "vivienda/notebooks/v01-housing-public-private.html#la-pregunta",
     "title": "¿Cuánta vivienda de España es pública y cuánta privada?",
-    "section": "Preguntas",
-    "text": "Preguntas\n\nP1. ¿Qué parte del parque de viviendas es de titularidad privada y qué parte pública?\nP2. ¿Qué peso tiene la vivienda de protección oficial?\n\nEste análisis está en preparación."
+    "section": "La pregunta",
+    "text": "La pregunta\n\nP1. ¿Qué parte del parque de viviendas es de titularidad privada y qué parte pública?\nP2. ¿Qué peso tiene la vivienda de protección oficial?\n\nEsta entrada está en preparación."
   }
 ]

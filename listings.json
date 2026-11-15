@@ -7,6 +7,16 @@
     ]
   },
   {
+    "listing": "/seguridad-ciudadana/index.html",
+    "items": [
+      "/seguridad-ciudadana/notebooks/seg01-gender-violence.html"
+    ]
+  },
+  {
+    "listing": "/salud/index.html",
+    "items": []
+  },
+  {
     "listing": "/poblacion/index.html",
     "items": [
       "/poblacion/notebooks/p01-foreign-population-growth.html",
@@ -21,10 +31,20 @@
     ]
   },
   {
-    "listing": "/gasto-publico/index.html",
-    "items": [
-      "/gasto-publico/notebooks/g01-public-spending.html"
-    ]
+    "listing": "/medio-ambiente/index.html",
+    "items": []
+  },
+  {
+    "listing": "/historia/index.html",
+    "items": []
+  },
+  {
+    "listing": "/empleo/index.html",
+    "items": []
+  },
+  {
+    "listing": "/dependencia/index.html",
+    "items": []
   },
   {
     "listing": "/index.html",
@@ -41,20 +61,37 @@
       "/gasto-publico/notebooks/g01-public-spending.html",
       "/vivienda/notebooks/v01-housing-public-private.html",
       "/vivienda/notebooks/v02-housing-owners.html",
-      "/seguridad/notebooks/seg01-gender-violence.html",
-      "/historia/notebooks/h01-francoism-deaths.html"
+      "/seguridad-ciudadana/notebooks/seg01-gender-violence.html"
     ]
   },
   {
-    "listing": "/historia/index.html",
+    "listing": "/educacion/index.html",
+    "items": []
+  },
+  {
+    "listing": "/gasto-publico/index.html",
     "items": [
-      "/historia/notebooks/h01-francoism-deaths.html"
+      "/gasto-publico/notebooks/g01-public-spending.html"
     ]
   },
   {
-    "listing": "/seguridad/index.html",
-    "items": [
-      "/seguridad/notebooks/seg01-gender-violence.html"
-    ]
+    "listing": "/instituciones/index.html",
+    "items": []
+  },
+  {
+    "listing": "/pensiones/index.html",
+    "items": []
+  },
+  {
+    "listing": "/renta-desigualdad/index.html",
+    "items": []
+  },
+  {
+    "listing": "/satisfaccion-vida/index.html",
+    "items": []
+  },
+  {
+    "listing": "/seguridad-social/index.html",
+    "items": []
   }
 ]

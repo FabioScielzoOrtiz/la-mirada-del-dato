@@ -5,6 +5,7 @@ Conventions (inside each topic folder)
 - Processed files: data/processed/<name>.parquet                  (rebuilt by the processing scripts)
 """
 
+import time
 from datetime import date
 from pathlib import Path
 
@@ -19,7 +20,12 @@ def download(url: str, topic: Path, source: str, name: str, ext: str, timeout: i
     raw, _ = data_dirs(topic)
     out = raw / source / f"{name}_{date.today().isoformat()}.{ext}"
     out.parent.mkdir(parents=True, exist_ok=True)
-    r = requests.get(url, timeout=timeout)
+    for attempt in range(1, 6):          # the INE answers 503 now and then: retry with a growing wait
+        r = requests.get(url, timeout=timeout)
+        if r.status_code < 500:
+            break
+        print(f"  {r.status_code} from the server, retrying in {30 * attempt} s ({attempt}/5)")
+        time.sleep(30 * attempt)
     r.raise_for_status()
     out.write_bytes(r.content)
     print(f"Saved {out.relative_to(topic)} ({len(r.content) / 1e6:.1f} MB)")

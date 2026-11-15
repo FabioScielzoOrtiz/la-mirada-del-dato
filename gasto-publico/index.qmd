@@ -1,6 +1,6 @@
 ---
-title: "Gasto público"
-description: "A dónde van los impuestos y cómo evoluciona el gasto."
+title: "Impuestos y gasto público"
+description: "Cuánto se recauda, de quién y a dónde va el gasto público."
 toc: false
 listing:
   contents: "notebooks/*.ipynb"

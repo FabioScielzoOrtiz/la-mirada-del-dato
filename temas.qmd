@@ -1,8 +1,10 @@
 ---
 title: "Temas"
-description: "Cada tema reúne los análisis sobre una cuestión de debate público."
+description: "Las dimensiones del bienestar que mide el blog: en España, frente a otros países y por comunidades autónomas."
 toc: false
 ---
+
+## Contexto {.seccion-titulo}
 
 ::: {.temas}
 ::: {.tema}
@@ -10,24 +12,89 @@ toc: false
 
 Cuánto crece España, de dónde y por qué.
 :::
-::: {.tema}
-[Gasto público →](gasto-publico/index.qmd)
+:::
 
-A dónde van los impuestos y cómo evoluciona el gasto.
+## Condiciones de vida {.seccion-titulo}
+
+::: {.temas}
+::: {.tema}
+[Renta y desigualdad →](renta-desigualdad/index.qmd)
+
+Ingresos de los hogares, pobreza y desigualdad: cómo se reparte el bienestar material.
+:::
+::: {.tema}
+[Empleo →](empleo/index.qmd)
+
+Empleo, paro y calidad del trabajo.
 :::
 ::: {.tema}
 [Vivienda →](vivienda/index.qmd)
 
-Quién posee la vivienda, qué parque hay y cómo se distribuye.
+Acceso a la vivienda, su coste y quién la posee.
+:::
+:::
+
+## Estado de bienestar {.seccion-titulo}
+
+::: {.temas}
+::: {.tema}
+[Educación →](educacion/index.qmd)
+
+Cuánto se invierte en educación, quién accede a ella y qué resultados obtiene.
 :::
 ::: {.tema}
-[Seguridad →](seguridad/index.qmd)
+[Salud →](salud/index.qmd)
+
+Estado de salud de la población y funcionamiento del sistema sanitario.
+:::
+::: {.tema}
+[Pensiones →](pensiones/index.qmd)
+
+Cuántas pensiones hay, cuánto cuestan y cómo se financian.
+:::
+::: {.tema}
+[Seguridad Social →](seguridad-social/index.qmd)
+
+Afiliación, cotizaciones y prestaciones: cómo se financia la protección social.
+:::
+::: {.tema}
+[Dependencia →](dependencia/index.qmd)
+
+Cuántas personas necesitan cuidados de larga duración y cuántas los reciben.
+:::
+:::
+
+## Estado e instituciones {.seccion-titulo}
+
+::: {.temas}
+::: {.tema}
+[Impuestos y gasto público →](gasto-publico/index.qmd)
+
+Cuánto se recauda, de quién y a dónde va el gasto público.
+:::
+::: {.tema}
+[Instituciones y gobernanza →](instituciones/index.qmd)
+
+Calidad democrática, confianza en las instituciones, justicia y transparencia.
+:::
+::: {.tema}
+[Seguridad ciudadana →](seguridad-ciudadana/index.qmd)
 
 Violencia, delincuencia y homicidios: evolución y comparativas.
 :::
-::: {.tema}
-[Historia →](historia/index.qmd)
+:::
 
-Memoria histórica y datos del pasado reciente.
+## Entorno y bienestar percibido {.seccion-titulo}
+
+::: {.temas}
+::: {.tema}
+[Medio ambiente →](medio-ambiente/index.qmd)
+
+Calidad del aire, emisiones y el entorno en el que se vive.
+:::
+::: {.tema}
+[Satisfacción con la vida →](satisfaccion-vida/index.qmd)
+
+Cómo valora la población su propia vida y su bienestar.
 :::
 :::

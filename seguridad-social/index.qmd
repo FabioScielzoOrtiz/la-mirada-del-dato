@@ -1,0 +1,16 @@
+---
+title: "Seguridad Social"
+description: "Afiliación, cotizaciones y prestaciones: cómo se financia la protección social."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "filename"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

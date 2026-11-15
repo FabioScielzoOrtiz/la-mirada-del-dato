@@ -11,7 +11,7 @@ index.qmd temas.qmd method.qmd about.qmd   páginas del sitio
 _variables.yml           registro de materiales docentes que citan las entradas
 common/                  código compartido (rutas, estilo de gráficos, descarga de ficheros)
 _template/               plantillas (no se publican): article.ipynb y topic/
-<tema>/                  cada tema es un mini-proyecto (poblacion/, gasto-publico/, vivienda/, seguridad/, historia/)
+<tema>/                  cada tema es un mini-proyecto (poblacion/, empleo/, salud/, …; mapa en temas.qmd)
   index.qmd              página del tema: lista sus entradas
   notebooks/             un notebook por entrada: el archivo maestro (la web muestra solo una parte)
   src/{download,process}/  código propio del tema   ┐ se crean al empezar
@@ -24,7 +24,7 @@ _template/               plantillas (no se publican): article.ipynb y topic/
 **Nuevo tema:** copia `_template/topic/` como `<tema>/`, edita su `index.qmd` y añádelo a `temas.qmd`. Las entradas previstas se anuncian con notebooks mínimos (pregunta y «Próximamente»); la página del tema las lista por nombre de fichero, en el orden de la serie.
 
 **Nueva entrada:**
-1. Copia `_template/article.ipynb` a `<tema>/notebooks/<id>-<slug>.ipynb` (ids: `p` población, `g` gasto público, `v` vivienda, `seg` seguridad, `h` historia).
+1. Copia `_template/article.ipynb` a `<tema>/notebooks/<id>-<slug>.ipynb` (ids: `p` población, `ren` renta y desigualdad, `emp` empleo, `v` vivienda, `edu` educación, `sal` salud, `pen` pensiones, `ss` Seguridad Social, `dep` dependencia, `g` impuestos y gasto público, `inst` instituciones, `seg` seguridad ciudadana, `ma` medio ambiente, `sat` satisfacción con la vida).
 2. Descarga y procesa con scripts en `<tema>/src/`; el notebook lee de `<tema>/data/processed/`.
 3. Cita cada técnica con `{{< var materiales.<id> >}}`. Si no está en `_variables.yml`, primero se añade a los materiales docentes y después al registro.
 4. Ejecuta el notebook entero y guárdalo **con las salidas**: Quarto publica las salidas guardadas, no lo re-ejecuta.

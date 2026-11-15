@@ -1,0 +1,16 @@
+---
+title: "Dependencia"
+description: "Cuántas personas necesitan cuidados de larga duración y cuántas los reciben."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "filename"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

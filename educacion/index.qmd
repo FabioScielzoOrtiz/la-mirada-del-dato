@@ -1,6 +1,6 @@
 ---
-title: "Seguridad"
-description: "Violencia, delincuencia y homicidios: evolución y comparativas."
+title: "Educación"
+description: "Cuánto se invierte en educación, quién accede a ella y qué resultados obtiene."
 toc: false
 listing:
   contents: "notebooks/*.ipynb"
@@ -12,3 +12,5 @@ listing:
 ---
 
 [← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

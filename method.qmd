@@ -7,6 +7,23 @@ el mismo rigor y el mismo tono que un curso universitario: cada concepto se defi
 técnica se explica. No son artículos académicos, pero siguen sus reglas: datos oficiales,
 método explícito, código abierto y limitaciones a la vista.
 
+## Qué se mide
+
+El blog mide la **calidad de vida y el bienestar** de un país de forma multidimensional:
+condiciones de vida (renta, empleo, vivienda), estado de bienestar (educación, salud,
+pensiones, protección social y dependencia), instituciones y seguridad, y entorno y
+bienestar percibido. Los temas siguen, a grandes rasgos, las dimensiones con que lo miden
+las estadísticas oficiales: los indicadores de calidad de vida de Eurostat y del INE y el
+marco *How's Life?* de la OCDE.
+
+Cada pregunta se mira, cuando los datos lo permiten, a tres escalas:
+
+- **España**: el nivel y la evolución del indicador.
+- **Comparación internacional**: frente a países con los que la comparación tiene sentido,
+  como los de la Unión Europea o la OCDE. No todas las preguntas la necesitan.
+- **Comunidades autónomas**: diferencias entre comunidades, o una comunidad, como Madrid,
+  frente a otras de peso, como Cataluña, País Vasco o Andalucía.
+
 ## Cómo es cada entrada
 
 Las entradas se agrupan por temas, y cada una responde a **una pregunta concreta**, con la

@@ -1,0 +1,16 @@
+---
+title: "Satisfacción con la vida"
+description: "Cómo valora la población su propia vida y su bienestar."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "filename"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

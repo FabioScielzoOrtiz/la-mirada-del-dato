@@ -51,4 +51,5 @@ $font-size-root: 17px;
   }
 }
 
-.seccion-titulo { font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; border-bottom: 1px solid rgba(127,127,127,.3); padding-bottom: .4rem; margin-top: 2rem; }
+// Quarto moves a heading's class to its <section>: style only the heading
+h2.seccion-titulo, .seccion-titulo > h2 { font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; border-bottom: 1px solid rgba(127,127,127,.3); padding-bottom: .4rem; margin-top: 2rem; }

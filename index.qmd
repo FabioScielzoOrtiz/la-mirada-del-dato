@@ -18,7 +18,7 @@ listing:
 
 [Estadística aplicada a problemas sociales]{.subtitulo}
 
-[Cada entrada plantea una pregunta concreta de debate público y la responde con datos oficiales y estadística, explicando cada técnica que usa con el rigor de un curso universitario. El texto se lee sin conocimientos previos; los desplegables guardan el detalle técnico para quien lo quiera.]{.lead}
+[El blog mide el bienestar de un país en sus distintas dimensiones (renta, empleo, vivienda, educación, salud, protección social, instituciones, seguridad, medio ambiente), en España, frente a otros países y entre comunidades autónomas. Cada entrada plantea una pregunta concreta y la responde con datos oficiales y estadística, explicando cada técnica que usa con el rigor de un curso universitario. El texto se lee sin conocimientos previos; los desplegables guardan el detalle técnico para quien lo quiera.]{.lead}
 :::
 
 ## Lo último {.seccion-titulo}

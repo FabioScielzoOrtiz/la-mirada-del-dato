@@ -1,0 +1,16 @@
+---
+title: "Renta y desigualdad"
+description: "Ingresos de los hogares, pobreza y desigualdad: cómo se reparte el bienestar material."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "filename"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

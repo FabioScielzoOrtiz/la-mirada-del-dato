@@ -1,0 +1,16 @@
+---
+title: "Medio ambiente"
+description: "Calidad del aire, emisiones y el entorno en el que se vive."
+toc: false
+listing:
+  contents: "notebooks/*.ipynb"
+  type: default
+  sort: "filename"
+  fields: [date, title, description, categories]
+  date-format: "D MMM YYYY"
+  categories: false
+---
+
+[← Todos los temas](../temas.qmd)
+
+*Tema en preparación: sus primeras entradas aparecerán aquí.*

@@ -1,41 +1,22 @@
 [
   {
-    "listing": "/vivienda/index.html",
-    "items": [
-      "/vivienda/notebooks/v01-housing-public-private.html",
-      "/vivienda/notebooks/v02-housing-owners.html"
-    ]
-  },
-  {
-    "listing": "/seguridad-ciudadana/index.html",
-    "items": [
-      "/seguridad-ciudadana/notebooks/seg01-gender-violence.html"
-    ]
-  },
-  {
-    "listing": "/salud/index.html",
+    "listing": "/seguridad-social/index.html",
     "items": []
   },
   {
-    "listing": "/poblacion/index.html",
-    "items": [
-      "/poblacion/notebooks/p01-foreign-population-growth.html",
-      "/poblacion/notebooks/p02-population-growth-phases.html",
-      "/poblacion/notebooks/p03-foreign-population-origin.html",
-      "/poblacion/notebooks/p04-born-abroad-population.html",
-      "/poblacion/notebooks/p05-defining-foreign-population.html",
-      "/poblacion/notebooks/p06-natural-vs-migratory-growth.html",
-      "/poblacion/notebooks/p07-migration-flows.html",
-      "/poblacion/notebooks/p08-foreign-population-territory.html",
-      "/poblacion/notebooks/p09-foreign-workers-social-security.html"
-    ]
-  },
-  {
-    "listing": "/medio-ambiente/index.html",
+    "listing": "/satisfaccion-vida/index.html",
     "items": []
   },
   {
-    "listing": "/historia/index.html",
+    "listing": "/renta-desigualdad/index.html",
+    "items": []
+  },
+  {
+    "listing": "/pensiones/index.html",
+    "items": []
+  },
+  {
+    "listing": "/instituciones/index.html",
     "items": []
   },
   {
@@ -49,12 +30,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/poblacion/notebooks/p01-foreign-population-growth.html",
-      "/poblacion/notebooks/p02-population-growth-phases.html",
-      "/poblacion/notebooks/p03-foreign-population-origin.html",
-      "/poblacion/notebooks/p04-born-abroad-population.html",
-      "/poblacion/notebooks/p05-defining-foreign-population.html",
-      "/poblacion/notebooks/p06-natural-vs-migratory-growth.html",
+      "/poblacion/notebooks/p02-foreign-population-growth.html",
+      "/poblacion/notebooks/p03-population-growth-phases.html",
+      "/poblacion/notebooks/p04-foreign-population-origin.html",
+      "/poblacion/notebooks/p05-born-abroad-population.html",
+      "/poblacion/notebooks/p06-defining-foreign-population.html",
       "/poblacion/notebooks/p07-migration-flows.html",
       "/poblacion/notebooks/p08-foreign-population-territory.html",
       "/poblacion/notebooks/p09-foreign-workers-social-security.html",
@@ -75,23 +55,37 @@
     ]
   },
   {
-    "listing": "/instituciones/index.html",
+    "listing": "/medio-ambiente/index.html",
     "items": []
   },
   {
-    "listing": "/pensiones/index.html",
+    "listing": "/poblacion/index.html",
+    "items": [
+      "/poblacion/notebooks/p02-foreign-population-growth.html",
+      "/poblacion/notebooks/p03-population-growth-phases.html",
+      "/poblacion/notebooks/p04-foreign-population-origin.html",
+      "/poblacion/notebooks/p05-born-abroad-population.html",
+      "/poblacion/notebooks/p06-defining-foreign-population.html",
+      "/poblacion/notebooks/p07-migration-flows.html",
+      "/poblacion/notebooks/p08-foreign-population-territory.html",
+      "/poblacion/notebooks/p09-foreign-workers-social-security.html"
+    ]
+  },
+  {
+    "listing": "/salud/index.html",
     "items": []
   },
   {
-    "listing": "/renta-desigualdad/index.html",
-    "items": []
+    "listing": "/seguridad-ciudadana/index.html",
+    "items": [
+      "/seguridad-ciudadana/notebooks/seg01-gender-violence.html"
+    ]
   },
   {
-    "listing": "/satisfaccion-vida/index.html",
-    "items": []
-  },
-  {
-    "listing": "/seguridad-social/index.html",
-    "items": []
+    "listing": "/vivienda/index.html",
+    "items": [
+      "/vivienda/notebooks/v01-housing-public-private.html",
+      "/vivienda/notebooks/v02-housing-owners.html"
+    ]
   }
 ]
